@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2mk31dn4nxh0"]
+
+[ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_hl5yw"]
+
+[node name="inventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_hl5yw")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = -220.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 8
+
+[node name="Panel2" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 360.0
+offset_right = 420.0
+offset_bottom = 460.0
+
+[node name="GridContainer" type="GridContainer" parent="Panel2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 171.0
+offset_right = 529.0
+offset_bottom = 179.0
+text = "dasdas"
+
+[connection signal="gui_input" from="Panel/GridContainer" to="." method="_on_grid_container_gui_input"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

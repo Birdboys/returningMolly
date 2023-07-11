@@ -1,0 +1,12 @@
+{
+  "0":{
+    "item_id": 0,
+    "item_name": "canned_food",
+    "item_graph": "0,0/1,0"
+  },
+  "1":{
+    "item_id": 1,
+    "item_name": "bottled_water",
+    "item_graph": "0,0/0,1"
+  }
+}
