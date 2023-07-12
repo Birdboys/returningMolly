@@ -1,6 +1,6 @@
 extends Control
-@onready var num_col = 10
-@onready var num_row = 8
+@onready var num_col = 8
+@onready var num_row = 6
 @onready var slot = preload("res://Scenes/temp_slot.tscn")
 @onready var slot_height 
 @onready var slot_width
@@ -8,22 +8,24 @@ extends Control
 @onready var held_item = null
 @onready var hovered_item = null
 @onready var slots = {}
+@onready var inventoryGrid = $gridPanel/inventoryGrid
+@onready var groundItems = $groundPanel/groundItemsScroll/groundItems
 var inventory_bounding_rect
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$gridPanel/GridContainer.columns = num_col
+	inventoryGrid.columns = num_col
 	for row in range(num_row):
 		for col in range(num_col):
 			var new_slot = slot.instantiate()
 
 			new_slot.color = '#d6c7a3'
 			#new_slot.text=('%s,%s'%[row,col])
-			$gridPanel/GridContainer.add_child(new_slot)
+			inventoryGrid.add_child(new_slot)
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
 			slots['%s:%s' %[col, row]] = new_slot
-	slot_height = $gridPanel/GridContainer.size.y/num_row
-	slot_width = $gridPanel/GridContainer.size.x/num_col
+	slot_height = inventoryGrid.size.y/num_row
+	slot_width = inventoryGrid.size.x/num_col
 	inventory_bounding_rect = Rect2(Vector2(0,0),Vector2(num_col, num_row))
 	pass # Replace with function body.
 
@@ -44,8 +46,9 @@ func _process(delta):
 					print("item found on ground")
 				held_item.pickUp()
 				#print(held_item.item_location)
-		for child in $groundPanel/groundItemsScroll/groundItems.get_children():
+		for child in groundItems.get_children():
 			child.mouse_filter = 1
+		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
 		if inventory_bounding_rect.has_point(slot_to_check):
@@ -63,14 +66,15 @@ func _process(delta):
 				held_item = null
 				
 			#current_slot = 
-		for child in $groundPanel/groundItemsScroll/groundItems.get_children():
+		for child in groundItems.get_children():
 		
 			child.mouse_filter = 2
+		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 			#print(child.mouse_filter)
 	#print(held_item, hovered_item)
 
 func getContainerLoc(mouse_pos):
-	var container_pos = mouse_pos - $gridPanel/GridContainer.global_position
+	var container_pos = mouse_pos - inventoryGrid.global_position
 	return Vector2(int(container_pos.x/slot_width), int(container_pos.y/slot_height))
 
 func slotEntered(the_slot):
@@ -137,18 +141,26 @@ func putItemDown(the_slot):
 
 func addItemToGround(id):
 	var new_item_button = load("res://Scenes/item_button.tscn").instantiate()
-	$groundPanel/groundItemsScroll/groundItems.add_child(new_item_button)
+	groundItems.add_child(new_item_button)
 	new_item_button.loadItemButton(id)
 	new_item_button.item_pressed.connect(groundItemPressed)
 	hovered_item = null
 	
 func groundItemPressed(id):
 	var new_item = load('res://Scenes/item.tscn').instantiate()
-	add_child(new_item)
+	$Objects.add_child(new_item)
 	new_item.loadItem(id)
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
 	new_item.return_to_ground.connect(addItemToGround)
 	held_item = new_item
 	new_item.pickUp()
-	
+
+func _on_clear_pressed():
+	for obj in $Objects.get_children():
+		obj.queue_free()
+	held_item = null
+	hovered_item = null
+	for sl in slots:
+		slots[sl].removeItem()
+	pass # Replace with function body.

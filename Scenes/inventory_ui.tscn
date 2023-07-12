@@ -28,7 +28,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="GridContainer" type="GridContainer" parent="gridPanel"]
+[node name="inventoryGrid" type="GridContainer" parent="gridPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -56,6 +56,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
 
 [node name="groundItems" type="HBoxContainer" parent="groundPanel/groundItemsScroll"]
 layout_mode = 2
@@ -70,4 +72,19 @@ offset_right = 529.0
 offset_bottom = 179.0
 text = "dasdas"
 
+[node name="Clear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 522.0
+offset_top = 223.0
+offset_right = 585.0
+offset_bottom = 254.0
+text = "clear
+"
+
+[node name="Objects" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Clear" to="." method="_on_clear_pressed"]
