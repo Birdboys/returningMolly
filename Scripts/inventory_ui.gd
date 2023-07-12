@@ -7,22 +7,21 @@ extends Control
 @onready var current_slot
 @onready var held_item = null
 @onready var hovered_item = null
+@onready var slots = {}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for row in range(num_row):
 		for col in range(num_col):
 			var new_slot = slot.instantiate()
-			if row%2 == col%2:
-				new_slot.color = '#ada387'
-			else:
-				new_slot.color = '#ffffff'
+
+			new_slot.color = '#ada387'
 			#new_slot.text=('%s,%s'%[row,col])
-			$Panel/GridContainer.add_child(new_slot)
+			$gridPanel/GridContainer.add_child(new_slot)
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
-	slot_height = $Panel/GridContainer.size.y/num_row
-	slot_width = $Panel/GridContainer.size.x/num_col
-	print(slot_height, slot_width)
+			slots['%s:%s' %[col, row]] = new_slot
+	slot_height = $gridPanel/GridContainer.size.y/num_row
+	slot_width = $gridPanel/GridContainer.size.x/num_col
 	pass # Replace with function body.
 
 
@@ -33,26 +32,39 @@ func _process(delta):
 			if hovered_item:
 				held_item = hovered_item
 				held_item.pickUp()
+				#print(held_item.item_location)
 	else:
-		if Input.is_action_just_pressed("ui_input"):
-			held_item.putDown()
-			held_item = null
-	print(held_item, hovered_item)
-	
-func _on_grid_container_gui_input(event):
-	if event.is_action_pressed("ui_input"):
-		var mouse_pos = get_global_mouse_position()
-		print(getContainerLoc(mouse_pos))
-	if event.is_action_released("ui_input"):
-		#print('release')
-		pass # Replace with function body.
+		var slot_to_check = getContainerLoc(get_global_mouse_position())
+		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+			current_slot = slots["%s:%s"%[slot_to_check.x,slot_to_check.y]]
+			slotEntered(current_slot)
+			
+			if Input.is_action_just_pressed("ui_input"):
+				if checkSlotsAvailable(current_slot):
+					putItemDown(current_slot)
+					
+		else:
+			current_slot = null
+			clearItemSlots()
+			if Input.is_action_just_pressed("ui_input"):
+				held_item.putDown()
+				held_item = null
+			#current_slot = 
+		
+	#print(held_item, hovered_item)
 
 func getContainerLoc(mouse_pos):
-	var container_pos = mouse_pos - $Panel/GridContainer.global_position
-	return [int(container_pos.x/slot_width), int(container_pos.y/slot_height)]
+	var container_pos = mouse_pos - $gridPanel/GridContainer.global_position
+	return Vector2(int(container_pos.x/slot_width), int(container_pos.y/slot_height))
 
 func slotEntered(the_slot):
+	clearItemSlots()
 	current_slot = the_slot
+	if held_item:
+		if checkSlotsAvailable(current_slot): #item fits
+			updateItemSlots(current_slot, 1)
+		else:
+			updateItemSlots(current_slot, 2)
 	pass
 	
 func slotExited(the_slot):
@@ -63,20 +75,51 @@ func itemEntered(the_item):
 	if held_item:
 		return
 	hovered_item = the_item
-	print("entered", the_item)
 	pass
 func itemExited(the_item):
 	if held_item:
 		return
 	hovered_item = null
-	print("exited", the_item)
 	pass
 func _on_button_pressed():
 	var new_item = load("res://Scenes/item.tscn").instantiate()
 	add_child(new_item)
+	#move_child(new_item, 0)
 	var id = randi_range(0,1)
 	new_item.loadItem(id)
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
 
 	pass # Replace with function body.
+
+func checkSlotsAvailable(the_slot):
+	var main_slot_location = the_slot.location
+	for coord in held_item.item_coords:
+		var slot_to_check = main_slot_location + coord
+		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+			if slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item:
+				return false
+		else:
+			return false
+	return true
+
+func updateItemSlots(the_slot, state):
+	var main_slot_location = the_slot.location
+	for coord in held_item.item_coords:
+		var slot_to_check = main_slot_location + coord
+		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+			slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].setState(state)
+
+func clearItemSlots():
+	for s in slots:
+		slots[s].setState(0)
+		
+func putItemDown(the_slot):
+	var main_slot_location = the_slot.location
+	held_item.item_location = main_slot_location
+	for coord in held_item.item_coords:
+		var slot_to_check = main_slot_location + coord
+		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
+	
+	held_item.putDown(slots["%s:%s"%[main_slot_location.x, main_slot_location.y]].position)
+	held_item = null

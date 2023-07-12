@@ -1,4 +1,4 @@
-extends Node
+extends ColorRect
 class_name slot
 
 @onready var has_item = false
@@ -17,16 +17,22 @@ func _process(delta):
 	pass
 
 func _on_mouse_entered():
-	setState(1)
+	#setState(1)
 	emit_signal("slotEntered", self)
 
 func _on_mouse_exited():
-	setState(0)
+	#setState(0)
 	pass # Replace with function body.
 
-
 func setState(s):
+	#print('settingstate')
 	match s:
 		0: $slotModulate.color = "#ffffff00"
 		1: $slotModulate.color = "00ff0033"
 		2: $slotModulate.color = "ff000033"
+		
+func addItem(id):
+	has_item = true
+	item_id = id
+	color = '#d6c7a3'
+	
