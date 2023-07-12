@@ -8,5 +8,10 @@
     "item_id": 1,
     "item_name": "bottled_water",
     "item_graph": "0,0/0,1"
+  },
+  "2":{
+    "item_id": 2,
+    "item_name": "dynamite",
+    "item_graph": "0,1/1,0/1,1"
   }
 }

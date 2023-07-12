@@ -31,13 +31,20 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_input"):
 			if hovered_item:
 				held_item = hovered_item
+				if hovered_item.item_location:
+					#print(hovered_item.item_location)
+					for coord in hovered_item.item_coords:
+						var slot_to_update = hovered_item.item_location + coord
+						print(slot_to_update)
+						slots["%s:%s"%[slot_to_update.x, slot_to_update.y]].removeItem()
 				held_item.pickUp()
 				#print(held_item.item_location)
+		for child in $groundPanel/groundItemsScroll/groundItems.get_children():
+			child.mouse_filter = 1
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
 		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
-			current_slot = slots["%s:%s"%[slot_to_check.x,slot_to_check.y]]
-			slotEntered(current_slot)
+			slotEntered(slots["%s:%s"%[slot_to_check.x,slot_to_check.y]])
 			
 			if Input.is_action_just_pressed("ui_input"):
 				if checkSlotsAvailable(current_slot):
@@ -49,8 +56,12 @@ func _process(delta):
 			if Input.is_action_just_pressed("ui_input"):
 				held_item.putDown()
 				held_item = null
+				
 			#current_slot = 
+		for child in $groundPanel/groundItemsScroll/groundItems.get_children():
 		
+			child.mouse_filter = 2
+			#print(child.mouse_filter)
 	#print(held_item, hovered_item)
 
 func getContainerLoc(mouse_pos):
@@ -82,15 +93,8 @@ func itemExited(the_item):
 	hovered_item = null
 	pass
 func _on_button_pressed():
-	var new_item = load("res://Scenes/item.tscn").instantiate()
-	add_child(new_item)
-	#move_child(new_item, 0)
-	var id = randi_range(0,1)
-	new_item.loadItem(id)
-	new_item.cursor_entered_item.connect(itemEntered)
-	new_item.cursor_exited_item.connect(itemExited)
-
-	pass # Replace with function body.
+	var id = randi_range(0,2)
+	addItemToGround(id)
 
 func checkSlotsAvailable(the_slot):
 	var main_slot_location = the_slot.location
@@ -116,10 +120,29 @@ func clearItemSlots():
 		
 func putItemDown(the_slot):
 	var main_slot_location = the_slot.location
+	print(main_slot_location)
 	held_item.item_location = main_slot_location
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
 		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
 	
-	held_item.putDown(slots["%s:%s"%[main_slot_location.x, main_slot_location.y]].position)
+	held_item.putDown(slots["%s:%s"%[main_slot_location.x, main_slot_location.y]].global_position)
 	held_item = null
+
+func addItemToGround(id):
+	var new_item_button = load("res://Scenes/item_button.tscn").instantiate()
+	$groundPanel/groundItemsScroll/groundItems.add_child(new_item_button)
+	new_item_button.loadItemButton(id)
+	new_item_button.item_pressed.connect(groundItemPressed)
+	hovered_item = null
+	
+func groundItemPressed(id):
+	var new_item = load('res://Scenes/item.tscn').instantiate()
+	add_child(new_item)
+	new_item.loadItem(id)
+	new_item.cursor_entered_item.connect(itemEntered)
+	new_item.cursor_exited_item.connect(itemExited)
+	new_item.return_to_ground.connect(addItemToGround)
+	held_item = new_item
+	new_item.pickUp()
+	

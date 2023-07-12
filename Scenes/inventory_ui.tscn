@@ -39,18 +39,28 @@ theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 8
 
-[node name="Panel2" type="Panel" parent="."]
+[node name="groundPanel" type="Panel" parent="."]
 custom_minimum_size = Vector2(400, 100)
 layout_mode = 0
 offset_left = 20.0
 offset_top = 360.0
 offset_right = 420.0
 offset_bottom = 460.0
+mouse_filter = 2
 
-[node name="GridContainer" type="GridContainer" parent="Panel2"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="groundItemsScroll" type="ScrollContainer" parent="groundPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="groundItems" type="HBoxContainer" parent="groundPanel/groundItemsScroll"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 0
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0

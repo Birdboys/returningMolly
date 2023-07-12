@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://csvrjkeubmn51"]
+
+[ext_resource type="Script" path="res://Scripts/item_button.gd" id="2_hy03k"]
+
+[node name="itemButton" type="TextureButton"]
+size_flags_vertical = 4
+mouse_filter = 1
+script = ExtResource("2_hy03k")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
