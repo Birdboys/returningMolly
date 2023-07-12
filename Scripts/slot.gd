@@ -34,9 +34,9 @@ func setState(s):
 func addItem(id):
 	has_item = true
 	item_id = id
-	color = '#d6c7a3'
+	color = '#ada387'
 
 func removeItem():
 	has_item = false
 	item_id = null
-	color = '#ada387'
+	color = '#d6c7a3'

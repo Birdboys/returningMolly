@@ -1,6 +1,6 @@
 extends Control
-@onready var num_col = 8
-@onready var num_row = 6
+@onready var num_col = 10
+@onready var num_row = 8
 @onready var slot = preload("res://Scenes/temp_slot.tscn")
 @onready var slot_height 
 @onready var slot_width
@@ -8,13 +8,15 @@ extends Control
 @onready var held_item = null
 @onready var hovered_item = null
 @onready var slots = {}
+var inventory_bounding_rect
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$gridPanel/GridContainer.columns = num_col
 	for row in range(num_row):
 		for col in range(num_col):
 			var new_slot = slot.instantiate()
 
-			new_slot.color = '#ada387'
+			new_slot.color = '#d6c7a3'
 			#new_slot.text=('%s,%s'%[row,col])
 			$gridPanel/GridContainer.add_child(new_slot)
 			new_slot.slotEntered.connect(slotEntered)
@@ -22,6 +24,7 @@ func _ready():
 			slots['%s:%s' %[col, row]] = new_slot
 	slot_height = $gridPanel/GridContainer.size.y/num_row
 	slot_width = $gridPanel/GridContainer.size.x/num_col
+	inventory_bounding_rect = Rect2(Vector2(0,0),Vector2(num_col, num_row))
 	pass # Replace with function body.
 
 
@@ -31,19 +34,21 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_input"):
 			if hovered_item:
 				held_item = hovered_item
-				if hovered_item.item_location:
-					#print(hovered_item.item_location)
-					for coord in hovered_item.item_coords:
-						var slot_to_update = hovered_item.item_location + coord
+				if held_item.item_location != null:
+					print("item found in inventory at", hovered_item.item_location)
+					for coord in held_item.item_coords:
+						var slot_to_update = held_item.item_location + coord
 						print(slot_to_update)
 						slots["%s:%s"%[slot_to_update.x, slot_to_update.y]].removeItem()
+				else:
+					print("item found on ground")
 				held_item.pickUp()
 				#print(held_item.item_location)
 		for child in $groundPanel/groundItemsScroll/groundItems.get_children():
 			child.mouse_filter = 1
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
-		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+		if inventory_bounding_rect.has_point(slot_to_check):
 			slotEntered(slots["%s:%s"%[slot_to_check.x,slot_to_check.y]])
 			
 			if Input.is_action_just_pressed("ui_input"):
@@ -93,14 +98,14 @@ func itemExited(the_item):
 	hovered_item = null
 	pass
 func _on_button_pressed():
-	var id = randi_range(0,2)
+	var id = randi_range(0,3)
 	addItemToGround(id)
 
 func checkSlotsAvailable(the_slot):
 	var main_slot_location = the_slot.location
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
-		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+		if inventory_bounding_rect.has_point(slot_to_check):
 			if slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item:
 				return false
 		else:
@@ -111,7 +116,7 @@ func updateItemSlots(the_slot, state):
 	var main_slot_location = the_slot.location
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
-		if Rect2(Vector2(0,0), Vector2(8,6)).has_point(slot_to_check):
+		if inventory_bounding_rect.has_point(slot_to_check):
 			slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].setState(state)
 
 func clearItemSlots():
@@ -120,11 +125,12 @@ func clearItemSlots():
 		
 func putItemDown(the_slot):
 	var main_slot_location = the_slot.location
-	print(main_slot_location)
 	held_item.item_location = main_slot_location
+	print("put down item location",held_item.item_location)
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
 		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
+		print(slot_to_check, slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item)
 	
 	held_item.putDown(slots["%s:%s"%[main_slot_location.x, main_slot_location.y]].global_position)
 	held_item = null
