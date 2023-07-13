@@ -1,7 +1,7 @@
 extends Control
 @onready var num_col = 8
 @onready var num_row = 6
-@onready var slot = preload("res://Scenes/temp_slot.tscn")
+@onready var inv_slot = preload("res://Scenes/temp_slot.tscn")
 @onready var slot_height 
 @onready var slot_width
 @onready var current_slot
@@ -10,20 +10,23 @@ extends Control
 @onready var slots = {}
 @onready var inventoryGrid = $gridPanel/inventoryGrid
 @onready var groundItems = $groundPanel/groundItemsScroll/groundItems
+@onready var scroll = $groundPanel/groundItemsScroll
+@onready var inv_scale
 var inventory_bounding_rect
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	inv_scale = 8.0/float(num_col)
+	print("scale", inv_scale)
 	inventoryGrid.columns = num_col
 	for row in range(num_row):
 		for col in range(num_col):
-			var new_slot = slot.instantiate()
-
-			new_slot.color = '#d6c7a3'
-			#new_slot.text=('%s,%s'%[row,col])
+			var new_slot = inv_slot.instantiate()
 			inventoryGrid.add_child(new_slot)
+			new_slot.scale = Vector2(0.5,0.5)#Vector2(inv_scale,inv_scale)
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
 			slots['%s:%s' %[col, row]] = new_slot
+			print(new_slot.scale)
 	slot_height = inventoryGrid.size.y/num_row
 	slot_width = inventoryGrid.size.x/num_col
 	inventory_bounding_rect = Rect2(Vector2(0,0),Vector2(num_col, num_row))
@@ -74,7 +77,7 @@ func _process(delta):
 	#print(held_item, hovered_item)
 
 func getContainerLoc(mouse_pos):
-	var container_pos = mouse_pos - inventoryGrid.global_position
+	var container_pos = mouse_pos - inventoryGrid.global_position #+ Vector2(slot_width, -slot_height)/2
 	return Vector2(int(container_pos.x/slot_width), int(container_pos.y/slot_height))
 
 func slotEntered(the_slot):
@@ -145,11 +148,12 @@ func addItemToGround(id):
 	new_item_button.loadItemButton(id)
 	new_item_button.item_pressed.connect(groundItemPressed)
 	hovered_item = null
+	scroll.queue_sort()
 	
 func groundItemPressed(id):
 	var new_item = load('res://Scenes/item.tscn').instantiate()
 	$Objects.add_child(new_item)
-	new_item.loadItem(id)
+	new_item.loadItem(id, Vector2(inv_scale, inv_scale))
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
 	new_item.return_to_ground.connect(addItemToGround)

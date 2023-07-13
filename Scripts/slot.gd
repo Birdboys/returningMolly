@@ -1,4 +1,4 @@
-extends ColorRect
+extends TextureRect
 class_name slot
 
 @onready var has_item = false
@@ -6,9 +6,12 @@ class_name slot
 @onready var is_parent = false
 @onready var parent_location = null
 @onready var item_id = null
+@onready var texture_empty = preload("res://Assets/temp_slot1.png")
+@onready var texture_full = preload("res://Assets/temp_slot2.png")
 signal slotEntered(the_slot)
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	texture = texture_empty
 	pass # Replace with function body.
 
 
@@ -34,9 +37,9 @@ func setState(s):
 func addItem(id):
 	has_item = true
 	item_id = id
-	color = '#ada387'
+	texture = texture_full
 
 func removeItem():
 	has_item = false
 	item_id = null
-	color = '#d6c7a3'
+	texture = texture_empty
