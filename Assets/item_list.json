@@ -2,21 +2,25 @@
   "0":{
     "item_id": 0,
     "item_name": "canned_food",
-    "item_graph": "0,0/1,0"
+    "item_graph": "0,0/1,0",
+    "item_size":"2,1",
   },
   "1":{
     "item_id": 1,
     "item_name": "bottled_water",
-    "item_graph": "0,0/0,1"
+    "item_graph": "0,0/0,1",
+    "item_size":"1,2",
   },
   "2":{
     "item_id": 2,
     "item_name": "dynamite",
-    "item_graph": "0,1/1,0/1,1"
+    "item_graph": "0,1/1,0/1,1",
+    "item_size":"2,2",
   },
   "3":{
     "item_id": 3,
     "item_name": "bat",
-    "item_graph": "0,0/0,1/0,2"
+    "item_graph": "0,0/0,1/0,2",
+    "item_size":"1,3",
   }
 }

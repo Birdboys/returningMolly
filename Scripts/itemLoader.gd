@@ -30,4 +30,5 @@ func loadItems():
 			var offset_point = Vector2(int(point.split(',')[0]),int(point.split(',')[1]))
 			temp_array.append(offset_point)
 		item_data[item]['item_graph'] = temp_array
+		item_data[item]['item_size'] = Vector2(int(item_data[item]['item_size'].split(',')[0]),int(item_data[item]['item_size'].split(',')[1]))
 	
