@@ -1,4 +1,5 @@
 extends Control
+@onready var sussy_slots = 1
 @onready var num_col = 9
 @onready var num_row = 11
 @onready var inv_slot = preload("res://Scenes/temp_slot.tscn")
@@ -13,8 +14,13 @@ extends Control
 @onready var scroll = $infoPanel/infoVbox/groundItemsScroll
 @onready var map = $infoPanel/infoVbox/mapPanel
 @onready var description = $infoPanel/infoVbox/descriptionPanel
+@onready var objects = $inventoryPanel/Objects
+@onready var infoPanel = $infoPanel
+@onready var uiAnim = $uiAnim
 @onready var inv_scale
+@export var infoOpen := false
 var inventory_bounding_rect
+var inventory_bounding_rect2
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	inv_scale = 40./50.
@@ -25,17 +31,25 @@ func _ready():
 			inventoryGrid.add_child(new_slot)
 			#new_slot.scale = Vector2(inv_scale,inv_scale)#Vector2(inv_scale,inv_scale)
 			new_slot.slotEntered.connect(slotEntered)
-			new_slot.location = Vector2(col, row)
+			new_slot.location = Vector2(col, row)			
 			slots['%s:%s' %[col, row]] = new_slot
+			if row < sussy_slots or col < sussy_slots or num_row-row <= sussy_slots or num_col-col <= sussy_slots:
+				new_slot.setType(-1)
+			elif (row == 1 and col == 1) or (row == 1 and num_col-col == 2) or (num_row-row == 2 and col == 1) or (num_row-row == 2 and num_col-col == 2):
+				new_slot.setType(-1)
+			else:
+				new_slot.setType(0)
 	slot_height = inventoryGrid.size.y/num_row
 	slot_width = inventoryGrid.size.x/num_col
-	inventory_bounding_rect = Rect2(Vector2(0,0),Vector2(num_col, num_row))
+	inventory_bounding_rect = Rect2(Vector2(1, 1), Vector2(num_col-2, num_row-2))
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if held_item == null:
+		if hovered_item and Input.is_action_just_pressed("ui_right_input"):
+			openItemDescription()
 		if Input.is_action_just_pressed("ui_input"):
 			if hovered_item:
 				held_item = hovered_item
@@ -51,7 +65,7 @@ func _process(delta):
 				#print(held_item.item_location)
 		for child in groundItems.get_children():
 			child.mouse_filter = 1
-		#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
+		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
 		if inventory_bounding_rect.has_point(slot_to_check):
@@ -72,12 +86,13 @@ func _process(delta):
 		for child in groundItems.get_children():
 		
 			child.mouse_filter = 2
-		#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
-			#print(child.mouse_filter)
-	#print(held_item, hovered_item)
-
+		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
+	
+	
+		
+	
 func getContainerLoc(mouse_pos):
-	var container_pos = mouse_pos - inventoryGrid.global_position #+ Vector2(slot_width, -slot_height)/2
+	var container_pos = mouse_pos - inventoryGrid.global_position - Vector2(slot_width, slot_height)/2*held_item.item_size
 	return Vector2(int(container_pos.x/slot_width), int(container_pos.y/slot_height))
 
 func slotEntered(the_slot):
@@ -113,7 +128,7 @@ func checkSlotsAvailable(the_slot):
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
 		if inventory_bounding_rect.has_point(slot_to_check):
-			if slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item:
+			if slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item or slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].slot_type < 0:
 				return false
 		else:
 			return false
@@ -152,7 +167,8 @@ func addItemToGround(id):
 	
 func groundItemPressed(id):
 	var new_item = load('res://Scenes/item.tscn').instantiate()
-	$Objects.add_child(new_item)
+	print("ADDING A NEW ITTEM TO INV")
+	objects.add_child(new_item)
 	new_item.loadItem(id, Vector2(inv_scale, inv_scale))
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
@@ -162,7 +178,7 @@ func groundItemPressed(id):
 	print(new_item.item_size)
 
 func _on_clear_pressed():
-	for obj in $Objects.get_children():
+	for obj in objects.get_children():
 		obj.queue_free()
 	held_item = null
 	hovered_item = null
@@ -171,9 +187,13 @@ func _on_clear_pressed():
 	pass # Replace with function body.
 
 func _on_tab_bar_tab_selected(tab):
-	print(tab)
 	match tab:
-		0: scroll.visible = true; map.visible = false; description.visible = false
-		1: scroll.visible = false; map.visible = false; description.visible = true 
-		2: scroll.visible = false; map.visible = true; description.visible = false
+		0: scroll.visible = true; map.visible = false; description.visible = false; if infoOpen: uiAnim.play("close_info") 
+		1: scroll.visible = false; map.visible = false; description.visible = true; if not infoOpen: uiAnim.play("open_info")
+		2: scroll.visible = false; map.visible = true; description.visible = false; if infoOpen: uiAnim.play("close_info")
 	pass # Replace with function body.
+
+func openItemDescription():
+	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.clear()
+	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.parse_bbcode(ItemLoader.item_data[str(hovered_item.item_id)]['item_description'])
+	_on_tab_bar_tab_selected(1)

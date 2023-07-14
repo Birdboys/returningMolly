@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://b2mk31dn4nxh0"]
+[gd_scene load_steps=17 format=3 uid="uid://b2mk31dn4nxh0"]
 
 [ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_hl5yw"]
 [ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="2_iyyu0"]
 [ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="3_ck2ib"]
 [ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="4_2yfa3"]
+[ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="5_hye5u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1cikh"]
 bg_color = Color(0.839216, 0.780392, 0.639216, 1)
@@ -22,6 +23,152 @@ bg_color = Color(0.8, 0.6, 0.439216, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bxp3w"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sonpy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yj88d"]
+
+[sub_resource type="Animation" id="Animation_0o25c"]
+resource_name = "open_info"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("infoPanel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(400, 20), Vector2(20, 20)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("infoPanel:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(220, 440), Vector2(600, 440)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:infoOpen")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("infoPanel/infoVbox/TabBar")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [true],
+"method": &"disable"
+}, {
+"args": [false],
+"method": &"disable"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_lqa6v"]
+resource_name = "close_info"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("infoPanel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(20, 20), Vector2(400, 20)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("infoPanel:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(600, 440), Vector2(220, 440)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:infoOpen")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("infoPanel/infoVbox/TabBar")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [true],
+"method": &"disable"
+}, {
+"args": [false],
+"method": &"disable"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3q1eu"]
+_data = {
+"close_info": SubResource("Animation_lqa6v"),
+"open_info": SubResource("Animation_0o25c")
+}
 
 [node name="inventoryUI" type="Control"]
 layout_mode = 3
@@ -69,6 +216,13 @@ grow_vertical = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 9
+
+[node name="Objects" type="Control" parent="inventoryPanel"]
+anchors_preset = 0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
 
 [node name="infoPanel" type="Panel" parent="."]
 custom_minimum_size = Vector2(220, 440)
@@ -130,15 +284,19 @@ mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_d4hwh")
 
 [node name="descriptionMargin" type="MarginContainer" parent="infoPanel/infoVbox/descriptionPanel"]
-layout_mode = 2
-offset_right = 220.0
-offset_bottom = 407.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 
 [node name="descriptionText" type="RichTextLabel" parent="infoPanel/infoVbox/descriptionPanel/descriptionMargin"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 text = "Oh fuck on shit oh fuck my balls got chopped off by the wood chipper oh fuck please help me the woodchipper it hurts oh my god help.
@@ -159,6 +317,7 @@ theme_override_constants/outline_size = 0
 theme_override_styles/tab_selected = SubResource("StyleBoxEmpty_simfe")
 theme_override_styles/tab_hovered = SubResource("StyleBoxEmpty_bxp3w")
 theme_override_styles/tab_unselected = SubResource("StyleBoxEmpty_sonpy")
+theme_override_styles/tab_disabled = SubResource("StyleBoxEmpty_yj88d")
 tab_alignment = 1
 clip_tabs = false
 scrolling_enabled = false
@@ -169,11 +328,12 @@ tab_1/title = ""
 tab_1/icon = ExtResource("3_ck2ib")
 tab_2/title = ""
 tab_2/icon = ExtResource("2_iyyu0")
+script = ExtResource("5_hye5u")
 
-[node name="Objects" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="uiAnim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3q1eu")
+}
 
 [connection signal="pressed" from="infoPanel/infoVbox/groundItemsScroll/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="infoPanel/infoVbox/groundItemsScroll/Clear" to="." method="_on_clear_pressed"]

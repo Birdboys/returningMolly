@@ -16,7 +16,12 @@ func loadItemButton(id):
 	item_id = id
 
 func _on_pressed():
+	print("pressed")
+	#if Input.is_action_pressed("ui_input"):
+	print("LEFT CLICK")
 	print("PRESSED THE BUTTON", item_id)
 	emit_signal("item_pressed", item_id)
 	queue_free()
+	#if Input.is_action_pressed("ui_right_input"):
+		#print("RIGHT CLICK")
 	pass # Replace with function body.

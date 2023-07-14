@@ -8,10 +8,11 @@ class_name slot
 @onready var item_id = null
 @onready var texture_empty = preload("res://Assets/temp_slot1.png")
 @onready var texture_full = preload("res://Assets/temp_slot2.png")
+@onready var texture_not_real = preload("res://Assets/temp_slot3.png")
+@onready var slot_type #0 - normal, 1 - wet, 2 - hole, -1 not real
 signal slotEntered(the_slot)
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	texture = texture_empty
 	pass # Replace with function body.
 
 
@@ -21,7 +22,8 @@ func _process(delta):
 
 func _on_mouse_entered():
 	#setState(1)
-	emit_signal("slotEntered", self)
+	if slot_type >= 0:
+		emit_signal("slotEntered", self)
 
 func _on_mouse_exited():
 	#setState(0)
@@ -29,11 +31,12 @@ func _on_mouse_exited():
 
 func setState(s):
 	#print('settingstate')
-	match s:
-		0: $slotModulate.color = "#ffffff00"
-		1: $slotModulate.color = "00ff0033"
-		2: $slotModulate.color = "ff000033"
-		
+	if slot_type >= 0:
+		match s:
+			0: $slotModulate.color = "#ffffff00"
+			1: $slotModulate.color = "00ff0033"
+			2: $slotModulate.color = "ff000033"
+			
 func addItem(id):
 	has_item = true
 	item_id = id
@@ -43,3 +46,10 @@ func removeItem():
 	has_item = false
 	item_id = null
 	texture = texture_empty
+
+func setType(t):
+	slot_type = t
+	match slot_type:
+		0: texture = texture_empty
+		-1: 
+			texture = texture_not_real
