@@ -170,13 +170,13 @@ _data = {
 "open_info": SubResource("Animation_0o25c")
 }
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nt14f"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 8
-border_width_top = 8
-border_width_right = 8
-border_width_bottom = 8
-border_color = Color(0.556863, 0.427451, 0.537255, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l66ot"]
+bg_color = Color(0.901961, 0.85098, 0.741176, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8, 0.6, 0.439216, 1)
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -357,7 +357,6 @@ libraries = {
 }
 
 [node name="convoUI" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -374,18 +373,39 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.427451, 0.513726, 0.556863, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="convoUI"]
+[node name="textPanel" type="Panel" parent="convoUI"]
 layout_mode = 1
-offset_left = 50.0
-offset_top = 285.0
-offset_right = 579.0
-offset_bottom = 450.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 330.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l66ot")
+
+[node name="textPanelMargin" type="MarginContainer" parent="convoUI/textPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_right = 32
+
+[node name="textPanelText" type="RichTextLabel" parent="convoUI/textPanel/textPanelMargin"]
+clip_contents = false
+layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 6
 theme_override_font_sizes/normal_font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_nt14f")
 bbcode_enabled = true
-text = "[center]THE GOOP IS LOOPY aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[/center]"
+text = "THE GOOP IS LOOPY aaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa
+adsadsadsa"
+scroll_active = false
 
 [connection signal="pressed" from="inventoryUI/infoPanel/infoVbox/groundItemsScroll/Button" to="inventoryUI" method="_on_button_pressed"]
 [connection signal="pressed" from="inventoryUI/infoPanel/infoVbox/groundItemsScroll/Clear" to="inventoryUI" method="_on_clear_pressed"]
