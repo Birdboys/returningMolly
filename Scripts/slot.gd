@@ -45,7 +45,8 @@ func addItem(id):
 func removeItem():
 	has_item = false
 	item_id = null
-	texture = texture_empty
+	if slot_type >= 0:
+		texture = texture_empty
 
 func setType(t):
 	slot_type = t
