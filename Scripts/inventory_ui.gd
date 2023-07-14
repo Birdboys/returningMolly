@@ -170,6 +170,7 @@ func groundItemPressed(id):
 	print("ADDING A NEW ITTEM TO INV")
 	objects.add_child(new_item)
 	new_item.loadItem(id, Vector2(inv_scale, inv_scale))
+	#new_item.pivot_offset = new_item.getSize()/2
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
 	new_item.return_to_ground.connect(addItemToGround)
