@@ -1,7 +1,7 @@
 extends Control
 @onready var sussy_slots = 1
-@onready var num_col = 9
-@onready var num_row = 11
+@onready var num_col = 10
+@onready var num_row = 8
 @onready var inv_slot = preload("res://Scenes/temp_slot.tscn")
 @onready var slot_height 
 @onready var slot_width
@@ -23,7 +23,7 @@ var inventory_bounding_rect
 var inventory_bounding_rect2
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	inv_scale = 40./50.
+	inv_scale = 80./50.
 	inventoryGrid.columns = num_col
 	for row in range(num_row):
 		for col in range(num_col):
