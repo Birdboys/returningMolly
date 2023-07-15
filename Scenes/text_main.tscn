@@ -1,0 +1,153 @@
+[gd_scene load_steps=9 format=3 uid="uid://2ub6scsfkxtl"]
+
+[ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="1_cxh3d"]
+[ext_resource type="Texture2D" uid="uid://bi73c5358eiqf" path="res://Assets/temp_cursor1.png" id="2_vmmny"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhw5i"]
+bg_color = Color(0.901961, 0.85098, 0.741176, 1)
+border_width_top = 12
+border_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[sub_resource type="Animation" id="Animation_sg3si"]
+resource_name = "cursorWaggle"
+length = 0.35
+loop_mode = 2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cursor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1230, 190), Vector2(1230, 175)]
+}
+
+[sub_resource type="Animation" id="Animation_6stfl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cursor:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1230, 200)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7y3vy"]
+_data = {
+"RESET": SubResource("Animation_6stfl"),
+"cursorWaggle": SubResource("Animation_sg3si")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j67gg"]
+bg_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5n3u"]
+bg_color = Color(0.513726, 0.513726, 0.513726, 1)
+
+[node name="textMain" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nhw5i")
+
+[node name="textMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = 16.0
+offset_right = -64.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="textMainText" type="RichTextLabel" parent="textMargin"]
+layout_mode = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.435294, 0.545098, 0.431373, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/normal_font = ExtResource("1_cxh3d")
+theme_override_font_sizes/normal_font_size = 28
+text = "PENIS PENIS PENIS PENIS
+PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS
+PENIS PENIS PENIS PENISPENIS PENIS PENIS PENISPENIS PENIS PENIS "
+
+[node name="cursor" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -20.0
+offset_right = -35.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+texture = ExtResource("2_vmmny")
+stretch_mode = 2
+flip_h = true
+
+[node name="textAnim" type="AnimationPlayer" parent="."]
+autoplay = "cursorWaggle"
+libraries = {
+"": SubResource("AnimationLibrary_7y3vy")
+}
+
+[node name="settingsButtons" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 426.0
+offset_top = -33.0
+offset_right = -428.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+
+[node name="Button" type="Button" parent="settingsButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cxh3d")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+text = "Settings"
+
+[node name="Button2" type="Button" parent="settingsButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cxh3d")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+text = "Settings"
+
+[node name="Button3" type="Button" parent="settingsButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_cxh3d")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+text = "Settings"
