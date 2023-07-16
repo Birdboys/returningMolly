@@ -44,6 +44,7 @@ func putDown(snap_coords=null):
 	z_index = 0
 	held = false
 	if snap_coords:
+		print("PUTTING ITEM IN POSITION", snap_coords)
 		global_position = snap_coords + itemImage.size/2
 	else:
 		emit_signal("return_to_ground", item_id)

@@ -9,7 +9,7 @@ extends Control
 @onready var held_item = null
 @onready var hovered_item = null
 @onready var slots = {}
-@onready var placed_objects = {}
+@onready var placed_objects := { Vector2(1, 2): 0, Vector2(1, 3): 1, Vector2(4, 2): 3, Vector2(6, 3): 1, Vector2(4, 6): 0 }
 @onready var inventoryGrid = $inventoryPanel/inventoryGrid
 @onready var groundItems = $infoPanel/infoVbox/groundItemsScroll/groundItemsGrid
 @onready var scroll = $infoPanel/infoVbox/groundItemsScroll
@@ -26,23 +26,8 @@ var inventory_bounding_rect2
 func _ready():
 	inv_scale = 80./50.
 	inventoryGrid.columns = num_col
-	for row in range(num_row):
-		for col in range(num_col):
-			var new_slot = inv_slot.instantiate()
-			inventoryGrid.add_child(new_slot)
-			#new_slot.scale = Vector2(inv_scale,inv_scale)#Vector2(inv_scale,inv_scale)
-			new_slot.slotEntered.connect(slotEntered)
-			new_slot.location = Vector2(col, row)			
-			slots['%s:%s' %[col, row]] = new_slot
-			if row < sussy_slots or col < sussy_slots or num_row-row <= sussy_slots or num_col-col <= sussy_slots:
-				new_slot.setType(-1)
-			elif (row == 1 and col == 1) or (row == 1 and num_col-col == 2) or (num_row-row == 2 and col == 1) or (num_row-row == 2 and num_col-col == 2):
-				new_slot.setType(-1)
-			else:
-				new_slot.setType(0)
-	slot_height = inventoryGrid.size.y/num_row
-	slot_width = inventoryGrid.size.x/num_col
-	inventory_bounding_rect = Rect2(Vector2(1, 1), Vector2(num_col-2, num_row-2))
+	createInventory()
+	loadInventory()
 	pass # Replace with function body.
 
 
@@ -86,12 +71,9 @@ func _process(delta):
 				
 			#current_slot = 
 		for child in groundItems.get_children():
-		
 			child.mouse_filter = 2
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
-	
-	print(placed_objects)
-		
+	#print(placed_objects)
 	
 func getContainerLoc(mouse_pos):
 	var container_pos = mouse_pos - inventoryGrid.global_position - Vector2(slot_width, slot_height)/2*held_item.item_size
@@ -151,13 +133,13 @@ func putItemDown(the_slot):
 	var main_slot_location = the_slot.location
 	placed_objects[main_slot_location] = held_item.item_id
 	held_item.item_location = main_slot_location
-	print("put down item location",held_item.item_location)
 	for coord in held_item.item_coords:
 		var slot_to_check = main_slot_location + coord
 		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
-		print(slot_to_check, slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].has_item)
 	
-	held_item.putDown(slots["%s:%s"%[main_slot_location.x, main_slot_location.y]].global_position)
+	var snap_coords = main_slot_location * slot_height
+	print(snap_coords)
+	held_item.putDown(inventoryGrid.global_position+snap_coords)
 	held_item = null
 
 func addItemToGround(id):
@@ -201,3 +183,36 @@ func openItemDescription():
 	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.clear()
 	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.parse_bbcode(ItemLoader.item_data[str(hovered_item.item_id)]['item_description'])
 	_on_tab_bar_tab_selected(1)
+
+func loadInventory():
+	for object in placed_objects:
+		var the_slot = slots["%s:%s" % [object.x, object.y]]
+		var new_item = load('res://Scenes/item.tscn').instantiate()
+		objects.add_child(new_item)
+		new_item.loadItem(placed_objects[object], Vector2(inv_scale, inv_scale))
+		#new_item.pivot_offset = new_item.getSize()/2
+		new_item.cursor_entered_item.connect(itemEntered)
+		new_item.cursor_exited_item.connect(itemExited)
+		new_item.return_to_ground.connect(addItemToGround)
+		held_item = new_item
+		new_item.pickUp()
+		putItemDown(the_slot)
+		print("ADDING ITEM %s TO SLOT %s WITH LOCATION %s" % [new_item.item_id, the_slot, the_slot.global_position])
+
+func createInventory():
+	for row in range(num_row):
+		for col in range(num_col):
+			var new_slot = inv_slot.instantiate()
+			inventoryGrid.add_child(new_slot)
+			new_slot.slotEntered.connect(slotEntered)
+			new_slot.location = Vector2(col, row)
+			slots['%s:%s' %[col, row]] = new_slot
+			if row < sussy_slots or col < sussy_slots or num_row-row <= sussy_slots or num_col-col <= sussy_slots:
+				new_slot.setType(-1)
+			elif (row == 1 and col == 1) or (row == 1 and num_col-col == 2) or (num_row-row == 2 and col == 1) or (num_row-row == 2 and num_col-col == 2):
+				new_slot.setType(-1)
+			else:
+				new_slot.setType(0)
+	slot_height = inventoryGrid.size.y/num_row
+	slot_width = inventoryGrid.size.x/num_col
+	inventory_bounding_rect = Rect2(Vector2(1, 1), Vector2(num_col-2, num_row-2))
