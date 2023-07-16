@@ -6,9 +6,6 @@ extends Control
 @onready var inChoice = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	mainText = textMain.instantiate()
-	add_child(mainText)
-	mainText.initialize("intro0")
 	pass # Replace with function body.
 
 
@@ -50,3 +47,8 @@ func dialogueChoice(id, data):
 	mainText = textMain.instantiate()
 	add_child(mainText)
 	mainText.initialize(data['NEXT_TEXT_ID'])
+
+func initialize(init_text):
+	mainText = textMain.instantiate()
+	add_child(mainText)
+	mainText.initialize(init_text)

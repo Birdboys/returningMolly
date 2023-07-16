@@ -1,14 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://2ub6scsfkxtl"]
+[gd_scene load_steps=6 format=3 uid="uid://2ub6scsfkxtl"]
 
-[ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="1_cxh3d"]
 [ext_resource type="Script" path="res://Scripts/textMain.gd" id="1_fl4v4"]
 [ext_resource type="Texture2D" uid="uid://bi73c5358eiqf" path="res://Assets/temp_cursor1.png" id="2_vmmny"]
-[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="3_hol0o"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhw5i"]
-bg_color = Color(0.901961, 0.85098, 0.741176, 1)
-border_width_top = 12
-border_color = Color(0.435294, 0.545098, 0.431373, 1)
 
 [sub_resource type="Animation" id="Animation_6stfl"]
 length = 0.001
@@ -49,15 +42,6 @@ _data = {
 "cursorWaggle": SubResource("Animation_sg3si")
 }
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j67gg"]
-bg_color = Color(0.435294, 0.545098, 0.431373, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5n3u"]
-bg_color = Color(0.513726, 0.513726, 0.513726, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ropw"]
-bg_color = Color(0.435294, 0.545098, 0.431373, 1)
-
 [node name="textMain" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -77,7 +61,7 @@ offset_top = 555.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-theme_override_styles/panel = SubResource("StyleBoxFlat_nhw5i")
+theme_type_variation = &"mainPanel"
 
 [node name="textMargin" type="MarginContainer" parent="textMainPanel"]
 layout_mode = 1
@@ -93,15 +77,6 @@ theme_override_constants/margin_right = 32
 [node name="textMainText" type="RichTextLabel" parent="textMainPanel/textMargin"]
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/default_color = Color(0.435294, 0.545098, 0.431373, 1)
-theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
-theme_override_colors/font_outline_color = Color(0.435294, 0.545098, 0.431373, 1)
-theme_override_constants/shadow_offset_x = 4
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/shadow_outline_size = 1
-theme_override_constants/outline_size = 6
-theme_override_fonts/normal_font = ExtResource("1_cxh3d")
-theme_override_font_sizes/normal_font_size = 32
 text = "test1"
 
 [node name="cursor" type="TextureRect" parent="textMainPanel"]
@@ -111,10 +86,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -50.0
-offset_top = 35.0
-offset_right = -35.0
-offset_bottom = 45.0
+offset_left = 1230.0
+offset_top = 200.0
+offset_right = 1245.0
+offset_bottom = 210.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(2, 2)
@@ -145,48 +120,47 @@ theme_override_constants/separation = 0
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cxh3d")
-theme_override_font_sizes/font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
-theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+theme_type_variation = &"settingButton"
 text = "Settings"
 
 [node name="Button2" type="Button" parent="textMainPanel/settingsButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cxh3d")
-theme_override_font_sizes/font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
-theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+theme_type_variation = &"settingButton"
 text = "Settings"
 
 [node name="Button3" type="Button" parent="textMainPanel/settingsButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_cxh3d")
-theme_override_font_sizes/font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_j67gg")
-theme_override_styles/hover = SubResource("StyleBoxFlat_o5n3u")
+theme_type_variation = &"settingButton"
 text = "Settings"
 
 [node name="textSpeaker" type="RichTextLabel" parent="."]
 layout_mode = 1
 offset_left = 100.0
 offset_top = 485.0
-offset_right = 199.0
-offset_bottom = 555.0
+offset_right = 100.0
+offset_bottom = 485.0
 mouse_filter = 1
-theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/normal_font = ExtResource("3_hol0o")
-theme_override_font_sizes/normal_font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_8ropw")
+theme_type_variation = &"speakerText"
 bbcode_enabled = true
-text = " Dad "
 fit_content = true
 scroll_active = false
+autowrap_mode = 0
+
+[node name="textListener" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_top = 485.0
+offset_right = -100.0
+offset_bottom = 485.0
+grow_horizontal = 0
+theme_type_variation = &"speakerText"
+bbcode_enabled = true
+fit_content = true
 autowrap_mode = 0

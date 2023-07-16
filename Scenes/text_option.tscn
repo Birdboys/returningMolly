@@ -1,14 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckv567ttgkrsb"]
+[gd_scene load_steps=2 format=3 uid="uid://ckv567ttgkrsb"]
 
 [ext_resource type="Script" path="res://Scripts/textChoice.gd" id="1_h77rb"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y8b5y"]
-bg_color = Color(0.901961, 0.85098, 0.741176, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0.556863, 0.427451, 0.537255, 1)
 
 [node name="textOption" type="Panel"]
 custom_minimum_size = Vector2(0, 120)
@@ -23,7 +15,6 @@ grow_vertical = 2
 pivot_offset = Vector2(450, 60)
 size_flags_horizontal = 3
 size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxFlat_y8b5y")
 script = ExtResource("1_h77rb")
 
 [node name="textMargin" type="MarginContainer" parent="."]
@@ -41,14 +32,6 @@ theme_override_constants/margin_right = 32
 clip_contents = false
 layout_mode = 2
 mouse_filter = 1
-theme_override_colors/default_color = Color(0.556863, 0.427451, 0.537255, 1)
-theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
-theme_override_colors/font_outline_color = Color(0.556863, 0.427451, 0.537255, 1)
-theme_override_constants/shadow_offset_x = 4
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/shadow_outline_size = 1
-theme_override_constants/outline_size = 6
-theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "test2"
 scroll_active = false

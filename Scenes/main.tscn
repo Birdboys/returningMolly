@@ -1,20 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2mk31dn4nxh0"]
+[gd_scene format=3 uid="uid://bq5ce1ok6yq7m"]
 
-[ext_resource type="PackedScene" uid="uid://bubugpoepm01g" path="res://Scenes/inventory.tscn" id="1_fel4g"]
-[ext_resource type="PackedScene" uid="uid://dxwe01qwbklgx" path="res://Scenes/dialogue.tscn" id="2_6jcr8"]
-
-[node name="Main" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="inventoryUI" parent="." instance=ExtResource("1_fel4g")]
-layout_mode = 1
-
-[node name="convoUI" parent="." instance=ExtResource("2_6jcr8")]
-layout_mode = 1
+[node name="main2" type="Node2D"]

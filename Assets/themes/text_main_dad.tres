@@ -1,0 +1,48 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://ba0rnmow03dw7"]
+
+[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="1_boylh"]
+[ext_resource type="FontFile" uid="uid://n8n8ij3wst52" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-BoldItalic.otf" id="2_e1vow"]
+[ext_resource type="FontFile" uid="uid://4itg0mrrptr8" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Italic.otf" id="3_13bos"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u46kd"]
+bg_color = Color(0.513726, 0.513726, 0.513726, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wsxw"]
+bg_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nckon"]
+bg_color = Color(0.901961, 0.85098, 0.741176, 1)
+border_width_top = 12
+border_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67fvq"]
+bg_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[resource]
+Button/font_sizes/font_size = 14
+Button/fonts/font = ExtResource("1_boylh")
+Button/styles/hover = SubResource("StyleBoxFlat_u46kd")
+Button/styles/normal = SubResource("StyleBoxFlat_7wsxw")
+Panel/styles/panel = SubResource("StyleBoxFlat_nckon")
+RichTextLabel/colors/default_color = Color(0.435294, 0.545098, 0.431373, 1)
+RichTextLabel/colors/font_outline_color = Color(0.435294, 0.545098, 0.431373, 1)
+RichTextLabel/colors/font_shadow_color = Color(0.592157, 0.54902, 0.388235, 1)
+RichTextLabel/constants/outline_size = 6
+RichTextLabel/constants/shadow_offset_x = 2
+RichTextLabel/constants/shadow_offset_y = 2
+RichTextLabel/constants/shadow_outline_size = 1
+RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/styles/focus = null
+speakerText/base_type = &"RichTextLabel"
+speakerText/colors/default_color = Color(1, 1, 1, 1)
+speakerText/constants/outline_size = 0
+speakerText/constants/shadow_offset_x = 0
+speakerText/constants/shadow_offset_y = 0
+speakerText/constants/shadow_outline_size = 0
+speakerText/font_sizes/bold_font_size = 40
+speakerText/font_sizes/normal_font_size = 40
+speakerText/fonts/bold_font = ExtResource("1_boylh")
+speakerText/fonts/bold_italics_font = ExtResource("2_e1vow")
+speakerText/fonts/italics_font = ExtResource("3_13bos")
+speakerText/fonts/normal_font = ExtResource("1_boylh")
+speakerText/styles/normal = SubResource("StyleBoxFlat_67fvq")

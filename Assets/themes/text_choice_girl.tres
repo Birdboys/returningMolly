@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cat6fk4o3cyls"]
+
+[ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="1_tlnhc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gnv48"]
+bg_color = Color(0.901961, 0.85098, 0.741176, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.556863, 0.427451, 0.537255, 1)
+
+[resource]
+Panel/styles/panel = SubResource("StyleBoxFlat_gnv48")
+RichTextLabel/colors/default_color = Color(0.556863, 0.427451, 0.537255, 1)
+RichTextLabel/colors/font_outline_color = Color(0.556863, 0.427451, 0.537255, 1)
+RichTextLabel/colors/font_shadow_color = Color(0.592157, 0.54902, 0.388235, 1)
+RichTextLabel/constants/outline_size = 6
+RichTextLabel/constants/shadow_offset_x = 2
+RichTextLabel/constants/shadow_offset_y = 2
+RichTextLabel/constants/shadow_outline_size = 1
+RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/fonts/normal_font = ExtResource("1_tlnhc")
