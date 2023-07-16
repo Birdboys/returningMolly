@@ -1,0 +1,174 @@
+{
+  "intro0": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hey bug, wake up...",
+    "NEXT_TEXT_ID": [
+      "intro1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro1": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "intro2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro10": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "How could I forget? Of course you can bring Them, just make sure they fit. Now, get out of bed and get ready while I cook.",
+    "NEXT_TEXT_ID": [
+      "intro11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro11": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Okay.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "intro2": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ok, I'll call school and tell them you cancelled.",
+    "NEXT_TEXT_ID": [
+      "intro3a",
+      "intro3b"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "intro3a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "intro4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro3b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "That sounds great.",
+    "NEXT_TEXT_ID": [
+      "intro4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro4": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Now, we both know you aren't asleep. Get up! You want pancakes, waffles, or french toast?",
+    "NEXT_TEXT_ID": [
+      "intro5a",
+      "intro5b",
+      "intro5c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "intro5a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Pancakes",
+    "NEXT_TEXT_ID": [
+      "intro6a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro5b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Waffles",
+    "NEXT_TEXT_ID": [
+      "intro6a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro5c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "French toast",
+    "NEXT_TEXT_ID": [
+      "intro6b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro6a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good choice bug.",
+    "NEXT_TEXT_ID": [
+      "intro7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro6b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "You know there were no right options, but that one's my favorite.",
+    "NEXT_TEXT_ID": [
+      "intro6a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro7": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "After we eat you need to pack your bag. Looks like you have everything you need right here... in a pile on the floor.",
+    "NEXT_TEXT_ID": [
+      "intro8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro8": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "As long as you can get your pencil, notebook, eraser, and lunch from Mr. floor pile I think I'll let him stay.",
+    "NEXT_TEXT_ID": [
+      "intro9a",
+      "intro9b"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "intro9a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I need to bring stuffy too!",
+    "NEXT_TEXT_ID": [
+      "intro10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "intro9b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Can I bring stuffy?",
+    "NEXT_TEXT_ID": [
+      "intro10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

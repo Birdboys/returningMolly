@@ -33,7 +33,7 @@ How could I forget? Of course you can bring Them, just make sure they fit. Now, 
 
 
 :: intro11 [girl:talk] {"position":"800,1750","size":"100,100"}
-Okay.
+Okay. [[]]
 
 
 :: intro2 [dad:listen] {"position":"800,600","size":"100,100"}
@@ -51,7 +51,6 @@ That sounds great. [[intro4]]
 
 
 :: intro4 [dad:listen] {"position":"800,850","size":"100,100"}
-
 Now, we both know you aren't asleep. Get up! You want pancakes, waffles, or french toast? [[intro5a]] [[intro5b]] [[intro5c]]
 
 

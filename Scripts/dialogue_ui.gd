@@ -29,12 +29,13 @@ func changeMainText():
 			new_choice.initialize(choice)
 			new_choice.dialogue_choice.connect(dialogueChoice)
 	else: #Next text option
-		mainText.queue_free()
-		mainText = textMain.instantiate()
-		add_child(mainText)
-		mainText.initialize(next[1])
-		pass
-	
+		if len(next[1]) > 0:
+			mainText.queue_free()
+			mainText = textMain.instantiate()
+			add_child(mainText)
+			mainText.initialize(next[1][0])
+			pass
+		
 func clearChoices():
 	for child in choicesBox.get_children():
 		child.queue_free()
@@ -46,7 +47,7 @@ func dialogueChoice(id, data):
 	mainText.queue_free()
 	mainText = textMain.instantiate()
 	add_child(mainText)
-	mainText.initialize(data['NEXT_TEXT_ID'])
+	mainText.initialize(data['NEXT_TEXT_ID'][0])
 
 func initialize(init_text):
 	mainText = textMain.instantiate()

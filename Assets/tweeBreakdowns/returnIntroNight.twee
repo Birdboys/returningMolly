@@ -1,0 +1,79 @@
+:: StoryTitle
+returnIntroNight
+
+
+:: StoryData
+{
+  "ifid": "BB73C2EA-52A3-4260-A44C-714F10BA9621",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "text0",
+  "tag-colors": {
+    "girl:think": "purple",
+    "dad:listen": "green",
+    "girl:talk": "purple",
+    "girl:choice": "red"
+  },
+  "zoom": 1
+}
+
+
+:: text0 [girl:think] {"position":"800,375","size":"100,100"}
+School felt weird today. We learned in class like normal but they didn't let us go out for recess. The guards at lunch looked worried. [[text1]]
+
+
+:: text1 [dad:listen] {"position":"800,500","size":"100,100"}
+Hey bug, you're back late. I was getting a little worried... [[text2]]
+
+
+:: text10 [dad:listen] {"position":"800,1625","size":"100,100"}
+It's done, let's eat. [[text11]]
+
+
+:: text11 [girl:think] {"position":"800,1750","size":"100,100"}
+Before we eat he flicks the tv back on. I want to talk instead. I hate the news.
+
+
+:: text2 [girl:talk] {"position":"800,625","size":"100,100"}
+The roads were really busy. [[text3]]
+
+
+:: text3 [dad:listen] {"position":"800,750","size":"100,100"}
+I see... [[text4]]
+
+
+
+:: text4 [dad:listen] {"position":"800,875","size":"100,100"}
+Well, lets get ready for dinner. I didn't have time to go to the store because... anyway we're doing pasta. [[text5]]
+
+
+:: text5 [girl:think] {"position":"800,1000","size":"100,100"}
+He shuffles to the tv remote and turns off the news. Next up, hand washing. [[text6]]
+
+
+:: text6 [girl:think] {"position":"800,1125","size":"100,100"}
+I want him to put on music and dance like he usually does. Instead I can hear the sound of the water boiling. [[text7]]
+
+
+:: text7 [dad:listen] {"position":"800,1250","size":"100,100"}
+How was school? [[text8a]] [[text8b]] [[text8c]]
+
+
+:: text8a [girl:choice] {"position":"675,1375","size":"100,100"}
+It was ok. [[text9a]]
+
+
+:: text8b [girl:choice] {"position":"800,1375","size":"100,100"}
+Things were weird. [[text9b]]
+
+
+:: text8c [girl:choice] {"position":"925,1375","size":"100,100"}
+Recess was fun. [[text9a]]
+
+
+:: text9a [dad:listen] {"position":"675,1500","size":"100,100"}
+I'm glad you had fun. [[text10]]
+
+
+:: text9b [dad:listen] {"position":"800,1500","size":"100,100"}
+I'm sorry bug, I think it's just a weird kind of day, haha. [[text10]]
