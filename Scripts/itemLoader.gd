@@ -7,7 +7,7 @@ extends Node
 func _ready():
 	loadItems()
 	#loadItemGrids()
-	print(item_data)
+	#print(item_data)
 	pass # Replace with function body.
 
 

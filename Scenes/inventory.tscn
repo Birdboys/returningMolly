@@ -1,12 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://b2mk31dn4nxh0"]
+[gd_scene load_steps=17 format=3 uid="uid://bubugpoepm01g"]
 
-[ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_hl5yw"]
-[ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="2_iyyu0"]
-[ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="3_ck2ib"]
-[ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="4_2yfa3"]
-[ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="5_hye5u"]
-[ext_resource type="PackedScene" uid="uid://ckv567ttgkrsb" path="res://Scenes/text_option.tscn" id="6_7lcr1"]
-[ext_resource type="PackedScene" uid="uid://2ub6scsfkxtl" path="res://Scenes/text_main.tscn" id="7_q5ecc"]
+[ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_sx561"]
+[ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="2_4u8g0"]
+[ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="3_f5pj3"]
+[ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="4_jxbvi"]
+[ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="5_rwuap"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1cikh"]
 bg_color = Color(0.839216, 0.780392, 0.639216, 1)
@@ -196,7 +194,7 @@ _data = {
 "open_info": SubResource("Animation_0o25c")
 }
 
-[node name="Main" type="Control"]
+[node name="inventoryUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -205,20 +203,10 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-
-[node name="inventoryUI" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 mouse_filter = 2
-script = ExtResource("1_hl5yw")
+script = ExtResource("1_sx561")
 
-[node name="background" type="ColorRect" parent="inventoryUI"]
+[node name="background" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -228,7 +216,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.901961, 0.85098, 0.741176, 1)
 
-[node name="inventoryPanel" type="Panel" parent="inventoryUI"]
+[node name="inventoryPanel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -241,7 +229,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="inventoryGrid" type="GridContainer" parent="inventoryUI/inventoryPanel"]
+[node name="inventoryGrid" type="GridContainer" parent="inventoryPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -252,19 +240,19 @@ theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 9
 
-[node name="Objects" type="Control" parent="inventoryUI/inventoryPanel"]
+[node name="Objects" type="Control" parent="inventoryPanel"]
 anchors_preset = 0
 offset_left = -20.0
 offset_top = -20.0
 offset_right = 20.0
 offset_bottom = 20.0
 
-[node name="infoPanel" type="Panel" parent="inventoryUI"]
+[node name="infoPanel" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 40.0
+offset_left = 860.0
 offset_top = 40.0
 offset_right = -40.0
 offset_bottom = -40.0
@@ -273,7 +261,7 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_1cikh")
 
-[node name="infoVbox" type="VBoxContainer" parent="inventoryUI/infoPanel"]
+[node name="infoVbox" type="VBoxContainer" parent="infoPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -282,14 +270,14 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="groundItemsScroll" type="ScrollContainer" parent="inventoryUI/infoPanel/infoVbox"]
+[node name="groundItemsScroll" type="ScrollContainer" parent="infoPanel/infoVbox"]
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_epw64")
 horizontal_scroll_mode = 0
 
-[node name="groundItemsGrid" type="GridContainer" parent="inventoryUI/infoPanel/infoVbox/groundItemsScroll"]
+[node name="groundItemsGrid" type="GridContainer" parent="infoPanel/infoVbox/groundItemsScroll"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -297,27 +285,27 @@ theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 2
 
-[node name="Button" type="Button" parent="inventoryUI/infoPanel/infoVbox/groundItemsScroll"]
+[node name="Button" type="Button" parent="infoPanel/infoVbox/groundItemsScroll"]
 layout_mode = 2
 size_flags_horizontal = 2
 size_flags_vertical = 10
 text = "dasdas"
 
-[node name="Clear" type="Button" parent="inventoryUI/infoPanel/infoVbox/groundItemsScroll"]
+[node name="Clear" type="Button" parent="infoPanel/infoVbox/groundItemsScroll"]
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 10
 text = "clear
 "
 
-[node name="descriptionPanel" type="Panel" parent="inventoryUI/infoPanel/infoVbox"]
+[node name="descriptionPanel" type="Panel" parent="infoPanel/infoVbox"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_d4hwh")
 
-[node name="descriptionMargin" type="MarginContainer" parent="inventoryUI/infoPanel/infoVbox/descriptionPanel"]
+[node name="descriptionMargin" type="MarginContainer" parent="infoPanel/infoVbox/descriptionPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -329,7 +317,7 @@ theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 
-[node name="descriptionText" type="RichTextLabel" parent="inventoryUI/infoPanel/infoVbox/descriptionPanel/descriptionMargin"]
+[node name="descriptionText" type="RichTextLabel" parent="infoPanel/infoVbox/descriptionPanel/descriptionMargin"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
@@ -339,14 +327,14 @@ theme_override_font_sizes/normal_font_size = 24
 text = "Oh fuck on shit oh fuck my balls got chopped off by the wood chipper oh fuck please help me the woodchipper it hurts oh my god help.
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
 
-[node name="mapPanel" type="Panel" parent="inventoryUI/infoPanel/infoVbox"]
+[node name="mapPanel" type="Panel" parent="infoPanel/infoVbox"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_1sq5x")
 
-[node name="TabBar" type="TabBar" parent="inventoryUI/infoPanel/infoVbox"]
+[node name="TabBar" type="TabBar" parent="infoPanel/infoVbox"]
 layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/icon_max_width = 0
@@ -360,74 +348,29 @@ clip_tabs = false
 scrolling_enabled = false
 tab_count = 3
 tab_0/title = ""
-tab_0/icon = ExtResource("4_2yfa3")
+tab_0/icon = ExtResource("2_4u8g0")
 tab_1/title = ""
-tab_1/icon = ExtResource("3_ck2ib")
+tab_1/icon = ExtResource("3_f5pj3")
 tab_2/title = ""
-tab_2/icon = ExtResource("2_iyyu0")
-script = ExtResource("5_hye5u")
+tab_2/icon = ExtResource("4_jxbvi")
+script = ExtResource("5_rwuap")
 
-[node name="uiAnim" type="AnimationPlayer" parent="inventoryUI"]
+[node name="uiAnim" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_3q1eu")
 }
 
-[node name="inventorySeparator" type="ColorRect" parent="inventoryUI"]
+[node name="inventorySeparator" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_right = -1240.0
+offset_left = 840.0
+offset_right = -420.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.901961, 0.85098, 0.741176, 1)
 
-[node name="convoUI" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="background" type="ColorRect" parent="convoUI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.427451, 0.513726, 0.556863, 1)
-
-[node name="choicesBox" type="VBoxContainer" parent="convoUI"]
-custom_minimum_size = Vector2(900, 460)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 190.0
-offset_right = -190.0
-offset_bottom = -260.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 40
-alignment = 2
-
-[node name="textOption" parent="convoUI/choicesBox" instance=ExtResource("6_7lcr1")]
-layout_mode = 2
-
-[node name="textOption2" parent="convoUI/choicesBox" instance=ExtResource("6_7lcr1")]
-layout_mode = 2
-
-[node name="textOption3" parent="convoUI/choicesBox" instance=ExtResource("6_7lcr1")]
-layout_mode = 2
-
-[node name="textMain" parent="convoUI" instance=ExtResource("7_q5ecc")]
-layout_mode = 1
-
-[connection signal="pressed" from="inventoryUI/infoPanel/infoVbox/groundItemsScroll/Button" to="inventoryUI" method="_on_button_pressed"]
-[connection signal="pressed" from="inventoryUI/infoPanel/infoVbox/groundItemsScroll/Clear" to="inventoryUI" method="_on_clear_pressed"]
-[connection signal="tab_selected" from="inventoryUI/infoPanel/infoVbox/TabBar" to="inventoryUI" method="_on_tab_bar_tab_selected"]
+[connection signal="pressed" from="infoPanel/infoVbox/groundItemsScroll/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="infoPanel/infoVbox/groundItemsScroll/Clear" to="." method="_on_clear_pressed"]
+[connection signal="tab_selected" from="infoPanel/infoVbox/TabBar" to="." method="_on_tab_bar_tab_selected"]

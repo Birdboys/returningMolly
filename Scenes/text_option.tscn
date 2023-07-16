@@ -35,20 +35,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 32
-theme_override_constants/margin_top = 8
+theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 32
 
 [node name="textOptionText" type="RichTextLabel" parent="textMargin"]
 clip_contents = false
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/default_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
 theme_override_colors/font_outline_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 1
 theme_override_constants/outline_size = 6
-theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
-text = "I dont think we can... gabababababa
-babababababa
-"
+text = "test2"
 scroll_active = false
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

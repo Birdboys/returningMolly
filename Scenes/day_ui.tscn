@@ -34,6 +34,7 @@ color = Color(0.513726, 0.611765, 0.662745, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 397.0
 offset_top = 15.0
 offset_right = 613.0

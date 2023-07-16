@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="returningMolly"
-run/main_scene="res://Scenes/inventory_ui.tscn"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 ItemLoader="*res://Scripts/itemLoader.gd"
+DialogueManager="*res://Scripts/dialogueManager.gd"
 
 [display]
 
@@ -41,6 +42,11 @@ ui_right_input={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(79, 18),"global_position":Vector2(83, 61),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Assets/testTranslation - Sheet1.en.translation", "res://Assets/testTranslation - Sheet1.es.translation", "res://Assets/testTranslation - Sheet1.fi.translation", "res://Assets/testTranslation - Sheet1.fr.translation", "res://Assets/testTranslation - Sheet1.sv.translation")
+locale/test="en"
 
 [rendering]
 

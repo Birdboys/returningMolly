@@ -1,0 +1,93 @@
+:: StoryTitle
+returnIntro
+
+
+:: StoryData
+{
+  "ifid": "3D17FFE6-CEA3-4BB1-A188-E40C737EE342",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "intro0",
+  "tag-colors": {
+    "girl:talk": "purple",
+    "dad:listen": "green",
+    "girl:choice": "red"
+  },
+  "zoom": 1
+}
+
+
+:: intro0 [dad:listen] {"position":"800,350","size":"100,100"}
+Hey bug, wake up... [[intro1]]
+
+
+
+:: intro1 [girl:talk] {"position":"800,475","size":"100,100"}
+... [[intro2]]
+
+
+
+:: intro10 [dad:listen] {"position":"800,1625","size":"100,100"}
+How could I forget? Of course you can bring Them, just make sure they fit. Now, get out of bed and get ready while I cook. [[intro11]]
+
+
+
+:: intro11 [girl:talk] {"position":"800,1750","size":"100,100"}
+Okay.
+
+
+:: intro2 [dad:listen] {"position":"800,600","size":"100,100"}
+Ok, I'll call school and tell them you cancelled. [[intro3a]] [[intro3b]]
+
+
+
+:: intro3a [girl:choice] {"position":"725,725","size":"100,100"}
+... [[intro4]]
+
+
+
+:: intro3b [girl:choice] {"position":"850,725","size":"100,100"}
+That sounds great. [[intro4]]
+
+
+:: intro4 [dad:listen] {"position":"800,850","size":"100,100"}
+
+Now, we both know you aren't asleep. Get up! You want pancakes, waffles, or french toast? [[intro5a]] [[intro5b]] [[intro5c]]
+
+
+
+:: intro5a [girl:choice] {"position":"675,1000","size":"100,100"}
+Pancakes [[intro6a]]
+
+
+:: intro5b [girl:choice] {"position":"800,1000","size":"100,100"}
+Waffles [[intro6a]]
+
+
+:: intro5c [girl:choice] {"position":"925,1000","size":"100,100"}
+French toast [[intro6b]]
+
+
+:: intro6a [dad:listen] {"position":"725,1125","size":"100,100"}
+Good choice bug. [[intro7]]
+
+
+:: intro6b [dad:listen] {"position":"850,1125","size":"100,100"}
+You know there were no right options, but that one's my favorite. [[intro6a]]
+
+
+:: intro7 [dad:listen] {"position":"800,1250","size":"100,100"}
+After we eat you need to pack your bag. Looks like you have everything you need right here... in a pile on the floor. [[intro8]]
+
+
+:: intro8 [dad:listen] {"position":"800,1375","size":"100,100"}
+As long as you can get your pencil, notebook, eraser, and lunch from Mr. floor pile I think I'll let him stay. [[intro9a]] [[intro9b]]
+
+
+
+:: intro9a [girl:choice] {"position":"725,1500","size":"100,100"}
+I need to bring stuffy too! [[intro10]]
+
+
+:: intro9b [girl:choice] {"position":"850,1500","size":"100,100"}
+Can I bring stuffy? [[intro10]]
