@@ -20,3 +20,16 @@ func loadDialogue(name):
 	var data = FileAccess.open(path, FileAccess.READ)
 	dialogue_data = JSON.parse_string(data.get_as_text())
 	data.close()
+
+func dialogueChoice(choiceID):
+	match choiceID:
+		"intro5a","intro5b","intro5c":
+			PlayerData.user_data['intro']['breakfast'] = choiceID
+			print(PlayerData.user_data['intro']['breakfast'])
+		_:
+			print('Non-important choice')
+
+func to_title(s: String):
+	s = s.strip_edges()
+	return s.substr(0,1).to_upper() + s.substr(1).to_lower()
+	
