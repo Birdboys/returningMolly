@@ -28,7 +28,5 @@ func initialize(textID):
 	
 func _on_gui_input(event):
 	if event.is_action_pressed("dialogue_choice_input"):
-		print(textData)
-		DialogueManager.dialogueChoice(textId)
-		emit_signal("dialogue_choice", textData)
+		emit_signal("dialogue_choice", textId, textData)
 	pass # Replace with function body.
