@@ -25,6 +25,7 @@ func initialize(textID):
 	match textData['TEXT_TYPE']:
 		'listen': setListener(textData['TEXT_SPEAKER'])
 		'talk': setSpeaker(textData['TEXT_SPEAKER'])
+		'think': setThink()
 	print("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER'])
 	set_theme(load("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER']))
 	print(theme)
@@ -43,6 +44,9 @@ func setListener(t):
 	listener.visible = true
 	speaker.visible = false
 	listener.parse_bbcode(" " + DialogueManager.to_title(t) + " ")
-	
+
+func setThink():
+	listener.visible = false
+	speaker.visible = false
 func setTheme(theme_id):
 	pass

@@ -5,7 +5,7 @@ extends Control
 func _ready():
 	var starting_dialogue = dialogueScene.instantiate()
 	add_child(starting_dialogue)
-	starting_dialogue.initialize("intro0")
+	starting_dialogue.initialize("text0")
 	pass # Replace with function body.
 
 

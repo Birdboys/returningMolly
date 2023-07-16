@@ -1,0 +1,152 @@
+{
+  "text0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "School felt weird today. We learned in class like normal but they didn't let us go out for recess. The guards at lunch looked worried.",
+    "NEXT_TEXT_ID": [
+      "text1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text1": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hey bug, you're back late. I was getting a little worried...",
+    "NEXT_TEXT_ID": [
+      "text2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text10": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It's done, let's eat.",
+    "NEXT_TEXT_ID": [
+      "text11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Before we eat he flicks the tv back on. I want to talk instead. I hate the news.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "text2": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "The roads were really busy.",
+    "NEXT_TEXT_ID": [
+      "text3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text3": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I see...",
+    "NEXT_TEXT_ID": [
+      "text4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text4": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Well, lets get ready for dinner. I didn't have time to go to the store because... anyway we're doing pasta.",
+    "NEXT_TEXT_ID": [
+      "text5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text5": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He shuffles to the tv remote and turns off the news. Next up, hand washing.",
+    "NEXT_TEXT_ID": [
+      "text6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I want him to put on music and dance like he usually does. Instead I can hear the sound of the water boiling.",
+    "NEXT_TEXT_ID": [
+      "text7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text7": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "How was school?",
+    "NEXT_TEXT_ID": [
+      "text8a",
+      "text8b",
+      "text8c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "text8a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "It was ok.",
+    "NEXT_TEXT_ID": [
+      "text9a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text8b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Things were weird.",
+    "NEXT_TEXT_ID": [
+      "text9b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text8c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Recess was fun.",
+    "NEXT_TEXT_ID": [
+      "text9a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text9a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm glad you had fun.",
+    "NEXT_TEXT_ID": [
+      "text10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "text9b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm sorry bug, I think it's just a weird kind of day, haha.",
+    "NEXT_TEXT_ID": [
+      "text10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

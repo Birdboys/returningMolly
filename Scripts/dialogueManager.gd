@@ -3,7 +3,7 @@ extends Node
 @onready var dialogue_data
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	loadDialogue("intro")
+	loadDialogue("introNight")
 		
 	pass # Replace with function body.
 
@@ -19,7 +19,6 @@ func loadDialogue(name):
 		return
 	var data = FileAccess.open(path, FileAccess.READ)
 	dialogue_data = JSON.parse_string(data.get_as_text())
-	print(dialogue_data['intro0']['NEXT_TEXT_ID'][0])
 	data.close()
 
 func dialogueChoice(choiceID):

@@ -9,6 +9,7 @@ extends Control
 @onready var held_item = null
 @onready var hovered_item = null
 @onready var slots = {}
+@onready var placed_objects = {}
 @onready var inventoryGrid = $inventoryPanel/inventoryGrid
 @onready var groundItems = $infoPanel/infoVbox/groundItemsScroll/groundItemsGrid
 @onready var scroll = $infoPanel/infoVbox/groundItemsScroll
@@ -54,6 +55,7 @@ func _process(delta):
 			if hovered_item:
 				held_item = hovered_item
 				if held_item.item_location != null:
+					placed_objects.erase(held_item.item_location)
 					print("item found in inventory at", hovered_item.item_location)
 					for coord in held_item.item_coords:
 						var slot_to_update = held_item.item_location + coord
@@ -88,7 +90,7 @@ func _process(delta):
 			child.mouse_filter = 2
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 	
-	
+	print(placed_objects)
 		
 	
 func getContainerLoc(mouse_pos):
@@ -147,6 +149,7 @@ func clearItemSlots():
 		
 func putItemDown(the_slot):
 	var main_slot_location = the_slot.location
+	placed_objects[main_slot_location] = held_item.item_id
 	held_item.item_location = main_slot_location
 	print("put down item location",held_item.item_location)
 	for coord in held_item.item_coords:
