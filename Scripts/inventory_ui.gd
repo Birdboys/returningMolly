@@ -9,7 +9,9 @@ extends Control
 @onready var held_item = null
 @onready var hovered_item = null
 @onready var slots = {}
-@onready var placed_objects := { Vector2(1, 2): 0, Vector2(1, 3): 1, Vector2(4, 2): 3, Vector2(6, 3): 1, Vector2(4, 6): 0 }
+@onready var edge_slots = []
+@onready var placed_objects := {}
+@onready var ground_objects = [0,1,2,2,1,3,0]
 @onready var inventoryGrid = $inventoryPanel/inventoryGrid
 @onready var groundItems = $infoPanel/infoVbox/groundItemsScroll/groundItemsGrid
 @onready var scroll = $infoPanel/infoVbox/groundItemsScroll
@@ -18,16 +20,17 @@ extends Control
 @onready var objects = $inventoryPanel/Objects
 @onready var infoPanel = $infoPanel
 @onready var uiAnim = $uiAnim
+@onready var finishButton = $inventoryPanel/finishButton
 @onready var inv_scale
+@onready var finish_criteria
 @export var infoOpen := false
 var inventory_bounding_rect
 var inventory_bounding_rect2
+
+signal inventory_finished(po)
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	inv_scale = 80./50.
-	inventoryGrid.columns = num_col
-	createInventory()
-	loadInventory()
+	print("STARTING INV READY")
 	pass # Replace with function body.
 
 
@@ -35,7 +38,7 @@ func _ready():
 func _process(delta):
 	if held_item == null:
 		if hovered_item and Input.is_action_just_pressed("ui_right_input"):
-			openItemDescription()
+			openItemDescription(hovered_item.item_id)
 		if Input.is_action_just_pressed("ui_input"):
 			if hovered_item:
 				held_item = hovered_item
@@ -52,6 +55,7 @@ func _process(delta):
 				#print(held_item.item_location)
 		for child in groundItems.get_children():
 			child.mouse_filter = 1
+		finishButton.mouse_filter = 1	
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
@@ -72,11 +76,12 @@ func _process(delta):
 			#current_slot = 
 		for child in groundItems.get_children():
 			child.mouse_filter = 2
+		finishButton.mouse_filter = 2
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 	#print(placed_objects)
-	
+	setFinishButton()
 func getContainerLoc(mouse_pos):
-	var container_pos = mouse_pos - inventoryGrid.global_position - Vector2(slot_width, slot_height)/2*held_item.item_size
+	var container_pos = mouse_pos - inventoryGrid.global_position
 	return Vector2(int(container_pos.x/slot_width), int(container_pos.y/slot_height))
 
 func slotEntered(the_slot):
@@ -103,9 +108,6 @@ func itemExited(the_item):
 		return
 	hovered_item = null
 	pass
-func _on_button_pressed():
-	var id = randi_range(0,3)
-	addItemToGround(id)
 
 func checkSlotsAvailable(the_slot):
 	var main_slot_location = the_slot.location
@@ -137,7 +139,7 @@ func putItemDown(the_slot):
 		var slot_to_check = main_slot_location + coord
 		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
 	
-	var snap_coords = main_slot_location * slot_height
+	var snap_coords = main_slot_location * slot_height #+ Vector2(slot_width,slot_height)/2
 	print(snap_coords)
 	held_item.putDown(inventoryGrid.global_position+snap_coords)
 	held_item = null
@@ -147,6 +149,7 @@ func addItemToGround(id):
 	groundItems.add_child(new_item_button)
 	new_item_button.loadItemButton(id)
 	new_item_button.item_pressed.connect(groundItemPressed)
+	new_item_button.get_description.connect(openItemDescription)
 	hovered_item = null
 	scroll.queue_sort()
 	
@@ -161,16 +164,6 @@ func groundItemPressed(id):
 	new_item.return_to_ground.connect(addItemToGround)
 	held_item = new_item
 	new_item.pickUp()
-	print(new_item.item_size)
-
-func _on_clear_pressed():
-	for obj in objects.get_children():
-		obj.queue_free()
-	held_item = null
-	hovered_item = null
-	for sl in slots:
-		slots[sl].removeItem()
-	pass # Replace with function body.
 
 func _on_tab_bar_tab_selected(tab):
 	match tab:
@@ -179,9 +172,9 @@ func _on_tab_bar_tab_selected(tab):
 		2: scroll.visible = false; map.visible = true; description.visible = false; if infoOpen: uiAnim.play("close_info")
 	pass # Replace with function body.
 
-func openItemDescription():
+func openItemDescription(item_id):
 	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.clear()
-	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.parse_bbcode(ItemLoader.item_data[str(hovered_item.item_id)]['item_description'])
+	$infoPanel/infoVbox/descriptionPanel/descriptionMargin/descriptionText.parse_bbcode(ItemLoader.item_data[str(item_id)]['item_description'])
 	_on_tab_bar_tab_selected(1)
 
 func loadInventory():
@@ -207,12 +200,43 @@ func createInventory():
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
 			slots['%s:%s' %[col, row]] = new_slot
-			if row < sussy_slots or col < sussy_slots or num_row-row <= sussy_slots or num_col-col <= sussy_slots:
-				new_slot.setType(-1)
-			elif (row == 1 and col == 1) or (row == 1 and num_col-col == 2) or (num_row-row == 2 and col == 1) or (num_row-row == 2 and num_col-col == 2):
+			if new_slot.location in edge_slots:
 				new_slot.setType(-1)
 			else:
 				new_slot.setType(0)
 	slot_height = inventoryGrid.size.y/num_row
 	slot_width = inventoryGrid.size.x/num_col
-	inventory_bounding_rect = Rect2(Vector2(1, 1), Vector2(num_col-2, num_row-2))
+	inventory_bounding_rect = Rect2(Vector2(0, 0), Vector2(num_col, num_row))
+
+func loadGround():
+	for item in ground_objects:
+		addItemToGround(item)
+
+func initialize(col, placed, ground, edge, fc):
+	print("STARTING INV INIT")
+	num_col = col
+	num_row = 4 * col / 5
+	placed_objects = placed
+	ground_objects = ground
+	edge_slots = edge
+	finish_criteria = fc
+	inv_scale = (800./num_col)/50.
+	inventoryGrid.columns = num_col
+	createInventory()
+	loadInventory()
+	loadGround()
+	print(inv_scale)
+	
+func setFinishButton():
+	match finish_criteria:
+		0: finishButton.disabled = false
+		1: 
+			if groundItems.get_child_count() == 0:
+				finishButton.disabled = false	
+			else:
+				finishButton.disabled = true
+	print(finish_criteria, finishButton.disabled, groundItems.get_child_count())
+
+func _on_finish_button_pressed():
+	emit_signal("inventory_finished", placed_objects)
+	pass # Replace with function body.

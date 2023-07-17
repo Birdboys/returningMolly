@@ -4,6 +4,8 @@ extends Control
 @onready var choicesBox = $choicesBox
 @onready var mainText
 @onready var inChoice = false
+
+signal end_of_dialogue(id)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -35,6 +37,8 @@ func changeMainText():
 			add_child(mainText)
 			mainText.initialize(next[1][0])
 			pass
+		else: #end of text
+			emit_signal("end_of_dialogue", mainText.textId)
 		
 func clearChoices():
 	for child in choicesBox.get_children():

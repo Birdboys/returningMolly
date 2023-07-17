@@ -27,7 +27,7 @@ func _process(delta):
 	pass
 
 func loadItem(id, scl=Vector2(1,1)):
-	itemImage.texture = await load("res://Assets/%s.png" % id)
+	itemImage.texture = await load("res://Assets/objects/%s.png" % ItemLoader.item_data[str(id)]["item_name"])
 	#itemImage.pivot_offset = itemImage.size/2*scl
 	itemImage.scale = scl
 	#print("THE PIVOT OFFSET",itemImage.pivot_offset, itemImage.size)
@@ -45,7 +45,7 @@ func putDown(snap_coords=null):
 	held = false
 	if snap_coords:
 		print("PUTTING ITEM IN POSITION", snap_coords)
-		global_position = snap_coords + itemImage.size/2
+		global_position = snap_coords 
 	else:
 		emit_signal("return_to_ground", item_id)
 		queue_free()

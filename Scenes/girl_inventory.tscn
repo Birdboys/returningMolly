@@ -1,11 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://bubugpoepm01g"]
+[gd_scene load_steps=20 format=3 uid="uid://dg5m8bfkjxdf7"]
 
-[ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_sx561"]
-[ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="2_4u8g0"]
-[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="2_t6vya"]
-[ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="3_f5pj3"]
-[ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="4_jxbvi"]
-[ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="5_rwuap"]
+[ext_resource type="Script" path="res://Scripts/girl_inventory_ui.gd" id="1_5hb4d"]
+[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="2_ibdf2"]
+[ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="3_pxxqf"]
+[ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="4_duisr"]
+[ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="5_qw508"]
+[ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="6_gin48"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bhrk"]
 bg_color = Color(0.529412, 0.662745, 0.521569, 1)
@@ -212,7 +212,7 @@ _data = {
 "open_info": SubResource("Animation_0o25c")
 }
 
-[node name="inventoryUI" type="Control"]
+[node name="girlInventoryUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -222,7 +222,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
-script = ExtResource("1_sx561")
+script = ExtResource("1_5hb4d")
 
 [node name="background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -278,7 +278,7 @@ offset_right = 29.5
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("2_t6vya")
+theme_override_fonts/font = ExtResource("2_ibdf2")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_5bhrk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_eqrjh")
@@ -372,12 +372,12 @@ clip_tabs = false
 scrolling_enabled = false
 tab_count = 3
 tab_0/title = ""
-tab_0/icon = ExtResource("2_4u8g0")
+tab_0/icon = ExtResource("3_pxxqf")
 tab_1/title = ""
-tab_1/icon = ExtResource("3_f5pj3")
+tab_1/icon = ExtResource("4_duisr")
 tab_2/title = ""
-tab_2/icon = ExtResource("4_jxbvi")
-script = ExtResource("5_rwuap")
+tab_2/icon = ExtResource("5_qw508")
+script = ExtResource("6_gin48")
 
 [node name="uiAnim" type="AnimationPlayer" parent="."]
 libraries = {
@@ -395,5 +395,4 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.901961, 0.85098, 0.741176, 1)
 
-[connection signal="pressed" from="inventoryPanel/finishButton" to="." method="_on_finish_button_pressed"]
 [connection signal="tab_selected" from="infoPanel/infoVbox/TabBar" to="." method="_on_tab_bar_tab_selected"]
