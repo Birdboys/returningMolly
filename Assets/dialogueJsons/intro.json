@@ -170,9 +170,5 @@
     ],
     "HAS_CHOICE": false,
     "IS_END": false
-  },
-  "NEXT":{
-    "NEXT_SCENE_START":"text0",
-    "NEXT_SCENE_NAME": "introNight"
   }
 }
