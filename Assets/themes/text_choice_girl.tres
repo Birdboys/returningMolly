@@ -1,6 +1,9 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cat6fk4o3cyls"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cat6fk4o3cyls"]
 
+[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="1_p3gnt"]
 [ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="1_tlnhc"]
+[ext_resource type="FontFile" uid="uid://n8n8ij3wst52" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-BoldItalic.otf" id="2_5cw8r"]
+[ext_resource type="FontFile" uid="uid://4itg0mrrptr8" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Italic.otf" id="3_4wko2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gnv48"]
 bg_color = Color(0.901961, 0.85098, 0.741176, 1)
@@ -19,5 +22,11 @@ RichTextLabel/constants/outline_size = 6
 RichTextLabel/constants/shadow_offset_x = 2
 RichTextLabel/constants/shadow_offset_y = 2
 RichTextLabel/constants/shadow_outline_size = 1
+RichTextLabel/font_sizes/bold_font_size = 32
+RichTextLabel/font_sizes/bold_italics_font_size = 32
+RichTextLabel/font_sizes/italics_font_size = 32
 RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/fonts/bold_font = ExtResource("1_p3gnt")
+RichTextLabel/fonts/bold_italics_font = ExtResource("2_5cw8r")
+RichTextLabel/fonts/italics_font = ExtResource("3_4wko2")
 RichTextLabel/fonts/normal_font = ExtResource("1_tlnhc")

@@ -2,6 +2,7 @@ extends Control
 @onready var dialogueScene = preload("res://Scenes/dialogue.tscn")
 @onready var inventoryScene = preload("res://Scenes/inventory.tscn")
 @onready var girlInventoryScene = preload("res://Scenes/girl_inventory.tscn")
+@onready var transition = preload("res://Scenes/day_transition.tscn")
 var currentInventory = null
 var currentDialogue = null
 var nextDialogue = null
@@ -26,15 +27,19 @@ func _process(delta):
 	
 func startTutorial():
 	currentDay = [false, "intro"]
-	startDialogue(currentDay[1])
+	
+	startDialogue(currentDay[1], true)
 
 
-func startDialogue(dialogueID):
+func startDialogue(dialogueID, add_transition=false):
 	DialogueManager.loadDialogue(dialogueID)
 	currentDialogue = dialogueScene.instantiate()
 	add_child(currentDialogue)
 	currentDialogue.initialize(dialogueID+"_0")
 	currentDialogue.end_of_dialogue.connect(endDialogue)
+	
+	if add_transition:
+		startTransition(dialogueID)
 	
 func startInventory(inventoryID):
 	pass
@@ -55,5 +60,13 @@ func endDialogue(dialogueID):
 		"introNight_11":
 			currentDay = dayRelation[currentDay[1]]
 			print("DAY1")
-			startDialogue(currentDay[1])
+			startDialogue(currentDay[1], true)
 	
+func startTransition(day):
+	var new_transition = transition.instantiate()
+	add_child(new_transition)
+	new_transition.initialize(day)
+	new_transition.finished_transition.connect(endTransition)
+
+func endTransition(day):
+	pass
