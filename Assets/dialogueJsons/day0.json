@@ -1,0 +1,152 @@
+{
+  "day0_0": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hey bug, get up.",
+    "NEXT_TEXT_ID": [
+      "day0_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Through a crack in my eyes I can see the window. It's still dark out and it's saturday. Why is he waking me up?",
+    "NEXT_TEXT_ID": [
+      "day0_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_2": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I need you to get up [b]right now[\\b].",
+    "NEXT_TEXT_ID": [
+      "day0_3a",
+      "day0_3b",
+      "day0_3c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day0_3a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I'm sleeping....",
+    "NEXT_TEXT_ID": [
+      "day0_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_3b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "There's no school today, what's going on?",
+    "NEXT_TEXT_ID": [
+      "day0_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_3c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "zzzzz",
+    "NEXT_TEXT_ID": [
+      "day0_4b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_4a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Something happened, I don't know what's going on I mean there's... It doesn't matter.",
+    "NEXT_TEXT_ID": [
+      "day0_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_4b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Molly. [b]NOW[/b]",
+    "NEXT_TEXT_ID": [
+      "day0_4c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_4c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "The unusual tone of voice sits me up.",
+    "NEXT_TEXT_ID": [
+      "day0_4d"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_4d": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Did I do something wrong?",
+    "NEXT_TEXT_ID": [
+      "day0_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_5": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I need you to get up and pack your bag ok? Just like you're going to school.",
+    "NEXT_TEXT_ID": [
+      "day0_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_6": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Are we going somewhere?",
+    "NEXT_TEXT_ID": [
+      "day0_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_7": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "We'll talk after you pack. I've added a few new [i]items[/i] to your pile, put them in there too. Now [b]go.[/b]",
+    "NEXT_TEXT_ID": [
+      "day0_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He shoves the bag into my arms and hurries out of the room. Shortly after he's on the phone.",
+    "NEXT_TEXT_ID": [
+      "day0_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0_9": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I start to pack, trying to make out what he's saying over the sound of the news still playing on the TV.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

@@ -9,6 +9,8 @@ class_name slot
 @onready var texture_empty = preload("res://Assets/temp_slot1.png")
 @onready var texture_full = preload("res://Assets/temp_slot2.png")
 @onready var texture_not_real = preload("res://Assets/temp_slot3.png")
+@onready var texture_not_real_girl = preload("res://Assets/temp_slot4.png")
+@onready var is_girl_inv = false
 @onready var slot_type #0 - normal, 1 - wet, 2 - hole, -1 not real
 signal slotEntered(the_slot)
 # Called when the node enters the scene tree for the first time.
@@ -53,4 +55,4 @@ func setType(t):
 	match slot_type:
 		0: texture = texture_empty
 		-1: 
-			texture = texture_not_real
+			texture = texture_not_real if not is_girl_inv else texture_not_real_girl

@@ -47,7 +47,6 @@ func _process(delta):
 					print("item found in inventory at", hovered_item.item_location)
 					for coord in held_item.item_coords:
 						var slot_to_update = held_item.item_location + coord
-						print(slot_to_update)
 						slots["%s:%s"%[slot_to_update.x, slot_to_update.y]].removeItem()
 				else:
 					print("item found on ground")
@@ -140,7 +139,6 @@ func putItemDown(the_slot):
 		slots["%s:%s"%[slot_to_check.x, slot_to_check.y]].addItem(held_item.item_id)
 	
 	var snap_coords = main_slot_location * slot_height #+ Vector2(slot_width,slot_height)/2
-	print(snap_coords)
 	held_item.putDown(inventoryGrid.global_position+snap_coords)
 	held_item = null
 
@@ -157,7 +155,7 @@ func groundItemPressed(id):
 	var new_item = load('res://Scenes/item.tscn').instantiate()
 	print("ADDING A NEW ITTEM TO INV")
 	objects.add_child(new_item)
-	new_item.loadItem(id, Vector2(inv_scale, inv_scale))
+	new_item.loadItem(id, Vector2(inv_scale, inv_scale),slot_width)
 	#new_item.pivot_offset = new_item.getSize()/2
 	new_item.cursor_entered_item.connect(itemEntered)
 	new_item.cursor_exited_item.connect(itemExited)
@@ -192,11 +190,14 @@ func loadInventory():
 		putItemDown(the_slot)
 		print("ADDING ITEM %s TO SLOT %s WITH LOCATION %s" % [new_item.item_id, the_slot, the_slot.global_position])
 
-func createInventory():
+func createInventory(girl=false):
 	for row in range(num_row):
 		for col in range(num_col):
 			var new_slot = inv_slot.instantiate()
 			inventoryGrid.add_child(new_slot)
+			if girl:
+				new_slot.is_girl_inv = true
+				print(new_slot.is_girl_inv)
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
 			slots['%s:%s' %[col, row]] = new_slot
@@ -212,7 +213,7 @@ func loadGround():
 	for item in ground_objects:
 		addItemToGround(item)
 
-func initialize(col, placed, ground, edge, fc):
+func initialize(col, placed, ground, edge, fc, girl=false):
 	print("STARTING INV INIT")
 	num_col = col
 	num_row = 4 * col / 5
@@ -222,10 +223,9 @@ func initialize(col, placed, ground, edge, fc):
 	finish_criteria = fc
 	inv_scale = (800./num_col)/50.
 	inventoryGrid.columns = num_col
-	createInventory()
+	createInventory(girl)
 	loadInventory()
 	loadGround()
-	print(inv_scale)
 	
 func setFinishButton():
 	match finish_criteria:
@@ -235,7 +235,6 @@ func setFinishButton():
 				finishButton.disabled = false	
 			else:
 				finishButton.disabled = true
-	print(finish_criteria, finishButton.disabled, groundItems.get_child_count())
 
 func _on_finish_button_pressed():
 	emit_signal("inventory_finished", placed_objects)

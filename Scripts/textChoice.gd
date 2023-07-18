@@ -15,10 +15,8 @@ func _process(delta):
 	pass
 
 func _on_mouse_entered():
-	print("entered text box")
 	scale = Vector2(1.05,1.05)
 func _on_mouse_exited():
-	print("exited text box")
 	scale = Vector2(1.,1.)
 
 func initialize(textID):

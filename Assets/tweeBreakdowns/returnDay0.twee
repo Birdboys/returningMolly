@@ -1,0 +1,82 @@
+:: StoryTitle
+returnDay0
+
+
+:: StoryData
+{
+  "ifid": "0F4FEC94-4F46-4DD4-9E2F-62B8DF900B23",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day0_0",
+  "tag-colors": {
+    "dad:listen": "green",
+    "girl:think": "purple",
+    "girl:choice": "red",
+    "girl:talk": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: day0_0 [dad:listen] {"position":"800,350","size":"100,100"}
+Hey bug, get up. [[day0_1]]
+
+
+
+:: day0_1 [girl:think] {"position":"800,475","size":"100,100"}
+Through a crack in my eyes I can see the window. It's still dark out and it's saturday. Why is he waking me up? [[day0_2]]
+
+
+
+:: day0_2 [dad:listen] {"position":"800,600","size":"100,100"}
+I need you to get up [b]right now[\b]. [[day0_3a]] [[day0_3b]] [[day0_3c]]
+
+
+:: day0_3a [girl:choice] {"position":"675,725","size":"100,100"}
+I'm sleeping.... [[day0_4a]]
+
+
+:: day0_3b [girl:choice] {"position":"800,725","size":"100,100"}
+There's no school today, what's going on? [[day0_4a]]
+
+
+:: day0_3c [girl:choice] {"position":"925,725","size":"100,100"}
+zzzzz [[day0_4b]]
+
+
+:: day0_4a [dad:listen] {"position":"750,850","size":"100,100"}
+Something happened, I don't know what's going on I mean there's... It doesn't matter.[[day0_5]]
+
+
+:: day0_4b [dad:listen] {"position":"875,850","size":"100,100"}
+Molly. [b]NOW[/b] [[day0_4c]]
+
+
+:: day0_4c [girl:think] {"position":"1000,850","size":"100,100"}
+The unusual tone of voice sits me up. [[day0_4d]]
+
+
+
+:: day0_4d [girl:talk] {"position":"1125,850","size":"100,100"}
+Did I do something wrong? [[day0_4a]]
+
+
+:: day0_5 [dad:listen] {"position":"750,975","size":"100,100"}
+I need you to get up and pack your bag ok? Just like you're going to school. [[day0_6]]
+
+
+
+:: day0_6 [girl:talk] {"position":"750,1100","size":"100,100"}
+Are we going somewhere? [[day0_7]]
+
+
+:: day0_7 [dad:listen] {"position":"750,1225","size":"100,100"}
+We'll talk after you pack. I've added a few new [i]items[/i] to your pile, put them in there too. Now [b]go.[/b] [[day0_8]]
+
+
+:: day0_8 [girl:think] {"position":"750,1350","size":"100,100"}
+He shoves the bag into my arms and hurries out of the room. Shortly after he's on the phone. [[day0_9]]
+
+
+:: day0_9 [girl:think] {"position":"750,1475","size":"100,100"}
+ I start to pack, trying to make out what he's saying over the sound of the news still playing on the TV. [[]]

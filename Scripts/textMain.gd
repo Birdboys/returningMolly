@@ -26,9 +26,8 @@ func initialize(textID):
 		'listen': setListener(textData['TEXT_SPEAKER'])
 		'talk': setSpeaker(textData['TEXT_SPEAKER'])
 		'think': setThink()
-	print("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER'])
 	set_theme(load("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER']))
-	print(theme)
+
 	
 func nextText():
 	return [textData["HAS_CHOICE"], textData["NEXT_TEXT_ID"]]
