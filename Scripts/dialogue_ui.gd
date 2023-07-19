@@ -4,7 +4,7 @@ extends Control
 @onready var choicesBox = $choicesBox
 @onready var mainText
 @onready var inChoice = false
-
+@onready var can_continue = false
 signal end_of_dialogue(id)
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,11 +17,16 @@ func _process(delta):
 
 func _on_gui_input(event: InputEvent):
 	if event.is_action_pressed("dialogue_input") and not inChoice:
-		changeMainText()
+		if mainText.finished_typing:
+			changeMainText()
+		else:
+			mainText.finishTyping()
+	
 	pass # Replace with function body.
 
 func changeMainText():
 	clearChoices()
+	can_continue = false
 	var next = mainText.nextText()
 	if next[0]: #Choice option
 		inChoice = true
@@ -36,7 +41,6 @@ func changeMainText():
 			mainText = textMain.instantiate()
 			add_child(mainText)
 			mainText.initialize(next[1][0])
-			pass
 		else: #end of text
 			emit_signal("end_of_dialogue", mainText.textId)
 		

@@ -4,11 +4,18 @@ var textId
 @onready var text = $textMainPanel/textMargin/textMainText
 @onready var speaker = $textSpeaker
 @onready var listener = $textListener
+@onready var bbStrip = RegEx.new()
+@onready var typeTimer
+@onready var visible_ration = 0.0
+@onready var finished_typing = false
+@onready var typing_increase 
+
 #TEXT_ID	TEXT_TEXT	TEXT_TYPE	TEXT_SPEAKER	NEXT_TEXT_ID	HAS_CHOICE	IS_END
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	text.clear()
 	speaker.clear()
+	bbStrip.compile("\\[.*?\\]")
 	pass # Replace with function body.
 
 
@@ -21,6 +28,13 @@ func initialize(textID):
 	textId = textID
 	text.parse_bbcode(textData['TEXT_TEXT'])
 	speaker.parse_bbcode(" " + DialogueManager.to_title(textData['TEXT_SPEAKER']))
+	typing_increase = 1.0/float(len(text.get_parsed_text()))
+	typeTimer = Timer.new()
+	add_child(typeTimer)
+	typeTimer.timeout.connect(stepTyping)
+	typeTimer.one_shot = true
+	typeTimer.start(.03)
+	startTyping()
 	
 	match textData['TEXT_TYPE']:
 		'listen': setListener(textData['TEXT_SPEAKER'])
@@ -52,3 +66,20 @@ func setThink():
 	speaker.visible = false
 func setTheme(theme_id):
 	pass
+
+func startTyping():
+	text.visible_ratio = 0
+	finished_typing = false
+
+func stepTyping():
+	text.visible_ratio += typing_increase
+	if text.visible_ratio >= 1:
+		finishTyping()
+	else:
+		typeTimer.start(.03)
+
+func finishTyping():
+	typeTimer.stop()
+	typeTimer.queue_free()
+	text.visible_ratio = 1
+	finished_typing = true

@@ -24,7 +24,6 @@ func initialize(nextDay):
 	$cont/subtitle.parse_bbcode("[center][u]%s[/u][/center]" % subtitles[nextDay])
 
 func _on_gui_input(event):
-	print(event)
 	if transition_done:
 		if event.is_action_pressed("ui_input"):
 			emit_signal("finished_transition", next_day)

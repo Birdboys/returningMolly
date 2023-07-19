@@ -33,14 +33,15 @@ func startTutorial():
 func startDay(day):
 	startDialogue(day)
 func startDialogue(dialogueID, add_transition=false):
+	if add_transition:
+		await startTransition(dialogueID)
 	DialogueManager.loadDialogue(dialogueID)
 	currentDialogue = dialogueScene.instantiate()
 	add_child(currentDialogue)
 	currentDialogue.initialize(dialogueID+"_0")
 	currentDialogue.end_of_dialogue.connect(endDialogue)
 	
-	if add_transition:
-		startTransition(dialogueID)
+	
 	
 func startInventory(inventoryID):
 	pass
@@ -77,7 +78,7 @@ func startTransition(day):
 	var new_transition = transition.instantiate()
 	add_child(new_transition)
 	new_transition.initialize(day)
-	new_transition.finished_transition.connect(endTransition)
-
+	await new_transition.finished_transition
+	
 func endTransition(day):
 	pass
