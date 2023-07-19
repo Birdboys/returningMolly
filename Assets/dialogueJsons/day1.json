@@ -1,0 +1,10 @@
+{
+  "day1_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I can't believe I left her at the gate... the thought clouds my head. I clear it repeatedly in an attempt to focus on the road.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

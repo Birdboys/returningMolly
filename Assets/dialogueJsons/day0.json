@@ -22,7 +22,7 @@
   "day0_2": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "I need you to get up [b]right now[\\b].",
+    "TEXT_TEXT": "I need you to get up [b]right now[/b].",
     "NEXT_TEXT_ID": [
       "day0_3a",
       "day0_3b",

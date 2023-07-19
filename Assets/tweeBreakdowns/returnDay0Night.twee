@@ -1,0 +1,102 @@
+:: StoryTitle
+returnDay0Night
+
+
+:: StoryData
+{
+  "ifid": "AE30BC60-AE59-4156-8843-319B5DD176D4",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day0Night_0",
+  "tag-colors": {
+    "dad:listen": "green",
+    "girl:choice": "red",
+    "girl:talk": "purple",
+    "girl:think": "purple",
+    "news:talk": "yellow"
+  },
+  "zoom": 1
+}
+
+
+:: day0Night_0 [dad:listen] {"position":"800,350","size":"100,100"}
+Are you done? Good, we got to go. [[day0Night_1a]] [[day0Night_1b]] [[day0Night_1c]]
+
+
+:: day0Night_10 [girl:think] {"position":"800,1600","size":"100,100"}
+I try to keep listening, it feels important, but my eyes are heavy. The shock of being woken up so suddenly is wearing off... [[day0Night_11]]
+
+
+:: day0Night_11 [news:talk] {"position":"800,1725","size":"100,100"}
+[i]		... are upset ... 			... efforts ... 		... split apart ...  				... transportation efficiency ... [/i][[day0Night_12]]
+
+
+:: day0Night_12 [girl:think] {"position":"800,1850","size":"100,100"}
+.........zzz... [[]]
+
+
+:: day0Night_1a [girl:choice] {"position":"675,475","size":"100,100"}
+I don't understand, what's happening? What's all this stuff for? [[day0Night_2a]]
+
+
+:: day0Night_1b [girl:choice] {"position":"800,475","size":"100,100"}
+I'm tired, where are we going? [[day0Night_2b]]
+
+
+:: day0Night_1c [girl:choice] {"position":"925,475","size":"100,100"}
+Stuffy wasn't in my bag, we need to find them! [[day0Night_2c]] 
+
+
+:: day0Night_2a [dad:listen] {"position":"675,600","size":"100,100"}
+It's just extra supplies that you might need bug. You got food and water and a bat just in case... [[day0Night_3a]]
+
+
+
+:: day0Night_2b [dad:listen] {"position":"800,600","size":"100,100"}
+I wish I could explain bug but we need to leave. They're only taking so many people out tonight. [[day0Night_3b]]
+
+
+:: day0Night_2c [dad:listen] {"position":"925,600","size":"100,100"}
+I'm sorry bug but we don't have time. [[day0Night_3c]]
+
+
+:: day0Night_3a [dad:listen] {"position":"675,725","size":"100,100"}
+... I just want you to have a weapon that's all. Alright, come on, get in the car. [[day0Night_4]]
+
+
+:: day0Night_3b [dad:listen] {"position":"800,725","size":"100,100"}
+Come on, get in. [[day0Night_4]]
+
+
+:: day0Night_3c [girl:talk] {"position":"925,725","size":"100,100"}
+Yes we DO. I'm not leaving without them. [[day0Night_4c]]
+
+
+:: day0Night_4 [girl:think] {"position":"800,850","size":"100,100"}
+Something isn't right. He looks scary. I decide that my best option is to get in the car. [[day0Night_5]]
+
+
+
+:: day0Night_4c [dad:listen] {"position":"925,850","size":"100,100"}
+Get in the car. [b][i]NOW[/i][/b] [[day0Night_4]]
+
+
+:: day0Night_5 [girl:think] {"position":"800,975","size":"100,100"}
+I've never seen him drive faster. From the back seat I watched us weave between lanes and cars. [[day0Night_6]]
+
+
+:: day0Night_6 [girl:think] {"position":"800,1100","size":"100,100"}
+Now the news is coming through the car radio. I can't tell what they're saying, it's too quiet and their words are too fast. [[day0Night_7]]
+
+
+
+:: day0Night_7 [news:talk] {"position":"800,1225","size":"100,100"}
+[i]... appears to... 					...ground...  									...substance... [/i][[day0Night_8]]
+
+
+:: day0Night_8 [news:talk] {"position":"800,1350","size":"100,100"}
+[i]					 ... contracted to address ... 				 ... no successful moves ... [/i][[day0Night_9]]
+
+
+:: day0Night_9 [news:talk] {"position":"800,1475","size":"100,100"}
+[i]		... waiting, we finally ... 	 ... President. Despite ... ... multiple cities ... ... substance ... ... people or infrastructure .... [/i][[day0Night_10]] 

@@ -26,7 +26,10 @@ func initialize(textID):
 		'listen': setListener(textData['TEXT_SPEAKER'])
 		'talk': setSpeaker(textData['TEXT_SPEAKER'])
 		'think': setThink()
-	set_theme(load("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER']))
+		
+	match textData['TEXT_SPEAKER']:
+		'dad','girl': set_theme(load("res://Assets/themes/text_main_%s.tres" % textData['TEXT_SPEAKER']))
+		_: set_theme(load("res://Assets/themes/text_main_default.tres"))
 
 	
 func nextText():

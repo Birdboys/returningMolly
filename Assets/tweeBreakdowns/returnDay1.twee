@@ -1,0 +1,19 @@
+:: StoryTitle
+returnDay1
+
+
+:: StoryData
+{
+  "ifid": "1FE53ED9-F04F-402B-B838-2C6228B547B8",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day1_0",
+  "tag-colors": {
+    "dad:think": "green"
+  },
+  "zoom": 1
+}
+
+
+:: day1_0 [dad:think] {"position":"800,350","size":"100,100"}
+I can't believe I left her at the gate... the thought clouds my head. I clear it repeatedly in an attempt to focus on the road. [[]]

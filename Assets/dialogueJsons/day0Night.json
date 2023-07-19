@@ -1,0 +1,202 @@
+{
+  "day0Night_0": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Are you done? Good, we got to go.",
+    "NEXT_TEXT_ID": [
+      "day0Night_1a",
+      "day0Night_1b",
+      "day0Night_1c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day0Night_10": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I try to keep listening, it feels important, but my eyes are heavy. The shock of being woken up so suddenly is wearing off...",
+    "NEXT_TEXT_ID": [
+      "day0Night_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_11": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "news",
+    "TEXT_TEXT": "[i]\t\t... are upset ... \t\t\t... efforts ... \t\t... split apart ...  \t\t\t\t... transportation efficiency ... [/i]",
+    "NEXT_TEXT_ID": [
+      "day0Night_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": ".........zzz...",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day0Night_1a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I don't understand, what's happening? What's all this stuff for?",
+    "NEXT_TEXT_ID": [
+      "day0Night_2a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_1b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I'm tired, where are we going?",
+    "NEXT_TEXT_ID": [
+      "day0Night_2b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_1c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Stuffy wasn't in my bag, we need to find them!",
+    "NEXT_TEXT_ID": [
+      "day0Night_2c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_2a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It's just extra supplies that you might need bug. You got food and water and a bat just in case...",
+    "NEXT_TEXT_ID": [
+      "day0Night_3a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_2b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I wish I could explain bug but we need to leave. They're only taking so many people out tonight.",
+    "NEXT_TEXT_ID": [
+      "day0Night_3b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_2c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm sorry bug but we don't have time.",
+    "NEXT_TEXT_ID": [
+      "day0Night_3c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_3a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... I just want you to have a weapon that's all. Alright, come on, get in the car.",
+    "NEXT_TEXT_ID": [
+      "day0Night_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_3b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Come on, get in.",
+    "NEXT_TEXT_ID": [
+      "day0Night_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_3c": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Yes we DO. I'm not leaving without them.",
+    "NEXT_TEXT_ID": [
+      "day0Night_4c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Something isn't right. He looks scary. I decide that my best option is to get in the car.",
+    "NEXT_TEXT_ID": [
+      "day0Night_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_4c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Get in the car. [b][i]NOW[/i][/b]",
+    "NEXT_TEXT_ID": [
+      "day0Night_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_5": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I've never seen him drive faster. From the back seat I watched us weave between lanes and cars.",
+    "NEXT_TEXT_ID": [
+      "day0Night_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Now the news is coming through the car radio. I can't tell what they're saying, it's too quiet and their words are too fast.",
+    "NEXT_TEXT_ID": [
+      "day0Night_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_7": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "news",
+    "TEXT_TEXT": "[i]... appears to... \t\t\t\t\t...ground...  \t\t\t\t\t\t\t\t\t...substance... [/i]",
+    "NEXT_TEXT_ID": [
+      "day0Night_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_8": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "news",
+    "TEXT_TEXT": "[i]\t\t\t\t\t ... contracted to address ... \t\t\t\t ... no successful moves ... [/i]",
+    "NEXT_TEXT_ID": [
+      "day0Night_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day0Night_9": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "news",
+    "TEXT_TEXT": "[i]\t\t... waiting, we finally ... \t ... President. Despite ... ... multiple cities ... ... substance ... ... people or infrastructure .... [/i]",
+    "NEXT_TEXT_ID": [
+      "day0Night_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}
