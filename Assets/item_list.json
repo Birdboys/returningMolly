@@ -47,5 +47,19 @@
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
     "item_description": "A bottle of water"
+  },
+  "7": {
+    "item_id": 7,
+    "item_name": "baseball_bat",
+    "item_graph": "0,0/0,1/0,2",
+    "item_size": "1,3",
+    "item_description": "A baseball bat"
+  },
+  "8": {
+    "item_id": 8,
+    "item_name": "walkie",
+    "item_graph": "0,0/0,1",
+    "item_size": "1,2",
+    "item_description": "A walkie talkie"
   }
 }

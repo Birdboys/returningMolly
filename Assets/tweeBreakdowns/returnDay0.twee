@@ -29,7 +29,7 @@ Through a crack in my eyes I can see the window. It's still dark out and it's sa
 
 
 :: day0_2 [dad:listen] {"position":"800,600","size":"100,100"}
-I need you to get up [b]right now[\b]. [[day0_3a]] [[day0_3b]] [[day0_3c]]
+I need you to get up [b]right now[/b]. [[day0_3a]] [[day0_3b]] [[day0_3c]]
 
 
 :: day0_3a [girl:choice] {"position":"675,725","size":"100,100"}

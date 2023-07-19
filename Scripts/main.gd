@@ -16,7 +16,7 @@ func _ready():
 	#add_child(starting_dialogue)
 	#starting_dialogue.initialize("text0")
 	
-	startTutorial()
+	startDay("day0")
 	pass # Replace with function body.
 
 
@@ -30,7 +30,8 @@ func startTutorial():
 	
 	startDialogue(currentDay[1], true)
 
-
+func startDay(day):
+	startDialogue(day)
 func startDialogue(dialogueID, add_transition=false):
 	DialogueManager.loadDialogue(dialogueID)
 	currentDialogue = dialogueScene.instantiate()
@@ -61,7 +62,15 @@ func endDialogue(dialogueID):
 			currentDay = dayRelation[currentDay[1]]
 			print("DAY1")
 			startDialogue(currentDay[1], true)
-	
+		"day0_9":
+			if currentInventory:
+				currentInventory.queue_free()
+			currentInventory = null
+			currentInventory = inventoryScene.instantiate()
+			add_child(currentInventory)
+			currentInventory.initialize(10, {}, [5,5,8,1,5,6,7], girl_edges, 1)
+			currentInventory.inventory_finished.connect(endInventory)
+			
 func startTransition(day):
 	var new_transition = transition.instantiate()
 	add_child(new_transition)

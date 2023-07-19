@@ -19,6 +19,7 @@ extends Control
 @onready var description = $infoPanel/infoVbox/descriptionPanel
 @onready var objects = $inventoryPanel/Objects
 @onready var infoPanel = $infoPanel
+@onready var tabBar = $infoPanel/infoVbox/TabBar
 @onready var uiAnim = $uiAnim
 @onready var finishButton = $inventoryPanel/finishButton
 @onready var inv_scale
@@ -30,6 +31,7 @@ var inventory_bounding_rect2
 signal inventory_finished(po)
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#initialize(10,{})
 	print("STARTING INV READY")
 	pass # Replace with function body.
 
@@ -54,7 +56,8 @@ func _process(delta):
 				#print(held_item.item_location)
 		for child in groundItems.get_children():
 			child.mouse_filter = 1
-		finishButton.mouse_filter = 1	
+		finishButton.mouse_filter = 1
+		tabBar.mouse_filter = 1
 		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_VISIBLE)
 	else:
 		var slot_to_check = getContainerLoc(get_global_mouse_position())
@@ -76,7 +79,8 @@ func _process(delta):
 		for child in groundItems.get_children():
 			child.mouse_filter = 2
 		finishButton.mouse_filter = 2
-		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
+		tabBar.mouse_filter = 2
+		#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 	#print(placed_objects)
 	setFinishButton()
 func getContainerLoc(mouse_pos):
@@ -140,6 +144,7 @@ func putItemDown(the_slot):
 	
 	var snap_coords = main_slot_location * slot_height #+ Vector2(slot_width,slot_height)/2
 	held_item.putDown(inventoryGrid.global_position+snap_coords)
+	hovered_item = held_item
 	held_item = null
 
 func addItemToGround(id):
@@ -213,7 +218,7 @@ func loadGround():
 	for item in ground_objects:
 		addItemToGround(item)
 
-func initialize(col, placed, ground, edge, fc, girl=false):
+func initialize(col, placed, ground=[1,2,3,4], edge=[], fc=0, girl=false):
 	print("STARTING INV INIT")
 	num_col = col
 	num_row = 4 * col / 5
