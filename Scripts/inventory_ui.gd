@@ -32,7 +32,6 @@ signal inventory_finished(po)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#initialize(10,{})
-	print("STARTING INV READY")
 	pass # Replace with function body.
 
 
@@ -81,7 +80,6 @@ func _process(delta):
 		finishButton.mouse_filter = 2
 		tabBar.mouse_filter = 2
 		#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
-	#print(placed_objects)
 	setFinishButton()
 func getContainerLoc(mouse_pos):
 	var container_pos = mouse_pos - inventoryGrid.global_position
@@ -232,6 +230,10 @@ func initialize(col, placed, ground=[1,2,3,4], edge=[], fc=0, girl=false):
 	loadInventory()
 	loadGround()
 	
+	if girl:
+		#$infoPanel/infoVbox/groundItemsScroll.add_stylebox_override("normal", load("res://Assets/themes/girl_inventory_stylebox.tres"))
+		$infoPanel/infoVbox/groundItemsScroll.get_theme_stylebox("normal").bg_color = '#8e6d89'
+		print($infoPanel/infoVbox/groundItemsScroll.get_theme_stylebox("normal").bg_color)
 func setFinishButton():
 	match finish_criteria:
 		0: finishButton.disabled = false

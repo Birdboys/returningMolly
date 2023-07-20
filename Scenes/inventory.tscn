@@ -27,7 +27,7 @@ border_color = Color(1, 1, 1, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1cikh"]
 bg_color = Color(0.839216, 0.780392, 0.639216, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_epw64"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_madjq"]
 bg_color = Color(0.529412, 0.662745, 0.521569, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4hwh"]
@@ -311,7 +311,7 @@ theme_override_constants/separation = 0
 layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_epw64")
+theme_override_styles/panel = SubResource("StyleBoxFlat_madjq")
 horizontal_scroll_mode = 0
 
 [node name="groundItemsGrid" type="GridContainer" parent="infoPanel/infoVbox/groundItemsScroll"]
