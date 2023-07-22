@@ -1,0 +1,36 @@
+:: StoryTitle
+returnDieFood
+
+
+:: StoryData
+{
+  "ifid": "396FBAAA-19D6-4270-8FEF-29020ED04E2B",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "dieFood_0",
+  "tag-colors": {
+    "dad:think": "green",
+    "dad:talk": "green"
+  },
+  "zoom": 1
+}
+
+
+:: dieFood_0 [dad:think] {"position":"800,350","size":"100,100"}
+When I wake up its hot. I stand and start walking... [[dieFood_1]]
+
+
+:: dieFood_1 [dad:think] {"position":"800,475","size":"100,100"}
+...my legs give out. [[dieFood_2]] 
+
+
+:: dieFood_2 [dad:think] {"position":"800,600","size":"100,100"}
+My stomache aches in pain as I reach for my bag. It's no use, my arms shake but don't move. [[dieFood_3]] 
+
+
+:: dieFood_3 [dad:think] {"position":"800,725","size":"100,100"}
+A cold sensation washes over me as my vision blurs. I'm hungry, but more than that I'm tired. [[dieFood_4]]
+
+
+:: dieFood_4 [dad:talk] {"position":"800,850","size":"100,100"}
+I'm sorry, Molly.

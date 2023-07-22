@@ -1,0 +1,30 @@
+{
+  "tempLooper_0": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dev",
+    "TEXT_TEXT": "THIS IS A TEST LOOP",
+    "NEXT_TEXT_ID": [
+      "tempLooper_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "tempLooper_1": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dev",
+    "TEXT_TEXT": "HOW DID YOU GET HERE IF YOU AREN'T ME (THE GUY MAKING THIS)",
+    "NEXT_TEXT_ID": [
+      "tempLooper_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "tempLooper_2": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dev",
+    "TEXT_TEXT": "GOOD JOB. EXITING TEST NOW",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

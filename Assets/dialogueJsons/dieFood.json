@@ -1,0 +1,50 @@
+{
+  "dieFood_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "When I wake up its hot. I stand and start walking...",
+    "NEXT_TEXT_ID": [
+      "dieFood_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieFood_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...my legs give out.",
+    "NEXT_TEXT_ID": [
+      "dieFood_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieFood_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "My stomache aches in pain as I reach for my bag. It's no use, my arms shake but don't move.",
+    "NEXT_TEXT_ID": [
+      "dieFood_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieFood_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "A cold sensation washes over me as my vision blurs. I'm hungry, but more than that I'm tired.",
+    "NEXT_TEXT_ID": [
+      "dieFood_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieFood_4": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm sorry, Molly.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

@@ -79,7 +79,7 @@ func _process(delta):
 			child.mouse_filter = 2
 		finishButton.mouse_filter = 2
 		tabBar.mouse_filter = 2
-		#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
+		DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)
 	setFinishButton()
 func getContainerLoc(mouse_pos):
 	var container_pos = mouse_pos - inventoryGrid.global_position
@@ -133,6 +133,7 @@ func clearItemSlots():
 		slots[s].setState(0)
 		
 func putItemDown(the_slot):
+	clearItemSlots()
 	var main_slot_location = the_slot.location
 	placed_objects[main_slot_location] = held_item.item_id
 	held_item.item_location = main_slot_location
@@ -213,8 +214,9 @@ func createInventory(girl=false):
 	inventory_bounding_rect = Rect2(Vector2(0, 0), Vector2(num_col, num_row))
 
 func loadGround():
-	for item in ground_objects:
-		addItemToGround(item)
+	if ground_objects:
+		for item in ground_objects:
+			addItemToGround(item)
 
 func initialize(col, placed, ground=[1,2,3,4], edge=[], fc=0, girl=false):
 	print("STARTING INV INIT")

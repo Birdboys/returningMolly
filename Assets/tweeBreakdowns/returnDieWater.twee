@@ -1,0 +1,43 @@
+:: StoryTitle
+returnDieWater
+
+
+:: StoryData
+{
+  "ifid": "B292ED0B-A29E-4E87-8B7F-5FF7F53044D0",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "dieWater_0",
+  "tag-colors": {
+    "dad:think": "green",
+    "dad:talk": "green"
+  },
+  "zoom": 1
+}
+
+
+:: dieWater_0 [dad:think] {"position":"800,350","size":"100,100"}
+When I eventually wake up I'm unbelievably hot. My lips are dry. [[dieWater_1]]
+
+
+:: dieWater_1 [dad:think] {"position":"800,475","size":"100,100"}
+I sit up, the effort sending my head into a tailspin that slams me back to the ground. [[dieWater_2]]
+
+
+:: dieWater_2 [dad:talk] {"position":"800,600","size":"100,100"}
+...water....... [[dieWater_3]]
+
+
+
+:: dieWater_3 [dad:think] {"position":"800,725","size":"100,100"}
+I reach desparately for my bag. After several failed attempts I manage to loosely grab a string and pull it over. [[dieWater_4]]
+
+
+:: dieWater_4 [dad:think] {"position":"800,850","size":"100,100"}
+My hand searches desperately for a bottle with weight. Empty... empty... empty...
+I'm out of water. [[dieWater_5]]
+
+
+
+:: dieWater_5 [dad:think dad:talk] {"position":"800,975","size":"100,100"}
+I'm sorry... Molly. [[]]

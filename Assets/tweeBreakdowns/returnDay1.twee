@@ -9,11 +9,368 @@ returnDay1
   "format-version": "2.36.1",
   "start": "day1_0",
   "tag-colors": {
-    "dad:think": "green"
+    "dad:think": "green",
+    "guard:talk": "yellow",
+    "dad:choice": "blue",
+    "dad:talk": "green",
+    "timer:listen": "yellow",
+    "officer:listen": "yellow",
+    "guard:listen": "yellow"
   },
   "zoom": 1
 }
 
 
 :: day1_0 [dad:think] {"position":"800,350","size":"100,100"}
-I can't believe I left her at the gate... the thought clouds my head. I clear it repeatedly in an attempt to focus on the road. [[]]
+I can't believe I left her... [[day1_1]]
+
+
+:: day1_1 [dad:think] {"position":"800,475","size":"100,100"}
+The guards words echo in my head as I shift aimlessly in line. [[day1_2]]
+
+
+:: day1_10 [dad:think] {"position":"800,1600","size":"100,100"}
+From the red faces and weak knees of people returning from the front of the line, it seems that correct answers aren't being given. [[day1_11]]
+
+
+:: day1_11 [officer:listen] {"position":"800,1725","size":"100,100"}
+State your name. [[day1_12]]
+
+
+:: day1_12 [dad:think] {"position":"800,1850","size":"100,100"}
+I hadn't realized I was next up. The skinny blond boy in a crisp uniform looks far too young to be the one I'm talking to. [[day1_13a]] [[day1_13b]] [[day1_13c]]
+
+
+:: day1_13a [dad:choice] {"position":"675,1975","size":"100,100"}
+It's Winston Birch. [[day1_14a]]
+
+
+:: day1_13b [dad:choice] {"position":"800,1975","size":"100,100"}
+The name's Winston. [[day1_14a]]
+
+
+:: day1_13c [dad:choice] {"position":"925,1975","size":"100,100"}
+What's going on? When can I see my daughter? [[day1_14b]]
+
+
+:: day1_14a [officer:listen] {"position":"750,2100","size":"100,100"}
+Okay Will, what can I do for you. [[day1_15a]]
+
+
+:: day1_14b [officer:listen] {"position":"925,2100","size":"100,100"}
+Before I attempt to answer any question I am required to get your name. [[day1_15b]]
+
+
+
+:: day1_15a [dad:think] {"position":"675,2225","size":"100,100"}
+I would be upset at his disregard for my name but the officer looked... off. [[day1_16a]]
+
+
+:: day1_15b [dad:think] {"position":"875,2225","size":"100,100"}
+The officer somehow looks worse for wear than I do. His eyes dart nervously between me and everything else. [[day1_15c]]
+
+
+
+:: day1_15c [dad:talk] {"position":"1000,2225","size":"100,100"}
+Its Winston, Winston Birch. [[day1_16b]]
+
+
+:: day1_16a [dad:think] {"position":"725,2350","size":"100,100"}
+His eyes dart nervously between me, the other concerned people in line, and a stack of papers I can't read. [[day1_17]]
+
+
+
+:: day1_16b [officer:listen] {"position":"850,2350","size":"100,100"}
+Ok Will, what questions do you have? [[day1_17]]
+
+
+:: day1_17 [dad:think] {"position":"800,2500","size":"100,100"}
+The officer reaches for a clock on the booth and sets the timer to 60 seconds. My time is running out. [[day1_18a]] [[day1_18b]] [[day1_18c]]
+
+
+:: day1_18a [dad:choice] {"position":"675,2625","size":"100,100"}
+What is going on, why do we have to evacuate? [[day1_19a]]
+
+
+:: day1_18b [dad:choice] {"position":"800,2625","size":"100,100"}
+I put my daughter in evacuation site C last night. Is that safe? When can I go?[[day1_19b]]
+
+
+:: day1_18c [dad:choice] {"position":"925,2625","size":"100,100"}
+Are we the only town? Is the entire country in danger? [[day1_19c]]
+
+
+:: day1_19a [officer:listen] {"position":"675,2750","size":"100,100"}
+On behalf of the government, I can assure you that your safety is our utmost priority. [[day1_20a]]
+
+
+:: day1_19b [officer:listen] {"position":"800,2750","size":"100,100"}
+On behalf of the government, I can assure you that your safety is our utmost priority.  [[day1_20b]]
+
+
+:: day1_19c [officer:listen] {"position":"925,2750","size":"100,100"}
+On behalf of the government, I can assure you that your safety is our utmost priority. [[day1_20c]]
+
+
+:: day1_2 [guard:listen] {"position":"800,600","size":"100,100"}
+[i] ... we're only taking the kids, sir ... [/i][[day1_3]]
+
+
+:: day1_20a [officer:listen] {"position":"675,2875","size":"100,100"}
+That said, the recent evacuation is simply a precautionary measure for a gas leak found near the center of town. [[day1_21a]]
+
+
+:: day1_20b [officer:listen] {"position":"800,2875","size":"100,100"}
+That said, evacuation is happening in stages to prevent panic and ensure good use of resources. [[day1_21b]]
+
+
+:: day1_20c [officer:listen] {"position":"925,2875","size":"100,100"}
+That said, the issue is a localized gasleak to this town specifically. There is no danger to this town or any others in the surrounding area. [[day1_21c]]
+
+
+:: day1_21a [officer:listen] {"position":"675,3000","size":"100,100"}
+The leak is not an immediate danger, which is why evacuation is happening in stages to keep an orderly flow of people and resources. [[day1_22a]] 
+
+
+:: day1_21b [officer:listen] {"position":"800,3000","size":"100,100"}
+Evacuation zones A, B, C, and D have been set up at city exits to assist civilians in their exit. [[day1_22b]]
+
+
+:: day1_21c [dad:talk] {"position":"925,3000","size":"100,100"}
+If thats true then why can't we get communication from anywhere else? [[day1_22c]]
+
+
+:: day1_22a [dad:talk] {"position":"675,3125","size":"100,100"}
+If the leak isn't dangerous why evacuate in the first place? [[day1_23a]]
+
+
+
+:: day1_22b [dad:talk] {"position":"800,3125","size":"100,100"}
+Why do we need to go through evacuation zones? If the city exits were open we could all just leave. [[day1_23b]]
+
+
+:: day1_22c [dad:talk] {"position":"925,3125","size":"100,100"}
+Since last night the news has all been emergency broadcast and the phone lines aren't working. [[day1_23c]]
+
+
+:: day1_23a [officer:listen] {"position":"675,3250","size":"100,100"}
+This is just a precautionary measure. We expect everyone to return to town within a few months once the leak has been contained. [[day1_24a]]
+
+
+:: day1_23b [officer:listen] {"position":"800,3250","size":"100,100"}
+I assure you that would be far less optimal. This process assures we can report on the evacuation of each citizen. [[day1_24b]]
+
+
+:: day1_23c [officer:listen] {"position":"925,3250","size":"100,100"}
+There was an incident with the city row crew who first attempted to fix the gas leak that resulted in cut phone lines. [[day1_24c]]
+
+
+
+:: day1_24a [dad:talk] {"position":"675,3375","size":"100,100"}
+What part of [i]precaution[/i] involves separating families? If it's just a gas leak why do kids need to be evacuated first? [[day1_25a]]
+
+
+:: day1_24b [dad:talk] {"position":"800,3375","size":"100,100"}
+Why would you have to do that? [[day1_25b]]
+
+
+:: day1_24c [officer:listen] {"position":"925,3375","size":"100,100"}
+When the leak has been fixed, the phone lines will become our engineers' top priority. [[day1_25c]]
+
+
+:: day1_25a [officer:listen] {"position":"675,3500","size":"100,100"}
+I can assure you that this is all part of standard procedure for unkno- I mean, gas leak phenomena. [[day1_27]]
+
+
+:: day1_25b [officer:listen] {"position":"800,3500","size":"100,100"}
+To ensure everyone that will sur- I mean, to get everyone who needs to be evacuated out of the town. [[day1_27]]
+
+
+:: day1_25c [dad:think] {"position":"925,3500","size":"100,100"}
+Are we just supposed to sit here and wait while you tell us what to do? [[day1_26c]]
+
+
+:: day1_26c [officer:listen] {"position":"1050,3500","size":"100,100"}
+Precisely. It's the same for every other- ah, every other individual in this town. [[day1_27]]
+
+
+:: day1_27 [officer:listen] {"position":"800,3625","size":"100,100"}
+Listen Wilson, there's nothing to worry about. My report says the newest round of evacuation starts in five days. [[day1_28]]
+
+
+:: day1_28 [dad:talk] {"position":"800,3750","size":"100,100"}
+Why five days? [[day1_29]]
+
+
+
+:: day1_29 [officer:listen] {"position":"800,3875","size":"100,100"}
+It will take five days for us to relocate everyone from evacuation zones A, B, C, and D to a secondary, secure location. [[day1_30]]
+
+
+:: day1_3 [dad:think] {"position":"800,725","size":"100,100"}
+I knew what to expect. They kept saying on the news there were only going to be so many evacuations in the first wave... [[day1_4]]
+
+
+
+:: day1_30 [dad:talk] {"position":"800,4000","size":"100,100"}
+What? Where are you moving them to?? [[day1_31]]
+
+
+:: day1_31 [officer:listen] {"position":"800,4125","size":"100,100"}
+I am not at liberty to say, but I can assure you their safety is our top priority. [[day1_32a]] [[day1_32b]] [[day1_32c]]
+
+
+:: day1_32a [dad:choice] {"position":"675,4250","size":"100,100"}
+That's not good enough! [[day1_33a]]
+
+
+:: day1_32b [dad:choice] {"position":"800,4250","size":"100,100"}
+Where are you taking my daughter!? [[day1_33b]]
+
+
+:: day1_32c [dad:choice] {"position":"925,4250","size":"100,100"}
+WHY NOT? [[day1_33]]
+
+
+:: day1_33 [officer:listen] {"position":"925,4375","size":"100,100"}
+If I... I just can't tell you. [[day1_34]]
+
+
+:: day1_33a [officer:listen] {"position":"675,4375","size":"100,100"}
+That's all I have to provide sir. [[day1_34]] 
+
+
+:: day1_33b [officer:listen] {"position":"800,4375","size":"100,100"}
+I'm not at liberty to say. [[day1_34]]
+
+
+:: day1_34 [dad:think] {"position":"800,4500","size":"100,100"}
+If it weren't for the pistol at the mans hip his head would be in my hands. [[day1_35]]
+
+
+:: day1_35 [dad:think] {"position":"800,4625","size":"100,100"}
+I have too many questions, too many things I need to scream at the officer. From the look on his face, I'm not the first today. [[day1_36]]
+
+
+:: day1_36 [timer:listen] {"position":"800,4750","size":"100,100"}
+brrrrring...... brrrrring...... brrrrring.................................................. [[day1_37]]
+
+
+:: day1_37 [dad:think] {"position":"800,4875","size":"100,100"}
+My time is up. [[day1_38]] 
+
+
+:: day1_38 [officer:listen] {"position":"800,5000","size":"100,100"}
+Your time is up. [[day1_39]]
+
+
+
+:: day1_39 [dad:think] {"position":"800,5125","size":"100,100"}
+He seems relieved as he says it. Can I really just leave now? Nothing makes sense, I can't let them take Molly without me. [[day1_40a]] [[day1_40b]]
+
+
+:: day1_4 [dad:think] {"position":"800,850","size":"100,100"}
+... I just hoped I could change it. [[day1_5]]
+
+
+:: day1_40a [dad:choice] {"position":"725,5250","size":"100,100"}
+You need to tell me more! [[day1_41a]]
+
+
+:: day1_40b [dad:choice] {"position":"875,5250","size":"100,100"}
+Fine... [[day1_42]]
+
+
+:: day1_41a [officer:listen] {"position":"725,5375","size":"100,100"}
+Sir. (rests hand on gun) [[day1_41b]]
+
+
+:: day1_41b [officer:listen] {"position":"600,5375","size":"100,100"}
+Your [b]time[/b], is [b]up[/b]. [[day1_41c]]
+
+
+:: day1_41c [dad:think] {"position":"600,5500","size":"100,100"}
+I lift my hands and back up. [[day1_42]]
+
+
+:: day1_42 [dad:think] {"position":"800,5500","size":"100,100"}
+He nods as I walk away. For a moment before he collects himself to face the next angry person in line, he looks... genuinely sad... [[day1_43]]
+
+
+:: day1_43 [dad:think] {"position":"800,5625","size":"100,100"}
+... or maybe genuinely guilty. [[day1_44]]
+
+
+:: day1_44 [dad:think] {"position":"800,5750","size":"100,100"}
+I don't have time to think about that though. I need to get home quick. [[day1_45]]
+
+
+
+:: day1_45 [dad:think] {"position":"800,5875","size":"100,100"}
+Five days isn't much time, especially if I have to go on foot, but I can make it. I have to. [[day1_46]]
+
+
+:: day1_46 [dad:think] {"position":"800,6000","size":"100,100"}
+Im going back to evacuation site C. I'm returning to Molly. [[day1_47]]
+
+
+:: day1_47 [dad:think] {"position":"800,6125","size":"100,100"}
+First, I need to pack. [[day1_48]]
+
+
+:: day1_48 [dad:think] {"position":"800,6250","size":"100,100"}
+The walk home was fast. Uniformed men wave me along as I pass. What are they looking for? Who are they protecting? [[day1_49]]
+
+
+
+:: day1_49 [dad:think] {"position":"800,6375","size":"100,100"}
+It's hard to believe this much of a large-scale response could be caused by a small, non-threatening gas leak... [[day1_50]]
+
+
+:: day1_5 [dad:think] {"position":"800,975","size":"100,100"}
+Clearly I'm not the only one. The questioning booth was too far away to see by the time I got in line. [[day1_6]]
+
+
+:: day1_50 [dad:think] {"position":"800,6500","size":"100,100"}
+For now I need to focus on supplies. Based on this [b]map[/b], it's a five day walk from my house to Molly's location. [[day1_51]]
+
+
+:: day1_51 [dad:think] {"position":"800,6625","size":"100,100"}
+The first three days will be walking through the city. Shouldn't be that bad, I guess I just have to avoid any gas. [[day1_52]]
+
+
+:: day1_52 [dad:think] {"position":"800,6750","size":"100,100"}
+The last two days will be involve going through the woods towards the northmost entrance to town. [[day1_53]]
+
+
+:: day1_53 [dad:think] {"position":"800,6875","size":"100,100"}
+I'll need food, water, my map, and maybe a weapon. I can use the walkie talkie to talk to Molly... hopefully.[[day1_54]]
+
+
+:: day1_54 [dad:think] {"position":"800,7000","size":"100,100"}
+Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place. [[day1_55]]
+
+
+:: day1_55 [dad:talk] {"position":"800,7125","size":"100,100"}
+I'll get you back to her too stuffy. [[]]
+
+
+:: day1_6 [dad:think] {"position":"800,1100","size":"100,100"}
+It all happened so fast. The news has been cryptic and the government has been silent. [[day1_7b]]
+
+
+:: day1_7 [dad:think] {"position":"800,1225","size":"100,100"}
+No one knows what or where the problem is. I've heard murmurs that its not just our city, but communication in and out of town is sparse. [[day1_8]]
+
+
+
+:: day1_7b [dad:think] {"position":"950,1225","size":"100,100"}
+Roads throughout town are being closed and blocked off. Soldiers in uniform seem to be posted at every intersection. [[day1_7]]
+
+
+:: day1_8 [dad:think] {"position":"800,1350","size":"100,100"}
+All we know is we need to evacuate. [[day1_9]]
+
+
+:: day1_9 [dad:think] {"position":"800,1475","size":"100,100"}
+The booth was announced late last night on the news, our first chance to get some real information. [[day1_10]]

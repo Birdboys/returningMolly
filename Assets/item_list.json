@@ -57,9 +57,23 @@
   },
   "8": {
     "item_id": 8,
-    "item_name": "walkie",
+    "item_name": "walkie_talkie",
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
     "item_description": "A walkie talkie"
+  },
+  "9": {
+    "item_id": 9,
+    "item_name": "kitchen_knife",
+    "item_graph": "0,0/1,0",
+    "item_size": "2,1",
+    "item_description": "A meat cleaver"
+  },
+  "10": {
+    "item_id": 10,
+    "item_name": "map",
+    "item_graph": "0,0/1,0/0,1/1,1",
+    "item_size": "2,2",
+    "item_description": "A map of the city and surrounding area."
   }
 }

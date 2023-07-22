@@ -2,7 +2,6 @@ extends Node
 @onready var item_data
 @onready var item_json_path = "res://Assets/item_list.json"
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	loadItems()

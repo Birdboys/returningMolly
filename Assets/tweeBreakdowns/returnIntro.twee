@@ -11,7 +11,8 @@ returnIntro
   "tag-colors": {
     "girl:talk": "purple",
     "dad:listen": "green",
-    "girl:choice": "red"
+    "girl:choice": "red",
+    "girl:thing": "purple"
   },
   "zoom": 1
 }
@@ -33,7 +34,47 @@ How could I forget? Of course you can bring them, just make sure they fit. Now, 
 
 
 :: intro_11 [girl:talk] {"position":"800,1750","size":"100,100"}
-Okay. [[]]
+Okay. [[intro_12]]
+
+
+:: intro_12 [dad:listen] {"position":"800,1875","size":"100,100"}
+Remember, [i][b]left click[/b][/i] on something to [i][b]grab[/b][/i] it. Then, you can [i][b]click again[/b][/i] to [i][b]place it in your bag[/b][/i] or [i][b]put it back on the floor[/b][/i]. [[intro_13]]
+
+
+:: intro_13 [dad:listen] {"position":"800,2000","size":"100,100"}
+You can [i][b]right click[/b][/i] on an [i][b]object in your bag[/b][/i] or [i][b]on the floor[/b][/i] to open it's [i][b]description[/b][/i]. The [i][b]description[/b][/i] tells you [i][b]what an object does[/b][/i]. [[intro_14]]
+
+
+:: intro_14 [dad:listen] {"position":"800,2125","size":"100,100"}
+If you're curious about an [i][b]object[/b][/i], read it's [i][b]description[/b][/i]. When you're done packing, hit the [i][b]finish button[/b][/i]. [[intro_15]]
+
+
+:: intro_15 [dad:listen] {"position":"800,2250","size":"100,100"}
+Did that make sense? [[intro_16a]] [[intro_16b]]
+
+
+:: intro_16a [girl:choice] {"position":"737.5,2375","size":"100,100"}
+Yes [[intro_17a]]
+
+
+:: intro_16b [girl:choice] {"position":"862.5,2375","size":"100,100"}
+No [[intro_17b]]
+
+
+:: intro_17a [dad:listen] {"position":"737.5,2500","size":"100,100"}
+Awesome, get packing bug. [[intro_18]]
+
+
+:: intro_17b [dad:listen] {"position":"850,2500","size":"100,100"}
+Ok, we'll go through it again. Packing your bag is an important life skill after all. [[intro_12]]
+
+
+:: intro_18 [girl:talk] {"position":"737.5,2625","size":"100,100"}
+Okay. [[intro_19]]
+
+
+:: intro_19 [girl:thing] {"position":"725,2750","size":"100,100"}
+He gets so weird when he's explaining things... [[]]
 
 
 :: intro_2 [dad:listen] {"position":"800,600","size":"100,100"}

@@ -1,0 +1,24 @@
+:: StoryTitle
+returnTempLooper
+
+
+:: StoryData
+{
+  "ifid": "90D4A1D0-D925-4E2E-8FBF-FA8161012D45",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "tempLooper_0",
+  "zoom": 1
+}
+
+
+:: tempLooper_0 [dev:talk] {"position":"800,350","size":"100,100"}
+THIS IS A TEST LOOP [[tempLooper_1]]
+
+
+:: tempLooper_1 [dev:talk] {"position":"800,475","size":"100,100"}
+HOW DID YOU GET HERE IF YOU AREN'T ME (THE GUY MAKING THIS) [[tempLooper_2]]
+
+
+:: tempLooper_2 [dev:talk] {"position":"800,600","size":"100,100"}
+GOOD JOB. EXITING TEST NOW [[]]

@@ -1,0 +1,60 @@
+{
+  "dieWater_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "When I eventually wake up I'm unbelievably hot. My lips are dry.",
+    "NEXT_TEXT_ID": [
+      "dieWater_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I sit up, the effort sending my head into a tailspin that slams me back to the ground.",
+    "NEXT_TEXT_ID": [
+      "dieWater_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_2": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...water.......",
+    "NEXT_TEXT_ID": [
+      "dieWater_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I reach desparately for my bag. After several failed attempts I manage to loosely grab a string and pull it over.",
+    "NEXT_TEXT_ID": [
+      "dieWater_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "My hand searches desperately for a bottle with weight. Empty... empty... empty...\nI'm out of water.",
+    "NEXT_TEXT_ID": [
+      "dieWater_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_5": {
+    "TEXT_TYPE": "think dad:talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm sorry... Molly.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

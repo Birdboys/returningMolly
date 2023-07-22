@@ -1,8 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://bubugpoepm01g"]
+[gd_scene load_steps=21 format=3 uid="uid://bubugpoepm01g"]
 
 [ext_resource type="Script" path="res://Scripts/inventory_ui.gd" id="1_sx561"]
 [ext_resource type="Texture2D" uid="uid://dv4l0x14eroij" path="res://Assets/temp_tabs3.png" id="2_4u8g0"]
 [ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="2_t6vya"]
+[ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="3_6tber"]
 [ext_resource type="Texture2D" uid="uid://bet5506mokgid" path="res://Assets/temp_tabs2.png" id="3_f5pj3"]
 [ext_resource type="Texture2D" uid="uid://dx0d3tvc41avf" path="res://Assets/temp_tabs1.png" id="4_jxbvi"]
 [ext_resource type="Script" path="res://Scripts/inventoryTabs.gd" id="5_rwuap"]
@@ -361,6 +362,43 @@ layout_mode = 2
 size_flags_vertical = 3
 mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_1sq5x")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="infoPanel/infoVbox/mapPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dayText" type="Label" parent="infoPanel/infoVbox/mapPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_t6vya")
+theme_override_font_sizes/font_size = 48
+text = "Day 0"
+
+[node name="helpTextMargin" type="MarginContainer" parent="infoPanel/infoVbox/mapPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="helpText" type="RichTextLabel" parent="infoPanel/infoVbox/mapPanel/VBoxContainer/helpTextMargin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("3_6tber")
+theme_override_fonts/bold_font = ExtResource("2_t6vya")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[b]Goal:[/b] Pack items to ensure your survival on the journey ahead.
+[b]Food[/b]: You need food to survive. If you go to sleep without enough food (1) you won't wake up.
+[b]Water[/b]: You need water to survive. If you go to sleep without enough water (2) you won't wake up.
+[b]Weapon[/b]: It couldn't hurt to have a weapon. You never know what scenario might occur."
 
 [node name="TabBar" type="TabBar" parent="infoPanel/infoVbox"]
 layout_mode = 2

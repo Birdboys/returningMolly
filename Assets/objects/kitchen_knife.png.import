@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuoufmqiju7wq"
-path="res://.godot/imported/walkie.png-fee307943f4fcc939eed1334a2d54c74.ctex"
+uid="uid://d0b16mfgllea1"
+path="res://.godot/imported/kitchen_knife.png-1cb64502d913871df6b307d04353bef6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/objects/walkie.png"
-dest_files=["res://.godot/imported/walkie.png-fee307943f4fcc939eed1334a2d54c74.ctex"]
+source_file="res://Assets/objects/kitchen_knife.png"
+dest_files=["res://.godot/imported/kitchen_knife.png-1cb64502d913871df6b307d04353bef6.ctex"]
 
 [params]
 

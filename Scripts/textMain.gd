@@ -9,7 +9,7 @@ var textId
 @onready var visible_ration = 0.0
 @onready var finished_typing = false
 @onready var typing_increase 
-
+@onready var speaker_dict = {'dad':' Dad ', 'girl': ' Molly ', 'news': ' News ', 'father':' Harold '}
 #TEXT_ID	TEXT_TEXT	TEXT_TYPE	TEXT_SPEAKER	NEXT_TEXT_ID	HAS_CHOICE	IS_END
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,7 +27,6 @@ func initialize(textID):
 	textData = DialogueManager.dialogue_data[textID]
 	textId = textID
 	text.parse_bbcode(textData['TEXT_TEXT'])
-	speaker.parse_bbcode(" " + DialogueManager.to_title(textData['TEXT_SPEAKER']))
 	typing_increase = 1.0/float(len(text.get_parsed_text()))
 	typeTimer = Timer.new()
 	add_child(typeTimer)
@@ -37,8 +36,8 @@ func initialize(textID):
 	startTyping()
 	
 	match textData['TEXT_TYPE']:
-		'listen': setListener(textData['TEXT_SPEAKER'])
-		'talk': setSpeaker(textData['TEXT_SPEAKER'])
+		'listen': setListener(getSpeaker(textData['TEXT_SPEAKER']))
+		'talk': setSpeaker(getSpeaker(textData['TEXT_SPEAKER']))
 		'think': setThink()
 		
 	match textData['TEXT_SPEAKER']:
@@ -53,13 +52,13 @@ func setSpeaker(t):
 	speaker.clear()
 	speaker.visible = true
 	listener.visible = false
-	speaker.parse_bbcode(" " + DialogueManager.to_title(t) + " ")
+	speaker.parse_bbcode(t)
 	
 func setListener(t):
 	listener.clear()
 	listener.visible = true
 	speaker.visible = false
-	listener.parse_bbcode(" " + DialogueManager.to_title(t) + " ")
+	listener.parse_bbcode(t)
 
 func setThink():
 	listener.visible = false
@@ -83,3 +82,9 @@ func finishTyping():
 	typeTimer.queue_free()
 	text.visible_ratio = 1
 	finished_typing = true
+
+func getSpeaker(s):
+	if s in speaker_dict:
+		return speaker_dict[s]
+	else:
+		return " %s " % DialogueManager.to_title(s)
