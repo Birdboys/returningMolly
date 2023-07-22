@@ -396,8 +396,8 @@ theme_override_font_sizes/normal_font_size = 24
 theme_override_font_sizes/bold_font_size = 28
 bbcode_enabled = true
 text = "[b]Goal:[/b] Pack items to ensure your survival on the journey ahead.
-[b]Food[/b]: You need food to survive. If you go to sleep without enough food (1) you won't wake up.
-[b]Water[/b]: You need water to survive. If you go to sleep without enough water (2) you won't wake up.
+[b]Food[/b]: You need food to survive. If you go to don't have enough food in your pack (1) you won't survive.
+[b]Water[/b]: You need water to survive. If you go to don't have enough water in your pack (2) you won't survive.
 [b]Weapon[/b]: It couldn't hurt to have a weapon. You never know what scenario might occur."
 
 [node name="TabBar" type="TabBar" parent="infoPanel/infoVbox"]

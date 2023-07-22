@@ -45,7 +45,6 @@ func _process(delta):
 				held_item = hovered_item
 				if held_item.item_location != null:
 					placed_objects.erase(held_item.item_location)
-					print("item found in inventory at", hovered_item.item_location)
 					for coord in held_item.item_coords:
 						var slot_to_update = held_item.item_location + coord
 						slots["%s:%s"%[slot_to_update.x, slot_to_update.y]].removeItem()
@@ -192,8 +191,7 @@ func loadInventory():
 		held_item = new_item
 		new_item.pickUp()
 		putItemDown(the_slot)
-		print("ADDING ITEM %s TO SLOT %s WITH LOCATION %s" % [new_item.item_id, the_slot, the_slot.global_position])
-
+		
 func createInventory(girl=false):
 	for row in range(num_row):
 		for col in range(num_col):
@@ -201,7 +199,6 @@ func createInventory(girl=false):
 			inventoryGrid.add_child(new_slot)
 			if girl:
 				new_slot.is_girl_inv = true
-				print(new_slot.is_girl_inv)
 			new_slot.slotEntered.connect(slotEntered)
 			new_slot.location = Vector2(col, row)
 			slots['%s:%s' %[col, row]] = new_slot
