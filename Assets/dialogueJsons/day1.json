@@ -769,7 +769,7 @@
   "day1_51": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "The first three days will be walking through the city. Shouldn't be that bad, I guess I just have to avoid any gas.",
+    "TEXT_TEXT": "The first two days will be walking through the city. Shouldn't be that bad, I guess I just have to avoid any gas.",
     "NEXT_TEXT_ID": [
       "day1_52"
     ],
@@ -779,7 +779,7 @@
   "day1_52": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "The last two days will be involve going through the woods towards the northmost entrance to town.",
+    "TEXT_TEXT": "The last three days will involve going through the woods towards the northmost entrance to town.",
     "NEXT_TEXT_ID": [
       "day1_53"
     ],
@@ -799,7 +799,7 @@
   "day1_54": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place.",
+    "TEXT_TEXT": "Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place...",
     "NEXT_TEXT_ID": [
       "day1_55"
     ],
@@ -807,6 +807,16 @@
     "IS_END": false
   },
   "day1_55": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I just wanted to keep a piece of her.",
+    "NEXT_TEXT_ID": [
+      "day1_56"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1_56": {
     "TEXT_TYPE": "talk",
     "TEXT_SPEAKER": "dad",
     "TEXT_TEXT": "I'll get you back to her too stuffy.",

@@ -1,0 +1,253 @@
+:: StoryTitle
+returnDay2
+
+
+:: StoryData
+{
+  "ifid": "C692002D-D949-43AF-B5C6-98134B1711B3",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day2_0",
+  "tag-colors": {
+    "dad:talk": "green",
+    "dad:think": "green",
+    "man:listen": "yellow",
+    "dad:choice": "blue",
+    "storekeeper:listen": "yellow",
+    "shopkeeper:choice": "yellow",
+    "storekeeper:choice": "yellow"
+  },
+  "zoom": 1
+}
+
+
+:: day2_0 [dad:think] {"position":"800,350","size":"100,100"}
+When I wake up my body aches. [[day2_1]]
+
+
+:: day2_1 [dad:think] {"position":"800,475","size":"100,100"}
+It could be from the walk, or from sleeping on the cement with only a sleeping bag...[[day2_2]]
+
+
+:: day2_10 [dad:think] {"position":"800,1600","size":"100,100"}
+Easy peasy... [[day2_11]]
+
+
+:: day2_11 [dad:think] {"position":"800,1725","size":"100,100"}
+... ... ... [[day2_12]]
+
+
+:: day2_12 [dad:think] {"position":"800,1850","size":"100,100"}
+... ... ... [[day2_13]]
+
+
+:: day2_13 [dad:think] {"position":"800,1975","size":"100,100"}
+After a few hours of walking I notice a gas station. [[day2_14]]
+
+
+:: day2_14 [dad:think] {"position":"800,2100","size":"100,100"}
+It's in a state of disrepair. [[day2_15]] 
+
+
+:: day2_15 [dad:think] {"position":"800,2225","size":"100,100"}
+I don't normally go to this part of town, but even I can admit that it's not usually this run down... [[day2_16]] 
+
+
+:: day2_16 [dad:think] {"position":"800,2350","size":"100,100"}
+... and in just two days. [[day2_17]] 
+
+
+:: day2_17 [dad:think] {"position":"800,2475","size":"100,100"}
+I'm still uncertain what the guards are here to do, but clearly this place wasn't worth protecting. [[day2_18]]
+
+
+:: day2_18 [man:listen] {"position":"800,2600","size":"100,100"}
+HEY! [[day2_19]]
+
+
+:: day2_19 [dad:think] {"position":"800,2725","size":"100,100"}
+I turn to face the sound. A squat man with a baseball bat is peering at me from behind the store windows. [[day2_20]]
+
+
+:: day2_2 [dad:think] {"position":"800,600","size":"100,100"}
+... either way I have to power through. [[day2_3]]
+
+
+:: day2_20 [man:listen] {"position":"800,2850","size":"100,100"}
+GET OUT OF HERE! THE STORE IS CLOSED! NO LOOTING! [[day2_21]]
+
+
+:: day2_21 [dad:think] {"position":"800,2975","size":"100,100"}
+He looks terrified. I don't want to provoke him. At the same time, it couldn't hurt to try and restock. [[day2_22a]] [[day2_22b]] [[day2_22c]]
+
+
+:: day2_22a [dad:choice] {"position":"675,3100","size":"100,100"}
+*turn and walk away* 
+
+
+:: day2_22b [dad:choice] {"position":"800,3100","size":"100,100"}
+I mean no harm, but I'd really like to restock. Maybe we can trade? [[day2_23b]]
+
+
+:: day2_22c [dad:choice] {"position":"925,3100","size":"100,100"}
+Looters? People have been looting? [[day2_23c]]
+
+
+:: day2_23b [storekeeper:listen] {"position":"800,3225","size":"100,100"}
+Ha, like I'm supposed to believe that. [[day2_24b]]
+
+
+:: day2_23c [storekeeper:listen] {"position":"925,3225","size":"100,100"}
+Are you kidding? It's been mayham out here. [[day2_24c]]
+
+
+:: day2_24b [storekeeper:listen] {"position":"800,3350","size":"100,100"}
+It's every man for himself out here now... [[day2_25c]]
+
+
+:: day2_24c [storekeeper:listen] {"position":"925,3350","size":"100,100"}
+Last night I had to... man people are going crazy. [[day2_25c]]
+
+
+:: day2_25c [storekeeper:listen] {"position":"800,3475","size":"100,100"}
+So you better BACK OFF. [[day2_26b]] [[day2_26c]]
+
+
+:: day2_26b [dad:choice] {"position":"725,3600","size":"100,100"}
+*give up and continue walking* [[day2_27a]]
+
+
+:: day2_26c [dad:choice] {"position":"850,3600","size":"100,100"}
+Please, I'm just trying to get to my daughter. [[day2_27c]]
+
+
+:: day2_27a [dad:think] {"position":"725,3725","size":"100,100"}
+He's too frantic. I can't take the chance interacting with him. I'll have to make my current supplies work for now. [[day2_28a]]
+
+
+:: day2_27c [dad:think] {"position":"850,3725","size":"100,100"}
+He seems to soften a little, but quickly his guard and bat are back up... [[day2_28c]]
+
+
+:: day2_28a [dad:think] {"position":"725,3850","size":"100,100"}
+I turn my back to the man and continue down the road. [[]]
+
+
+:: day2_28c [storekeeper:listen] {"position":"850,3850","size":"100,100"}
+Ca-.... can you prove it? [[day2_29c]]
+
+
+:: day2_29c [dad:think] {"position":"850,3975","size":"100,100"}
+Can I prove it? If she's smart her walkie is off so I won't be able to call her. Maybe something in my bag... [[]]
+
+
+:: day2_3 [dad:think] {"position":"800,725","size":"100,100"}
+I figured I would meet opposition from the guards for sleeping outside, but no one has approached me so far. [[day2_4]] 
+
+
+:: day2_30a [dad:think] {"position":"725,4125","size":"100,100"}
+... STUFFY. Thank god for you. [[day2_31a]] 
+
+
+:: day2_30b [dad:think] {"position":"850,4125","size":"100,100"}
+... nothing. Damn. [[day2_31b]]
+
+
+:: day2_31a [dad:talk] {"position":"725,4250","size":"100,100"}
+This is stuffy, Molly doesn't go anywhere without it. I'm bringing them back to her now. [[day2_32a]]
+
+
+:: day2_31b [storekeeper:listen] {"position":"850,4250","size":"100,100"}
+Well?!  [[day2_32b]]
+
+
+:: day2_32a [dad:think] {"position":"725,4375","size":"100,100"}
+This time I can see tears welling in his eyes. [[day2_33a]]
+
+
+:: day2_32b [dad:think] {"position":"975,4375","size":"100,100"}
+The bat meets the doorframe of the shop with a thud. A warning swing. [[day2_27a]]
+
+
+:: day2_33a [storekeeper:listen] {"position":"725,4500","size":"100,100"}
+My daughter is at an extraction point too... [[day2_34a]]
+
+
+:: day2_34a [storekeeper:listen] {"position":"725,4625","size":"100,100"}
+... I didn't know what to do I mean they-... the news had it all going crazy and I just ... [[day2_35a]]
+
+
+:: day2_35a [storekeeper:listen] {"position":"725,4750","size":"100,100"}
+... no one's answering any questions and I KNOW a gas leak can't... [[day2_36a]]
+
+
+:: day2_36a [dad:talk] {"position":"725,4875","size":"100,100"}
+We did what we had to do. [[day2_37a]]
+
+
+:: day2_37a [dad:think] {"position":"725,5000","size":"100,100"}
+I don't know if I believe it myself, but I have to calm him down... [[day2_38a]]
+
+
+:: day2_38a [storekeeper:listen] {"position":"725,5125","size":"100,100"}
+You're right, you're right. Ok. I'll help you, but I have a kid to think about too.[[day2_39a]] 
+
+
+:: day2_39a [storekeeper:listen] {"position":"725,5250","size":"100,100"}
+I'll give you two cans of food and two bottles of water for your trouble. [[day2_40]]
+
+
+:: day2_4 [dad:think] {"position":"800,850","size":"100,100"}
+Looking back on the previous days events, I really haven't seen much of anyone recently. [[day2_5]]
+
+
+:: day2_40 [storekeeper:listen] {"position":"725,5375","size":"100,100"}
+If you throw in a walkie tallkie, I'll give you three extra cans.  [[day2_41]]
+
+
+:: day2_41 [storekeeper:listen] {"position":"725,5500","size":"100,100"}
+For a weapon of my choice, I'll give you three extra bottles. So, what'll it be?[[day2_42a]] [[day2_42b]] [[day2_42c]]
+
+
+:: day2_42a [storekeeper:choice] {"position":"600,5625","size":"100,100"}
+Free food and water. [[day2_43a]]
+
+
+:: day2_42b [storekeeper:choice] {"position":"725,5625","size":"100,100"}
+Trade walkie talkie for extra food. 
+
+
+:: day2_42c [storekeeper:choice] {"position":"850,5625","size":"100,100"}
+Trade random weapon for extra water.
+
+
+:: day2_43a [storekeeper:listen] {"position":"600,5750","size":"100,100"}
+Fair enough, here you go pal. Good luck. I hope you find her. [[day2_44a]]
+
+
+:: day2_44a [dad:talk] {"position":"600,5875","size":"100,100"}
+Thanks, me too. [[day2_45a]]
+
+
+:: day2_45a [dad:talk] {"position":"600,6000","size":"100,100"}
+I guess not everyone has gone crazy. [[]]
+
+
+:: day2_5 [dad:think] {"position":"800,975","size":"100,100"}
+Every once in a while I'll notice a stranger, but the farther I get from the city center the fewer civilians and guards I see. [[day2_6]]
+
+
+:: day2_6 [dad:think] {"position":"800,1100","size":"100,100"}
+I guess most people are waiting for the next wave of evacuation. [[day2_7]]
+
+
+:: day2_7 [dad:think] {"position":"800,1225","size":"100,100"}
+Less people means more space for me. Time to get a move on. [[day2_8]]
+
+
+:: day2_8 [dad:think] {"position":"800,1350","size":"100,100"}
+Today's route should be easy. Based on the map it's pretty much a straight shot out of the city. [[day2_9]] 
+
+
+:: day2_9 [dad:think] {"position":"800,1475","size":"100,100"}
+Then I'll follow the wooded dirt road north toward the evacuation zone. [[day2_10]] 

@@ -65,8 +65,8 @@
   "9": {
     "item_id": 9,
     "item_name": "kitchen_knife",
-    "item_graph": "0,0/1,0",
-    "item_size": "2,1",
+    "item_graph": "0,0/1,0/1,1",
+    "item_size": "2,2",
     "item_description": "A meat cleaver"
   },
   "10": {
@@ -75,5 +75,19 @@
     "item_graph": "0,0/1,0/0,1/1,1",
     "item_size": "2,2",
     "item_description": "A map of the city and surrounding area."
+  },
+  "11": {
+    "item_id": 11,
+    "item_name": "water_jug",
+    "item_graph": "0,0/1,0/0,1/1,1",
+    "item_size": "2,2",
+    "item_description": "A jug of water"
+  },
+  "12": {
+    "item_id": 12,
+    "item_name": "sleeping_bag",
+    "item_graph": "0,0/1,0/0,1/1,1/0,2/1,2",
+    "item_size": "2,3",
+    "item_description": "A sleeping bag"
   }
 }

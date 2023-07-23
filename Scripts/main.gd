@@ -6,18 +6,20 @@ var currentInventory = null
 var currentDialogue = null
 var nextDialogue = null
 var currentDay
-var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "day0"],"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], "day1":[true,true,"day1Night"], "tempLooper":[false, true,"tempLooper"]}
+var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "day0"],"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], "day1":[true,true,"day1Night"], 
+				"day1Night": [false, false, "day2"], "day2":[true, true,"day2Night"], "tempLooper":[false, true,"tempLooper"]}
 @onready var objects_in_inventory = {}
 @onready var water_objects = {1:5, 6:1, 11:2}
 @onready var food_objects = {3:5, 5:1}
+@onready var weapon_objects = []
 @onready var is_alive_tomorrow = 0
 # Called when the node enters the scene tree for the first time.
 @onready var dad_edges = [Vector2(0, 0), Vector2(1, 0), Vector2(2, 0), Vector2(3, 0), Vector2(4, 0), Vector2(5, 0), Vector2(6, 0), Vector2(7, 0), Vector2(8, 0), Vector2(9, 0), Vector2(9, 1), Vector2(9, 2), Vector2(9, 3), Vector2(9, 4), Vector2(9, 5), Vector2(9, 6), Vector2(9, 7), Vector2(8, 7), Vector2(7, 7), Vector2(6, 7), Vector2(5, 7), Vector2(4, 7), Vector2(3, 7), Vector2(2, 7), Vector2(1, 7), Vector2(0, 7), Vector2(0, 6), Vector2(0, 5), Vector2(0, 4), Vector2(0, 3), Vector2(0, 2), Vector2(0, 1), Vector2(1, 1), Vector2(8, 1), Vector2(8, 6), Vector2(1, 6)]
 @onready var girl_edges = [Vector2(0, 0), Vector2(1, 0), Vector2(2, 0), Vector2(3, 0), Vector2(4, 0), Vector2(5, 0), Vector2(6, 0), Vector2(7, 0), Vector2(8, 0), Vector2(9, 0), Vector2(9, 1), Vector2(9, 2), Vector2(9, 3), Vector2(9, 4), Vector2(9, 5), Vector2(9, 6), Vector2(9, 7), Vector2(8, 7), Vector2(7, 7), Vector2(6, 7), Vector2(5, 7), Vector2(4, 7), Vector2(3, 7), Vector2(2, 7), Vector2(1, 7), Vector2(0, 7), Vector2(0, 6), Vector2(0, 5), Vector2(0, 4), Vector2(0, 3), Vector2(0, 2), Vector2(0, 1), Vector2(1, 1), Vector2(1, 2), Vector2(1, 3), Vector2(1, 4), Vector2(1, 5), Vector2(1, 6), Vector2(8, 1), Vector2(8, 2), Vector2(8, 3), Vector2(8, 4), Vector2(8, 5), Vector2(8, 6), Vector2(7, 6), Vector2(6, 6), Vector2(5, 6), Vector2(4, 6), Vector2(3, 6), Vector2(2, 6), Vector2(2, 1), Vector2(3, 1), Vector2(4, 1), Vector2(5, 1), Vector2(6, 1), Vector2(7, 1)]
 func _ready():
-	#currentDay = 'tempLooper'
-	#startDialogue(currentDay)
-	startTutorial()
+	currentDay = 'day1'
+	startDialogue(currentDay)
+	#startTutorial()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -28,13 +30,16 @@ func startTutorial():
 
 func startDay(day):
 	startDialogue(day)
-func startDialogue(dialogueID, add_transition=false):
+func startDialogue(dialogueID, add_transition=false, start_index=0):
+	if currentDialogue:
+		currentDialogue.queue_free()
+		currentDialogue = null
 	if add_transition:
 		await startTransition(dialogueID)
 	DialogueManager.loadDialogue(dialogueID)
 	currentDialogue = dialogueScene.instantiate()
 	add_child(currentDialogue)
-	currentDialogue.initialize(dialogueID+"_0")
+	currentDialogue.initialize(dialogueID+"_%s"% start_index)
 	currentDialogue.end_of_dialogue.connect(endDialogue)
 	
 func startInventory():
@@ -48,10 +53,15 @@ func endInventory(placed_objects):
 	if "intro" not in currentDay:
 		print("SUSSY INV")
 		objects_in_inventory = placed_objects
+		print(objects_in_inventory)
+		is_alive_tomorrow = processInventory()
+	else:
+		is_alive_tomorrow = 0
 	print("NORMAL INV")
 	currentDay = dayData[currentDay][2]
 	print(objects_in_inventory)
-	is_alive_tomorrow = processInventory()
+	
+	
 	print("IM_ALIVE", is_alive_tomorrow)
 	startDialogue(currentDay)
 	match is_alive_tomorrow:
@@ -79,6 +89,13 @@ func endDialogue(dialogueID):
 			add_child(currentInventory)
 			currentInventory.initialize(10, {}, [5,5,8,1,5,6,7], girl_edges, 1)
 			currentInventory.inventory_finished.connect(endInventory)
+		"dieWater_5", "dieFood_4":
+			pass
+		"day2_29c":
+			if 4 in objects_in_inventory.values():
+				startDialogue(currentDay, false, "30a")
+			else:
+				startDialogue(currentDay, false, "30b")
 		_:
 			print(currentDay)
 			if dayData[currentDay][1]: #go to inventory
@@ -99,9 +116,9 @@ func endTransition(day):
 func getGroundItems(day):
 	match day:
 		"day1": #food, water, walkie, map, 
-			return [6,6,6,6,5,5,5,5,8,8,7,9,10]
+			return [4,6,6,6,6,5,5,5,5,8,8,7,9,10,11,11,12]
 			
-		"tempLooper": return [6,6,6,6,6,5,5,5,5]
+		"tempLooper": return [6,6,6,6,6,5,5,5,5,9, 11]
 		_: return []
 
 func processInventory():

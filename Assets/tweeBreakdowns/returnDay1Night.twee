@@ -1,0 +1,257 @@
+:: StoryTitle
+returnDay1Night
+
+
+:: StoryData
+{
+  "ifid": "B5427638-4424-4B7F-A347-31C9A48FD731",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day1Night_0",
+  "tag-colors": {
+    "dad:talk": "green",
+    "dad:think": "green",
+    "dad:choice": "blue",
+    "girl:listen": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: day1Night_0 [dad:talk] {"position":"800,350","size":"100,100"}
+Earth to bug, Earth to bug come in... [[day1Night_1]]
+
+
+:: day1Night_1 [dad:talk] {"position":"800,475","size":"100,100"}
+... please ... [[day1Night_2]]
+
+
+:: day1Night_10 [dad:think] {"position":"800,1600","size":"100,100"}
+Dinner for one... [[day1Night_11]]
+
+
+
+:: day1Night_11 [girl:listen] {"position":"800,1725","size":"100,100"}
+Hello? [[day1Night_12]]
+
+
+
+:: day1Night_12 [dad:think] {"position":"800,1850","size":"100,100"}
+I almost drop the can. The voice is grainy and cuts in and out, but it's hers. [[day1Night_13]]
+
+
+:: day1Night_13 [girl:listen] {"position":"800,1975","size":"100,100"}
+Dad, are you there? [[day1Night_14a]] [[day1Night_14b]] [[day1Night_14c]]  
+
+
+:: day1Night_14a [dad:choice] {"position":"675,2100","size":"100,100"}
+Hey bug, its me. [[day1Night_15a]] 
+
+
+:: day1Night_14b [dad:choice] {"position":"800,2100","size":"100,100"}
+I'm right here Molly. [[day1Night_15a]]
+
+
+:: day1Night_14c [dad:choice] {"position":"925,2100","size":"100,100"}
+I'm here, and I brought stuffy too. [[day1Night_15b]]
+
+
+:: day1Night_15a [girl:listen] {"position":"725,2225","size":"100,100"}
+Really? [[day1Night_16a]]
+
+
+:: day1Night_15b [girl:listen] {"position":"850,2225","size":"100,100"}
+Really, you got them?! [[day1Night_16b]]
+
+
+:: day1Night_16a [dad:think] {"position":"725,2350","size":"100,100"}
+She's holding it together but I can hear the sniffles building. [[day1Night_17a]]
+
+
+:: day1Night_16b [dad:think] {"position":"850,2350","size":"100,100"}
+I can hear the smile slowly building on her face. [[day1Night_17b]]
+
+
+:: day1Night_17a [dad:talk] {"position":"725,2475","size":"100,100"}
+Yep, I'm right here. [[day1Night_18]]
+
+
+:: day1Night_17b [dad:talk] {"position":"850,2475","size":"100,100"}
+Yep, we're right here.
+
+
+:: day1Night_18 [dad:talk] {"position":"800,2600","size":"100,100"}
+Listen bug, we don't have much time. I don't know how long the batteries in these walkies will last. [[day1Night_19]]
+
+
+
+:: day1Night_19 [girl:listen] {"position":"800,2725","size":"100,100"}
+What's going on? Where am I? When are you coming back? [[day1Night_20a]] [[day1Night_20b]] [[day1Night_20c]]  
+
+
+:: day1Night_2 [dad:think] {"position":"800,600","size":"100,100"}
+It's been five minutes of talking restlessly into the walkie talkie. [[day1Night_3]]
+
+
+:: day1Night_20a [dad:choice] {"position":"675,2850","size":"100,100"}
+They're saying it's a leak... [[day1Night_21a]] 
+
+
+:: day1Night_20b [dad:choice] {"position":"800,2850","size":"100,100"}
+You're at a safe place, don't worry... [[day1Night_21b]]
+
+
+:: day1Night_20c [dad:choice] {"position":"925,2850","size":"100,100"}
+I'm on my way right now... [[day1Night_21c]]
+
+
+:: day1Night_21a [dad:talk] {"position":"675,2975","size":"100,100"}
+... but I'm not too sure. What I know is that for now you're safe. [[day1Night_22a]]
+
+
+:: day1Night_21b [dad:talk] {"position":"800,2975","size":"100,100"}
+... I'm heading there as fast as I can. [[day1Night_24]] 
+
+
+:: day1Night_21c [dad:talk] {"position":"925,2975","size":"100,100"}
+... I should be there in a few days. [[day1Night_24]] 
+
+
+:: day1Night_22a [girl:listen] {"position":"675,3100","size":"100,100"}
+For now? [[day1Night_23a]]
+
+
+:: day1Night_23a [dad:talk] {"position":"675,3225","size":"100,100"}
+They're movi-... don't worry about it bug. I'm on my way. [[day1Night_24]]
+
+
+:: day1Night_24 [dad:talk] {"position":"800,3125","size":"100,100"}
+I need you to help me with our plan now, ok. Can you do that? [[day1Night_25]]
+
+
+:: day1Night_25 [dad:think] {"position":"800,3300","size":"100,100"}
+This is all to much to put on her, but we don't have a choice. [[day1Night_26]]
+
+
+:: day1Night_26 [girl:listen] {"position":"800,3425","size":"100,100"}
+Okay, let's do it. [[day1Night_27]]
+
+
+
+:: day1Night_27 [dad:talk] {"position":"800,3550","size":"100,100"}
+Good. [[day1Night_28]]
+
+
+:: day1Night_28 [dad:think] {"position":"800,3675","size":"100,100"}
+She didn't get the bravery from me. [[day1Night_29]]
+
+
+:: day1Night_29 [dad:talk] {"position":"800,3800","size":"100,100"}
+We might not have much time on the walkies. Lets try to call once a day, every day, at this time. [[day1Night_30]]
+
+
+
+:: day1Night_3 [dad:think] {"position":"800,725","size":"100,100"}
+So far, no response. [[day1Night_4a]] [[day1Night_4b]] [[day1Night_4c]]
+
+
+:: day1Night_30 [dad:talk] {"position":"800,3925","size":"100,100"}
+Have you heard anything from the guards that sounded important? [[day1Night_31]]
+
+
+
+:: day1Night_31 [girl:listen] {"position":"800,4050","size":"100,100"}
+I don't think so. They're nice but kinda scary. Everyone seems a little afraid actually. [[day1Night_32]]
+
+
+:: day1Night_32 [girl:listen] {"position":"800,4175","size":"100,100"}
+I can't understand most of what they talk about. Something about [i]"evacuation"[/i]... [i]"secondary protocol"[/i]. [[day1Night_33]]
+
+
+:: day1Night_33 [dad:think] {"position":"800,4300","size":"100,100"}
+Sounds like they're talking about the extraction to a secondary location. I may be running out of time... [[day1Night_34]]
+
+
+:: day1Night_34 [dad:think] {"position":"800,4425","size":"100,100"}
+... I can't let her know that. [[day1Night_35]]
+
+
+:: day1Night_35 [dad:talk] {"position":"800,4550","size":"100,100"}
+Good job bug. Keep listening, but don't be too obvious. This is an important mission and you have to be sneaky. [[day1Night_36]]
+
+
+:: day1Night_36 [girl:listen] {"position":"800,4675","size":"100,100"}
+Oooh, I can do that. [[day1Night_37]] 
+
+
+:: day1Night_37 [dad:think] {"position":"800,4800","size":"100,100"}
+Her words escape with a giggle. Maybe we will be ok. [[day1Night_38]]
+
+
+:: day1Night_38 [dad:talk] {"position":"800,4925","size":"100,100"}
+I knew you could. [[day1Night_39]]
+
+
+:: day1Night_39 [dad:talk] {"position":"800,5050","size":"100,100"}
+Ok bug. It's time for me to go, I want to walk a bit farther before setting up for the night. [[day1Night_40]] 
+
+
+:: day1Night_40 [girl:listen] {"position":"800,5175","size":"100,100"}
+Good night dad. [[day1Night_41]]
+
+
+:: day1Night_41 [dad:talk] {"position":"800,5300","size":"100,100"}
+Good night bug, I love you. [[day1Night_42]]
+
+
+:: day1Night_42 [girl:listen] {"position":"800,5425","size":"100,100"}
+Love you too. [[day1Night_43]]
+
+
+:: day1Night_43 [dad:think] {"position":"800,5550","size":"100,100"}
+I reluctantly shut the walkie off. [[day1Night_44]]
+
+
+:: day1Night_44 [dad:think] {"position":"800,5675","size":"100,100"}
+There's so much more I want to say. [[day1Night_45]]
+
+
+:: day1Night_45 [dad:think] {"position":"800,5800","size":"100,100"}
+I have a bad feeling, no one has good answers to what's going on, even the government is on edge... [[day1Night_46]]
+
+
+:: day1Night_46 [dad:think] {"position":"800,5925","size":"100,100"}
+... but for now none of that matters. For now I get to Molly, no matter what. [[]]
+
+
+:: day1Night_4a [dad:choice] {"position":"675,850","size":"100,100"}
+Come in bug... [[day1Night_5]]
+
+
+:: day1Night_4b [dad:choice] {"position":"800,850","size":"100,100"}
+Hello? Are you there? [[day1Night_5]]
+
+
+:: day1Night_4c [dad:choice] {"position":"925,850","size":"100,100"}
+Molly? [[day1Night_5]]
+
+
+:: day1Night_5 [dad:think] {"position":"800,975","size":"100,100"}
+...   ...   ... [[day1Night_6]]
+
+
+:: day1Night_6 [dad:think] {"position":"800,1100","size":"100,100"}
+...   ...   ... [[day1Night_7]]
+
+
+:: day1Night_7 [dad:think] {"position":"800,1225","size":"100,100"}
+The trek to my current point was tiring but doable. [[day1Night_8]]
+
+
+:: day1Night_8 [dad:think] {"position":"800,1350","size":"100,100"}
+I'm getting closer the outskirts of town, but for now the asphalt and streetlights are there to keep me company. [[day1Night_9]]
+
+
+
+:: day1Night_9 [dad:think] {"position":"800,1475","size":"100,100"}
+I should have packed a can opener. Thankfully, hitting them on the ground works well enough. [[day1Night_10]]

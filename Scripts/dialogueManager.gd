@@ -23,12 +23,13 @@ func loadDialogue(name):
 func dialogueChoice(choiceID):
 	match choiceID:
 		"intro_5a","intro_5b","intro_5c":
-			PlayerData.user_data['intro']['breakfast'] = choiceID
-			print(PlayerData.user_data['intro']['breakfast'])
+			PlayerData.user_data['breakfast'] = choiceID
+			PlayerData.save_user()
+		"day2_42a","day2_42b","day2_42c":
+			PlayerData.user_data['shopkeeper_choice'] = choiceID
 			PlayerData.save_user()
 		_:
-			print('Non-important choice')
-
+			pass
 func to_title(s: String):
 	s = s.strip_edges()
 	return s.substr(0,1).to_upper() + s.substr(1).to_lower()

@@ -1,8 +1,8 @@
 extends Control
 @export var transition_done := false
 var next_day
-@onready var titles = {'intro':'Returning\nto Molly', "day0": "Day 0", "day1": "Day 1"}
-@onready var subtitles = {'intro':'A game by Colby Bird', "day0":"Doomsday", "day1":"Relocation"}
+@onready var titles = {'intro':'Returning\nto Molly', "day0": "Day 0", "day1": "Day 1", "day2":"Day 2"}
+@onready var subtitles = {'intro':'A game by Colby Bird', "day0":"Doomsday", "day1":"Relocation", "day2":"Quarrel"}
 
 signal finished_transition(next)
 # Called when the node enters the scene tree for the first time.
@@ -10,10 +10,8 @@ func _ready():
 	$anim.play("begin")
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	pass
 
 func initialize(nextDay):

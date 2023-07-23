@@ -336,11 +336,11 @@ For now I need to focus on supplies. Based on this [b]map[/b], it's a five day w
 
 
 :: day1_51 [dad:think] {"position":"800,6625","size":"100,100"}
-The first three days will be walking through the city. Shouldn't be that bad, I guess I just have to avoid any gas. [[day1_52]]
+The first two days will be walking through the city. Shouldn't be that bad, I guess I just have to avoid any gas. [[day1_52]]
 
 
 :: day1_52 [dad:think] {"position":"800,6750","size":"100,100"}
-The last two days will be involve going through the woods towards the northmost entrance to town. [[day1_53]]
+The last three days will involve going through the woods towards the northmost entrance to town. [[day1_53]]
 
 
 :: day1_53 [dad:think] {"position":"800,6875","size":"100,100"}
@@ -348,10 +348,15 @@ I'll need food, water, my map, and maybe a weapon. I can use the walkie talkie t
 
 
 :: day1_54 [dad:think] {"position":"800,7000","size":"100,100"}
-Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place. [[day1_55]]
+Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place... [[day1_55]]
 
 
-:: day1_55 [dad:talk] {"position":"800,7125","size":"100,100"}
+:: day1_55 [dad:think] {"position":"800,7125","size":"100,100"}
+I just wanted to keep a piece of her. [[day1_56]]
+
+
+
+:: day1_56 [dad:talk] {"position":"800,7250","size":"100,100"}
 I'll get you back to her too stuffy. [[]]
 
 

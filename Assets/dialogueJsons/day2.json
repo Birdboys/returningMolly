@@ -1,0 +1,575 @@
+{
+  "day2_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "When I wake up my body aches.",
+    "NEXT_TEXT_ID": [
+      "day2_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It could be from the walk, or from sleeping on the cement with only a sleeping bag...",
+    "NEXT_TEXT_ID": [
+      "day2_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_10": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Easy peasy...",
+    "NEXT_TEXT_ID": [
+      "day2_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... ... ...",
+    "NEXT_TEXT_ID": [
+      "day2_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... ... ...",
+    "NEXT_TEXT_ID": [
+      "day2_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_13": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "After a few hours of walking I notice a gas station.",
+    "NEXT_TEXT_ID": [
+      "day2_14"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_14": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It's in a state of disrepair.",
+    "NEXT_TEXT_ID": [
+      "day2_15"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_15": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I don't normally go to this part of town, but even I can admit that it's not usually this run down...",
+    "NEXT_TEXT_ID": [
+      "day2_16"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_16": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... and in just two days.",
+    "NEXT_TEXT_ID": [
+      "day2_17"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_17": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm still uncertain what the guards are here to do, but clearly this place wasn't worth protecting.",
+    "NEXT_TEXT_ID": [
+      "day2_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_18": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "man",
+    "TEXT_TEXT": "HEY!",
+    "NEXT_TEXT_ID": [
+      "day2_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_19": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I turn to face the sound. A squat man with a baseball bat is peering at me from behind the store windows.",
+    "NEXT_TEXT_ID": [
+      "day2_20"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... either way I have to power through.",
+    "NEXT_TEXT_ID": [
+      "day2_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_20": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "man",
+    "TEXT_TEXT": "GET OUT OF HERE! THE STORE IS CLOSED! NO LOOTING!",
+    "NEXT_TEXT_ID": [
+      "day2_21"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_21": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "He looks terrified. I don't want to provoke him. At the same time, it couldn't hurt to try and restock.",
+    "NEXT_TEXT_ID": [
+      "day2_22a",
+      "day2_22b",
+      "day2_22c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day2_22a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "*turn and walk away*",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_22b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I mean no harm, but I'd really like to restock. Maybe we can trade?",
+    "NEXT_TEXT_ID": [
+      "day2_23b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_22c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Looters? People have been looting?",
+    "NEXT_TEXT_ID": [
+      "day2_23c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_23b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Ha, like I'm supposed to believe that.",
+    "NEXT_TEXT_ID": [
+      "day2_24b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_23c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Are you kidding? It's been mayham out here.",
+    "NEXT_TEXT_ID": [
+      "day2_24c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_24b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "It's every man for himself out here now...",
+    "NEXT_TEXT_ID": [
+      "day2_25c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_24c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Last night I had to... man people are going crazy.",
+    "NEXT_TEXT_ID": [
+      "day2_25c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_25c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "So you better BACK OFF.",
+    "NEXT_TEXT_ID": [
+      "day2_26b",
+      "day2_26c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day2_26b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "*give up and continue walking*",
+    "NEXT_TEXT_ID": [
+      "day2_27a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_26c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Please, I'm just trying to get to my daughter.",
+    "NEXT_TEXT_ID": [
+      "day2_27c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_27a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "He's too frantic. I can't take the chance interacting with him. I'll have to make my current supplies work for now.",
+    "NEXT_TEXT_ID": [
+      "day2_28a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_27c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "He seems to soften a little, but quickly his guard and bat are back up...",
+    "NEXT_TEXT_ID": [
+      "day2_28c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_28a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I turn my back to the man and continue down the road.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_28c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Ca-.... can you prove it?",
+    "NEXT_TEXT_ID": [
+      "day2_29c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_29c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Can I prove it? If she's smart her walkie is off so I won't be able to call her. Maybe something in my bag...",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I figured I would meet opposition from the guards for sleeping outside, but no one has approached me so far.",
+    "NEXT_TEXT_ID": [
+      "day2_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_30a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... STUFFY. Thank god for you.",
+    "NEXT_TEXT_ID": [
+      "day2_31a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_30b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... nothing. Damn.",
+    "NEXT_TEXT_ID": [
+      "day2_31b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_31a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This is stuffy, Molly doesn't go anywhere without it. I'm bringing them back to her now.",
+    "NEXT_TEXT_ID": [
+      "day2_32a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_31b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Well?!",
+    "NEXT_TEXT_ID": [
+      "day2_32b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_32a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This time I can see tears welling in his eyes.",
+    "NEXT_TEXT_ID": [
+      "day2_33a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_32b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The bat meets the doorframe of the shop with a thud. A warning swing.",
+    "NEXT_TEXT_ID": [
+      "day2_27a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_33a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "My daughter is at an extraction point too...",
+    "NEXT_TEXT_ID": [
+      "day2_34a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_34a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "... I didn't know what to do I mean they-... the news had it all going crazy and I just ...",
+    "NEXT_TEXT_ID": [
+      "day2_35a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_35a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "... no one's answering any questions and I KNOW a gas leak can't...",
+    "NEXT_TEXT_ID": [
+      "day2_36a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_36a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "We did what we had to do.",
+    "NEXT_TEXT_ID": [
+      "day2_37a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_37a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I don't know if I believe it myself, but I have to calm him down...",
+    "NEXT_TEXT_ID": [
+      "day2_38a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_38a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "You're right, you're right. Ok. I'll help you, but I have a kid to think about too.",
+    "NEXT_TEXT_ID": [
+      "day2_39a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_39a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "I'll give you two cans of food and two bottles of water for your trouble.",
+    "NEXT_TEXT_ID": [
+      "day2_40"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Looking back on the previous days events, I really haven't seen much of anyone recently.",
+    "NEXT_TEXT_ID": [
+      "day2_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_40": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "If you throw in a walkie tallkie, I'll give you three extra cans.",
+    "NEXT_TEXT_ID": [
+      "day2_41"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_41": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "For a weapon of my choice, I'll give you three extra bottles. So, what'll it be?",
+    "NEXT_TEXT_ID": [
+      "day2_42a",
+      "day2_42b",
+      "day2_42c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day2_42a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Free food and water.",
+    "NEXT_TEXT_ID": [
+      "day2_43a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_42b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Trade walkie talkie for extra food.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_42c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Trade random weapon for extra water.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_43a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Fair enough, here you go pal. Good luck. I hope you find her.",
+    "NEXT_TEXT_ID": [
+      "day2_44a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_44a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Thanks, me too.",
+    "NEXT_TEXT_ID": [
+      "day2_45a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_45a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I guess not everyone has gone crazy.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_5": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Every once in a while I'll notice a stranger, but the farther I get from the city center the fewer civilians and guards I see.",
+    "NEXT_TEXT_ID": [
+      "day2_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I guess most people are waiting for the next wave of evacuation.",
+    "NEXT_TEXT_ID": [
+      "day2_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Less people means more space for me. Time to get a move on.",
+    "NEXT_TEXT_ID": [
+      "day2_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Today's route should be easy. Based on the map it's pretty much a straight shot out of the city.",
+    "NEXT_TEXT_ID": [
+      "day2_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_9": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Then I'll follow the wooded dirt road north toward the evacuation zone.",
+    "NEXT_TEXT_ID": [
+      "day2_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

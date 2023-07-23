@@ -1,10 +1,7 @@
 extends Node
 var user_data
 @onready var user_data_path = "user://user_data.json"
-@onready var default_save_data = {
-	"intro" : {"breakfast":"waffles"
-		}
-}
+@onready var default_save_data = {"breakfast":"","shopkeeper_choice":""}
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	user_data = load_user_data(user_data_path)

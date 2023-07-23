@@ -1,0 +1,584 @@
+{
+  "day1Night_0": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Earth to bug, Earth to bug come in...",
+    "NEXT_TEXT_ID": [
+      "day1Night_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_1": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... please ...",
+    "NEXT_TEXT_ID": [
+      "day1Night_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_10": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Dinner for one...",
+    "NEXT_TEXT_ID": [
+      "day1Night_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_11": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Hello?",
+    "NEXT_TEXT_ID": [
+      "day1Night_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I almost drop the can. The voice is grainy and cuts in and out, but it's hers.",
+    "NEXT_TEXT_ID": [
+      "day1Night_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_13": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Dad, are you there?",
+    "NEXT_TEXT_ID": [
+      "day1Night_14a",
+      "day1Night_14b",
+      "day1Night_14c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day1Night_14a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hey bug, its me.",
+    "NEXT_TEXT_ID": [
+      "day1Night_15a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_14b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm right here Molly.",
+    "NEXT_TEXT_ID": [
+      "day1Night_15a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_14c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm here, and I brought stuffy too.",
+    "NEXT_TEXT_ID": [
+      "day1Night_15b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_15a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Really?",
+    "NEXT_TEXT_ID": [
+      "day1Night_16a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_15b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Really, you got them?!",
+    "NEXT_TEXT_ID": [
+      "day1Night_16b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_16a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She's holding it together but I can hear the sniffles building.",
+    "NEXT_TEXT_ID": [
+      "day1Night_17a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_16b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I can hear the smile slowly building on her face.",
+    "NEXT_TEXT_ID": [
+      "day1Night_17b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_17a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Yep, I'm right here.",
+    "NEXT_TEXT_ID": [
+      "day1Night_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_17b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Yep, we're right here.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day1Night_18": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Listen bug, we don't have much time. I don't know how long the batteries in these walkies will last.",
+    "NEXT_TEXT_ID": [
+      "day1Night_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_19": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What's going on? Where am I? When are you coming back?",
+    "NEXT_TEXT_ID": [
+      "day1Night_20a",
+      "day1Night_20b",
+      "day1Night_20c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day1Night_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It's been five minutes of talking restlessly into the walkie talkie.",
+    "NEXT_TEXT_ID": [
+      "day1Night_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_20a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "They're saying it's a leak...",
+    "NEXT_TEXT_ID": [
+      "day1Night_21a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_20b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "You're at a safe place, don't worry...",
+    "NEXT_TEXT_ID": [
+      "day1Night_21b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_20c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm on my way right now...",
+    "NEXT_TEXT_ID": [
+      "day1Night_21c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_21a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... but I'm not too sure. What I know is that for now you're safe.",
+    "NEXT_TEXT_ID": [
+      "day1Night_22a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_21b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... I'm heading there as fast as I can.",
+    "NEXT_TEXT_ID": [
+      "day1Night_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_21c": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... I should be there in a few days.",
+    "NEXT_TEXT_ID": [
+      "day1Night_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_22a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "For now?",
+    "NEXT_TEXT_ID": [
+      "day1Night_23a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_23a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "They're movi-... don't worry about it bug. I'm on my way.",
+    "NEXT_TEXT_ID": [
+      "day1Night_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_24": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I need you to help me with our plan now, ok. Can you do that?",
+    "NEXT_TEXT_ID": [
+      "day1Night_25"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_25": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This is all to much to put on her, but we don't have a choice.",
+    "NEXT_TEXT_ID": [
+      "day1Night_26"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_26": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Okay, let's do it.",
+    "NEXT_TEXT_ID": [
+      "day1Night_27"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_27": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good.",
+    "NEXT_TEXT_ID": [
+      "day1Night_28"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_28": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She didn't get the bravery from me.",
+    "NEXT_TEXT_ID": [
+      "day1Night_29"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_29": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "We might not have much time on the walkies. Lets try to call once a day, every day, at this time.",
+    "NEXT_TEXT_ID": [
+      "day1Night_30"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "So far, no response.",
+    "NEXT_TEXT_ID": [
+      "day1Night_4a",
+      "day1Night_4b",
+      "day1Night_4c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day1Night_30": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Have you heard anything from the guards that sounded important?",
+    "NEXT_TEXT_ID": [
+      "day1Night_31"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_31": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I don't think so. They're nice but kinda scary. Everyone seems a little afraid actually.",
+    "NEXT_TEXT_ID": [
+      "day1Night_32"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_32": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I can't understand most of what they talk about. Something about [i]\"evacuation\"[/i]... [i]\"secondary protocol\"[/i].",
+    "NEXT_TEXT_ID": [
+      "day1Night_33"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_33": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Sounds like they're talking about the extraction to a secondary location. I may be running out of time...",
+    "NEXT_TEXT_ID": [
+      "day1Night_34"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_34": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... I can't let her know that.",
+    "NEXT_TEXT_ID": [
+      "day1Night_35"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_35": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good job bug. Keep listening, but don't be too obvious. This is an important mission and you have to be sneaky.",
+    "NEXT_TEXT_ID": [
+      "day1Night_36"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_36": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Oooh, I can do that.",
+    "NEXT_TEXT_ID": [
+      "day1Night_37"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_37": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Her words escape with a giggle. Maybe we will be ok.",
+    "NEXT_TEXT_ID": [
+      "day1Night_38"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_38": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I knew you could.",
+    "NEXT_TEXT_ID": [
+      "day1Night_39"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_39": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ok bug. It's time for me to go, I want to walk a bit farther before setting up for the night.",
+    "NEXT_TEXT_ID": [
+      "day1Night_40"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_40": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Good night dad.",
+    "NEXT_TEXT_ID": [
+      "day1Night_41"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_41": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good night bug, I love you.",
+    "NEXT_TEXT_ID": [
+      "day1Night_42"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_42": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Love you too.",
+    "NEXT_TEXT_ID": [
+      "day1Night_43"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_43": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I reluctantly shut the walkie off.",
+    "NEXT_TEXT_ID": [
+      "day1Night_44"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_44": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "There's so much more I want to say.",
+    "NEXT_TEXT_ID": [
+      "day1Night_45"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_45": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I have a bad feeling, no one has good answers to what's going on, even the government is on edge...",
+    "NEXT_TEXT_ID": [
+      "day1Night_46"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_46": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... but for now none of that matters. For now I get to Molly, no matter what.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day1Night_4a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Come in bug...",
+    "NEXT_TEXT_ID": [
+      "day1Night_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_4b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hello? Are you there?",
+    "NEXT_TEXT_ID": [
+      "day1Night_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_4c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Molly?",
+    "NEXT_TEXT_ID": [
+      "day1Night_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_5": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...   ...   ...",
+    "NEXT_TEXT_ID": [
+      "day1Night_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...   ...   ...",
+    "NEXT_TEXT_ID": [
+      "day1Night_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The trek to my current point was tiring but doable.",
+    "NEXT_TEXT_ID": [
+      "day1Night_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm getting closer the outskirts of town, but for now the asphalt and streetlights are there to keep me company.",
+    "NEXT_TEXT_ID": [
+      "day1Night_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1Night_9": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I should have packed a can opener. Thankfully, hitting them on the ground works well enough.",
+    "NEXT_TEXT_ID": [
+      "day1Night_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}
