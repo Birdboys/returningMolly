@@ -51,23 +51,18 @@ func startInventory():
 
 func endInventory(placed_objects):
 	if "intro" not in currentDay:
-		print("SUSSY INV")
 		objects_in_inventory = placed_objects
-		print(objects_in_inventory)
 		is_alive_tomorrow = processInventory()
 	else:
 		is_alive_tomorrow = 0
-	print("NORMAL INV")
+		
 	currentDay = dayData[currentDay][2]
-	print(objects_in_inventory)
 	
-	
-	print("IM_ALIVE", is_alive_tomorrow)
-	startDialogue(currentDay)
 	match is_alive_tomorrow:
 		0: startDialogue(currentDay, dayData[currentDay][0])
 		1: startDialogue("dieFood")
 		2: startDialogue("dieWater")
+		3: startDialogue("noWalkie")
 
 func endDialogue(dialogueID):
 	currentDialogue.queue_free()
@@ -176,6 +171,9 @@ func processInventory():
 		objects_in_inventory.erase(water)
 	for food in food_used:
 		objects_in_inventory.erase(food)
+	if 8 not in objects_in_inventory.values():
+		return 3
+	return 0
 	pass
 	
 func removeFromInv(item_ids):

@@ -1,0 +1,70 @@
+:: StoryTitle
+returnNoWalkie
+
+
+:: StoryData
+{
+  "ifid": "3B223ECE-98D1-46A2-B793-22256ACDFC17",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "noWalkie_0",
+  "tag-colors": {
+    "dad:think": "green",
+    "dad:talk": "green"
+  },
+  "zoom": 1
+}
+
+
+:: noWalkie_0 [dad:think] {"position":"800,350","size":"100,100"}
+... [[noWalkie_1]]
+
+
+:: noWalkie_1 [dad:think] {"position":"800,475","size":"100,100"}
+... [[noWalkie_2]]
+
+
+:: noWalkie_10 [dad:talk] {"position":"800,1600","size":"100,100"}
+... guess I'll go to sleep. [[noWalkie_11]]
+
+
+:: noWalkie_11 [dad:think] {"position":"800,1725","size":"100,100"}
+... [[noWalkie_12]]
+
+
+:: noWalkie_12 [dad:think] {"position":"800,1850","size":"100,100"}
+... [[]]
+
+
+:: noWalkie_2 [dad:think] {"position":"800,600","size":"100,100"}
+... [[noWalkie_3]]
+
+
+:: noWalkie_3 [dad:think] {"position":"800,725","size":"100,100"}
+... [[noWalkie_4]]
+
+
+:: noWalkie_4 [dad:think] {"position":"800,850","size":"100,100"}
+... no walkie talkie ... [[noWalkie_5]]
+
+
+:: noWalkie_5 [dad:talk] {"position":"800,975","size":"100,100"}
+she's okay. [[noWalkie_6]]
+
+
+
+:: noWalkie_6 [dad:think] {"position":"800,1100","size":"100,100"}
+... [[noWalkie_7]]
+
+
+:: noWalkie_7 [dad:think] {"position":"800,1225","size":"100,100"}
+If I say it out loud, does it make it more true?  [[noWalkie_8]]
+
+
+
+:: noWalkie_8 [dad:think] {"position":"800,1350","size":"100,100"}
+... [[noWalkie_9]]
+
+
+:: noWalkie_9 [dad:think] {"position":"800,1475","size":"100,100"}
+... [[noWalkie_10]]

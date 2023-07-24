@@ -1,0 +1,130 @@
+{
+  "noWalkie_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_10": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... guess I'll go to sleep.",
+    "NEXT_TEXT_ID": [
+      "noWalkie_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "noWalkie_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... no walkie talkie ...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_5": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "she's okay.",
+    "NEXT_TEXT_ID": [
+      "noWalkie_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "If I say it out loud, does it make it more true?",
+    "NEXT_TEXT_ID": [
+      "noWalkie_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "noWalkie_9": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "noWalkie_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}
