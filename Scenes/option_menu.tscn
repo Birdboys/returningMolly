@@ -1,0 +1,171 @@
+[gd_scene load_steps=16 format=3 uid="uid://cjle6mqaponny"]
+
+[ext_resource type="Script" path="res://Scripts/option_menu.gd" id="1_hndpg"]
+[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="1_njh0e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptoee"]
+bg_color = Color(0.901961, 0.85098, 0.741176, 1)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color(0.678431, 0.639216, 0.529412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lcuag"]
+bg_color = Color(0.678431, 0.639216, 0.529412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xo8ds"]
+bg_color = Color(0.556863, 0.427451, 0.537255, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_472pi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmwwi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2b727"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8uimv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u3ecj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dfvik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5ny0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m3gl2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_54gkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ua41"]
+
+[node name="optionMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -425.0
+offset_top = -210.0
+offset_right = 425.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hndpg")
+
+[node name="bg" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ptoee")
+
+[node name="music_vol" type="ProgressBar" parent="bg"]
+custom_minimum_size = Vector2(35, 250)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -125.0
+offset_right = -262.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_lcuag")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xo8ds")
+step = 10.0
+value = 40.0
+fill_mode = 3
+show_percentage = false
+
+[node name="music_button" type="Button" parent="bg/music_vol"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -59.5
+offset_top = 5.0
+offset_right = 59.5
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_pressed_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_hover_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_focus_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_outline_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_njh0e")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_472pi")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fmwwi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2b727")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8uimv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u3ecj")
+text = "MUSIC"
+flat = true
+
+[node name="sound_vol" type="ProgressBar" parent="bg"]
+custom_minimum_size = Vector2(35, 250)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -125.0
+offset_right = -107.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_lcuag")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xo8ds")
+step = 10.0
+value = 40.0
+fill_mode = 3
+show_percentage = false
+
+[node name="sound_button" type="Button" parent="bg/sound_vol"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -59.5
+offset_top = 5.0
+offset_right = 59.5
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_pressed_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_hover_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_focus_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_outline_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_njh0e")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dfvik")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_j5ny0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_m3gl2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_54gkf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2ua41")
+text = "SOUND
+"
+flat = true
+
+[connection signal="gui_input" from="bg/music_vol" to="." method="_on_music_vol_gui_input"]
+[connection signal="value_changed" from="bg/music_vol" to="." method="_on_music_vol_value_changed"]
+[connection signal="pressed" from="bg/music_vol/music_button" to="." method="_on_music_button_pressed"]
+[connection signal="gui_input" from="bg/sound_vol" to="." method="_on_sound_vol_gui_input"]
+[connection signal="pressed" from="bg/sound_vol/sound_button" to="." method="_on_sound_button_pressed"]

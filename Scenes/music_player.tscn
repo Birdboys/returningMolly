@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dki7lwdhd3gel"]
+
+[ext_resource type="AudioStream" uid="uid://d10xccpoix0wp" path="res://Assets/music/bear_phone.mp3" id="1_ke8t3"]
+
+[node name="musicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_ke8t3")
+volume_db = -21.0
+autoplay = true

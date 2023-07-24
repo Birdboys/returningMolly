@@ -1,0 +1,127 @@
+[gd_scene load_steps=6 format=3 uid="uid://cov2cmi00nwqq"]
+
+[ext_resource type="FontFile" uid="uid://ney6ybfqgm7a" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Bold.otf" id="1_lkeoa"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_q153v"]
+[ext_resource type="FontFile" uid="uid://bfgp7mg6wu44k" path="res://Assets/fonts/OpenDyslexic2 (Windows, MacOS, Linux OTF)/OpenDyslexic-Regular.otf" id="2_8gaqj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ulcny"]
+bg_color = Color(0.556863, 0.427451, 0.537255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21k2l"]
+bg_color = Color(0.435294, 0.545098, 0.431373, 1)
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q153v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.901961, 0.85098, 0.741176, 1)
+
+[node name="returningto" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 32.0
+offset_right = 1179.0
+offset_bottom = 305.0
+theme_override_colors/default_color = Color(0.435294, 0.545098, 0.431373, 1)
+theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/normal_font = ExtResource("1_lkeoa")
+theme_override_font_sizes/normal_font_size = 156
+bbcode_enabled = true
+text = "Returning To"
+fit_content = true
+autowrap_mode = 0
+
+[node name="molly" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 87.0
+offset_top = 214.0
+offset_right = -745.0
+offset_bottom = -233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.556863, 0.427451, 0.537255, 1)
+theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/normal_font = ExtResource("1_lkeoa")
+theme_override_font_sizes/normal_font_size = 156
+bbcode_enabled = true
+text = "Molly"
+fit_content = true
+autowrap_mode = 0
+
+[node name="credits" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 475.0
+offset_right = 688.0
+offset_bottom = 649.0
+theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/normal_font = ExtResource("2_8gaqj")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Code, Design, Narrative, 
+Sounds: [u][url=https://birdboys.itch.io/]Colby Bird[/url][/u]
+Music: Logan Bird"
+fit_content = true
+autowrap_mode = 0
+
+[node name="buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 757.0
+offset_top = 348.0
+offset_right = -83.0
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="play" type="Button" parent="buttons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_lkeoa")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ulcny")
+theme_override_styles/hover = SubResource("StyleBoxFlat_21k2l")
+text = " Play "
+
+[node name="settings" type="Button" parent="buttons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_lkeoa")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ulcny")
+theme_override_styles/hover = SubResource("StyleBoxFlat_21k2l")
+text = " Settings "
+
+[node name="quit" type="Button" parent="buttons"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_lkeoa")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_ulcny")
+theme_override_styles/hover = SubResource("StyleBoxFlat_21k2l")
+text = "Quit "
+
+[connection signal="meta_clicked" from="credits" to="." method="_on_credits_meta_clicked"]
+[connection signal="pressed" from="buttons/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="buttons/quit" to="." method="_on_quit_pressed"]

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 ItemLoader="*res://Scripts/itemLoader.gd"
 DialogueManager="*res://Scripts/dialogueManager.gd"
 PlayerData="*res://Scripts/player_data.gd"
+MusicPlayer="*res://Scenes/music_player.tscn"
 
 [display]
 
