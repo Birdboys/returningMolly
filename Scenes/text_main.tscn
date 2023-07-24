@@ -79,7 +79,7 @@ theme_override_constants/margin_right = 32
 [node name="textMainText" type="RichTextLabel" parent="textMainPanel/textMargin"]
 layout_mode = 2
 mouse_filter = 1
-text = "I can use the walkie talkie to talk to Molly. If she finds the note I left in her bag, she should call at eight tonight. "
+text = "Good that they're feeding her too. If she worked up the nerve to eat the canned food she'd still only have enough for a few days. "
 
 [node name="cursor" type="TextureRect" parent="textMainPanel"]
 layout_mode = 1

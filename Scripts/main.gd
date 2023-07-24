@@ -7,7 +7,7 @@ var currentDialogue = null
 var nextDialogue = null
 var currentDay
 var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "day0"],"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], "day1":[true,true,"day1Night"], 
-				"day1Night": [false, false, "day2"], "day2":[true, true,"day2Night"], "tempLooper":[false, true,"tempLooper"]}
+				"day1Night": [false, false, "day2"], "day2":[true, true,"day2Night"], "day2Night":[false, false,"day3"],"tempLooper":[false, true,"tempLooper"]}
 @onready var objects_in_inventory = {}
 @onready var water_objects = {1:5, 6:1, 11:2}
 @onready var food_objects = {3:5, 5:1}
@@ -96,6 +96,26 @@ func endDialogue(dialogueID):
 				startDialogue(currentDay, false, "30a")
 			else:
 				startDialogue(currentDay, false, "30b")
+		"day2_43b":
+			if removeFromInv([8]):
+				print("SUCCESSFUL WALKIE TRADE")
+				startDialogue(currentDay, false, "44b")
+			else:
+				print("FAILED WALKIE TRADE")
+				startDialogue(currentDay, false, "44c")
+				PlayerData.user_data['shopkeeper_choice'] = 'ran_away'
+		"day2_43c":
+			if removeFromInv([7,9]):
+				print("SUCCESSFUL WEAPON TRADE")
+				startDialogue(currentDay, false, "44b")
+			else:
+				print("FAILED WEAPON TRADE")
+				startDialogue(currentDay, false, "44c")
+				PlayerData.user_data['shopkeeper_choice'] = 'ran_awaay'
+		"day2_47c":
+			removeFromInv([5])
+			removeFromInv([6])
+			startInventory()
 		_:
 			print(currentDay)
 			if dayData[currentDay][1]: #go to inventory
@@ -117,7 +137,13 @@ func getGroundItems(day):
 	match day:
 		"day1": #food, water, walkie, map, 
 			return [4,6,6,6,6,5,5,5,5,8,8,7,9,10,11,11,12]
-			
+		"day2":
+			match PlayerData.user_data['shopkeeper_choice']:
+				"": return []
+				"day2_42a": return [5,5,6,6]
+				"day2_42b": return [5,5,5,5,5,6,6]
+				"day2_42c": return [5,5,6,6,6,6,6]
+				"ran_away": return []
 		"tempLooper": return [6,6,6,6,6,5,5,5,5,9, 11]
 		_: return []
 
@@ -151,3 +177,10 @@ func processInventory():
 	for food in food_used:
 		objects_in_inventory.erase(food)
 	pass
+	
+func removeFromInv(item_ids):
+	for obj in objects_in_inventory:
+		if objects_in_inventory[obj] in item_ids:
+			objects_in_inventory.erase(obj)
+			return true
+	return false

@@ -482,17 +482,21 @@
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "storekeeper",
     "TEXT_TEXT": "Trade walkie talkie for extra food.",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day2_43b"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day2_42c": {
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "storekeeper",
     "TEXT_TEXT": "Trade random weapon for extra water.",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day2_43c"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day2_43a": {
     "TEXT_TYPE": "listen",
@@ -504,6 +508,22 @@
     "HAS_CHOICE": false,
     "IS_END": false
   },
+  "day2_43b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This should be good.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_43c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This should be good.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
   "day2_44a": {
     "TEXT_TYPE": "talk",
     "TEXT_SPEAKER": "dad",
@@ -514,10 +534,56 @@
     "HAS_CHOICE": false,
     "IS_END": false
   },
+  "day2_44b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Good deal man, and good luck out there.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_44c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "storekeeper",
+    "TEXT_TEXT": "Hey! You don't have the goods? What are you trying to pull here?",
+    "NEXT_TEXT_ID": [
+      "day2_45c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
   "day2_45a": {
     "TEXT_TYPE": "talk",
     "TEXT_SPEAKER": "dad",
     "TEXT_TEXT": "I guess not everyone has gone crazy.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2_45c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Shoot, I didn't think this deal through. Before the man has time to react I make a break for it down the road.",
+    "NEXT_TEXT_ID": [
+      "day2_46c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_46c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I hear something fall out of my bag and hit the floor behind me. A bottle of water? A can of food?",
+    "NEXT_TEXT_ID": [
+      "day2_47c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2_47c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No time to go back now, I need to keep moving.",
     "NEXT_TEXT_ID": [],
     "HAS_CHOICE": false,
     "IS_END": true

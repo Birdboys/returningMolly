@@ -214,23 +214,52 @@ Free food and water. [[day2_43a]]
 
 
 :: day2_42b [storekeeper:choice] {"position":"725,5625","size":"100,100"}
-Trade walkie talkie for extra food. 
+Trade walkie talkie for extra food. [[day2_43b]]
 
 
 :: day2_42c [storekeeper:choice] {"position":"850,5625","size":"100,100"}
-Trade random weapon for extra water.
+Trade random weapon for extra water. [[day2_43c]]
 
 
 :: day2_43a [storekeeper:listen] {"position":"600,5750","size":"100,100"}
 Fair enough, here you go pal. Good luck. I hope you find her. [[day2_44a]]
 
 
+:: day2_43b [dad:think] {"position":"725,5750","size":"100,100"}
+This should be good. [[]]
+
+
+:: day2_43c [dad:think] {"position":"850,5750","size":"100,100"}
+This should be good. [[]]
+
+
 :: day2_44a [dad:talk] {"position":"600,5875","size":"100,100"}
 Thanks, me too. [[day2_45a]]
 
 
+:: day2_44b [storekeeper:listen] {"position":"725,5875","size":"100,100"}
+Good deal man, and good luck out there. [[]]
+
+
+:: day2_44c [storekeeper:listen] {"position":"850,5875","size":"100,100"}
+Hey! You don't have the goods? What are you trying to pull here? [[day2_45c]]
+
+
+
 :: day2_45a [dad:talk] {"position":"600,6000","size":"100,100"}
 I guess not everyone has gone crazy. [[]]
+
+
+:: day2_45c [dad:think] {"position":"850,6000","size":"100,100"}
+Shoot, I didn't think this deal through. Before the man has time to react I make a break for it down the road. [[day2_46c]]
+
+
+:: day2_46c [dad:think] {"position":"850,6125","size":"100,100"}
+I hear something fall out of my bag and hit the floor behind me. A bottle of water? A can of food? [[day2_47c]] 
+
+
+:: day2_47c [dad:think] {"position":"850,6250","size":"100,100"}
+No time to go back now, I need to keep moving. [[]]
 
 
 :: day2_5 [dad:think] {"position":"800,975","size":"100,100"}

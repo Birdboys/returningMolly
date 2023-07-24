@@ -1,0 +1,19 @@
+:: StoryTitle
+returnDay3
+
+
+:: StoryData
+{
+  "ifid": "C4CE9DBD-E87E-4AFB-9683-DBF045367BEB",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day3_0",
+  "tag-colors": {
+    "dad:think": "green"
+  },
+  "zoom": 1
+}
+
+
+:: day3_0 [dad:think] {"position":"800,350","size":"100,100"}
+OOOHH ADSAD ADSA

@@ -1,0 +1,220 @@
+:: StoryTitle
+returnDay2Night
+
+
+:: StoryData
+{
+  "ifid": "F8FCB9A3-F537-4BFF-B57C-6DC96A444F21",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day2Night_0",
+  "tag-colors": {
+    "dad:thinkl": "green",
+    "dad:think": "green",
+    "girl:listen": "purple",
+    "dad:talk": "green",
+    "dad:choice": "blue"
+  },
+  "zoom": 1
+}
+
+
+:: day2Night_0 [dad:think] {"position":"800,350","size":"100,100"}
+Despite the excitement of my interaction with the shopkeeper, the rest of the days travels were relatively unassuming. [[day2Night_1]]
+
+
+:: day2Night_1 [dad:think] {"position":"800,475","size":"100,100"}
+I'm at the town border now, the last of the 'easy' part is over. [[day2Night_2]]
+
+
+:: day2Night_10 [dad:think] {"position":"800,1600","size":"100,100"}
+I can tell that she's crying... [[day2Night_11]]
+
+
+:: day2Night_11 [dad:think] {"position":"800,1725","size":"100,100"}
+I was never good at this stuff. [[day2Night_12a]] [[day2Night_12b]] [[day2Night_12c]]
+
+
+:: day2Night_12a [dad:choice] {"position":"675,1850","size":"100,100"}
+We're gonna be ok, I promise. [[day2Night_13a]]
+
+
+:: day2Night_12b [dad:choice] {"position":"800,1850","size":"100,100"}
+I'm on the way... [[day2Night_13b]] 
+
+
+:: day2Night_12c [dad:choice] {"position":"925,1850","size":"100,100"}
+How's our mission going? [[day2Night_13c]]
+
+
+:: day2Night_13a [dad:think] {"position":"675,1975","size":"100,100"}
+I don't know how I feel about making promisses I can't keep... [[day2Night_14a]]
+
+
+:: day2Night_13b [girl:listen] {"position":"800,1975","size":"100,100"}
+...okay... [[day2Night_14b]]
+
+
+:: day2Night_13c [girl:listen] {"position":"925,1975","size":"100,100"}
+Good! I listened to the guards all day during lunch. [[day2Night_14c]]
+
+
+:: day2Night_14a [dad:think] {"position":"675,2100","size":"100,100"}
+...but I don't know what else to do. [[day2Night_15a]]
+
+
+:: day2Night_14b [dad:talk] {"position":"800,2100","size":"100,100"}
+... [[day2Night_15b]]
+
+
+:: day2Night_14c [dad:think] {"position":"925,2100","size":"100,100"}
+Missions and food are always good choices to cheer her up. [[day2Night_15c]]
+
+
+:: day2Night_15a [girl:listen] {"position":"675,2225","size":"100,100"}
+I believe you. [[day2Night_16a]]
+
+
+:: day2Night_15b [girl:listen] {"position":"800,2225","size":"100,100"}
+... [[day2Night_16b]]
+
+
+:: day2Night_15c [dad:think] {"position":"925,2225","size":"100,100"}
+Good that they're feeding her too. If she worked up the nerve to eat the canned food she'd still only have enough for a few days. [[day2Night_16c]]
+
+
+:: day2Night_16a [dad:think] {"position":"675,2350","size":"100,100"}
+At least that is reassuring. [[day2Night_18]]
+
+
+:: day2Night_16b [dad:talk] {"position":"800,2350","size":"100,100"}
+... [[day2Night_18]]
+
+
+:: day2Night_16c [dad:talk] {"position":"925,2350","size":"100,100"}
+That's my girl. Get any important intel? [[day2Night_17c]]
+
+
+:: day2Night_17c [girl:listen] {"position":"925,2475","size":"100,100"}
+No... not really. They keep saying the same stuff... [[day2Night_18]]
+
+
+:: day2Night_18 [girl:listen] {"position":"800,2475","size":"100,100"}
+Do you know what a 'rift' is? [[day2Night_19]]
+
+
+:: day2Night_19 [dad:talk] {"position":"800,2600","size":"100,100"}
+Why do you ask? [[day2Night_20]]
+
+
+:: day2Night_2 [dad:think] {"position":"800,600","size":"100,100"}
+Tomorrow on I'll be walking through the woods. [[day2Night_3]]
+
+
+:: day2Night_20 [girl:listen] {"position":"800,2725","size":"100,100"}
+I heard two of the guards talking about it. Something about a "rift" under the town... [[day2Night_21]]
+
+
+:: day2Night_21 [girl:listen] {"position":"800,2850","size":"100,100"}
+The way they talked about it made it sound scary, but I couldn't hear a lot. [[day2Night_22]]
+
+
+:: day2Night_22 [dad:talk] {"position":"800,2975","size":"100,100"}
+I don't know what it means, but that's high quality intel. [[day2Night_23]]
+
+
+:: day2Night_23 [dad:think] {"position":"800,3100","size":"100,100"}
+Good job Molly. [[day2Night_24]]
+
+
+:: day2Night_24 [dad:think] {"position":"800,3225","size":"100,100"}
+I raise my hand instinctively for a high-five... [[day2Night_25]]
+
+
+:: day2Night_25 [dad:think] {"position":"800,3350","size":"100,100"}
+... a light tap to the walkie will have to do for now. [[day2Night_26]]
+
+
+:: day2Night_26 [girl:listen] {"position":"800,3475","size":"100,100"}
+Thanks, I try. [[day2Night_27]]
+
+
+:: day2Night_27 [dad:talk] {"position":"800,3600","size":"100,100"}
+Anything else that you can think of? [[day2Night_28]]
+
+
+:: day2Night_28 [girl:listen] {"position":"800,3725","size":"100,100"}
+Hmm... [[day2Night_29]]
+
+
+:: day2Night_29 [girl:listen] {"position":"800,3850","size":"100,100"}
+Nope, that's it. [[day2Night_30]]
+
+
+:: day2Night_3 [dad:think] {"position":"800,725","size":"100,100"}
+Three days to the site... [[day2Night_4]] 
+
+
+:: day2Night_30 [dad:talk] {"position":"800,3975","size":"100,100"}
+Ok. I'll see what I can do with your intel. [[day2Night_31]]
+
+
+:: day2Night_31 [girl:listen] {"position":"800,4100","size":"100,100"}
+And I'll keep listening. [[day2Night_32]]
+
+
+:: day2Night_32 [dad:talk] {"position":"800,4225","size":"100,100"}
+Good to hear. [[day2Night_33]]
+
+
+:: day2Night_33 [dad:think] {"position":"800,4350","size":"100,100"}
+Ok, it's time for me to sign off. Gotta keep those batteries juiced. [[day2Night_34]]
+
+
+:: day2Night_34 [girl:listen] {"position":"800,4475","size":"100,100"}
+Ok... [[day2Night_35]]
+
+
+:: day2Night_35 [dad:think] {"position":"800,4600","size":"100,100"}
+She doesn't say it, but anyone could tell that her dissapointment is immeasurable. [[day2Night_36]]
+
+
+:: day2Night_36 [dad:think] {"position":"800,4725","size":"100,100"}
+These walkie talkie chats are great, but they're not nearly enough. [[day2Night_37]]
+
+
+:: day2Night_37 [dad:talk] {"position":"800,4850","size":"100,100"}
+See you soon. [[day2Night_38]] 
+
+
+:: day2Night_38 [dad:think] {"position":"800,4975","size":"100,100"}
+The electrical buzzing sound of our connection stops as I turn off the walkie talkie. [[day2Night_39]]
+
+
+:: day2Night_39 [dad:think] {"position":"800,5100","size":"100,100"}
+I need to rest up good tonight, it only gets harder from here... [[]]
+
+
+:: day2Night_4 [girl:listen] {"position":"800,850","size":"100,100"}
+Dad?... Hello?....... [[day2Night_5]]
+
+
+:: day2Night_5 [dad:talk] {"position":"800,975","size":"100,100"}
+I'm here bug. Are you ok? [[day2Night_6]]
+
+
+:: day2Night_6 [girl:listen] {"position":"800,1100","size":"100,100"}
+I'm fine... [[day2Night_7]] 
+
+
+:: day2Night_7 [dad:think] {"position":"800,1225","size":"100,100"}
+She's not, but given the circumstances I can't blame her. [[day2Night_8]]
+
+
+
+:: day2Night_8 [dad:talk] {"position":"800,1350","size":"100,100"}
+I know this is rough, but I'm on my way. [[day2Night_9]]
+
+
+:: day2Night_9 [girl:listen] {"position":"800,1475","size":"100,100"}
+I know... [[day2Night_10]]

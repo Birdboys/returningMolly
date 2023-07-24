@@ -1,0 +1,502 @@
+{
+  "day2Night_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Despite the excitement of my interaction with the shopkeeper, the rest of the days travels were relatively unassuming.",
+    "NEXT_TEXT_ID": [
+      "day2Night_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm at the town border now, the last of the 'easy' part is over.",
+    "NEXT_TEXT_ID": [
+      "day2Night_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_10": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I can tell that she's crying...",
+    "NEXT_TEXT_ID": [
+      "day2Night_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I was never good at this stuff.",
+    "NEXT_TEXT_ID": [
+      "day2Night_12a",
+      "day2Night_12b",
+      "day2Night_12c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day2Night_12a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "We're gonna be ok, I promise.",
+    "NEXT_TEXT_ID": [
+      "day2Night_13a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_12b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm on the way...",
+    "NEXT_TEXT_ID": [
+      "day2Night_13b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_12c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "How's our mission going?",
+    "NEXT_TEXT_ID": [
+      "day2Night_13c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_13a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I don't know how I feel about making promisses I can't keep...",
+    "NEXT_TEXT_ID": [
+      "day2Night_14a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_13b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "...okay...",
+    "NEXT_TEXT_ID": [
+      "day2Night_14b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_13c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Good! I listened to the guards all day during lunch.",
+    "NEXT_TEXT_ID": [
+      "day2Night_14c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_14a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...but I don't know what else to do.",
+    "NEXT_TEXT_ID": [
+      "day2Night_15a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_14b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day2Night_15b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_14c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Missions and food are always good choices to cheer her up.",
+    "NEXT_TEXT_ID": [
+      "day2Night_15c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_15a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I believe you.",
+    "NEXT_TEXT_ID": [
+      "day2Night_16a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_15b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day2Night_16b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_15c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good that they're feeding her too. If she worked up the nerve to eat the canned food she'd still only have enough for a few days.",
+    "NEXT_TEXT_ID": [
+      "day2Night_16c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_16a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "At least that is reassuring.",
+    "NEXT_TEXT_ID": [
+      "day2Night_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_16b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day2Night_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_16c": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "That's my girl. Get any important intel?",
+    "NEXT_TEXT_ID": [
+      "day2Night_17c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_17c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "No... not really. They keep saying the same stuff...",
+    "NEXT_TEXT_ID": [
+      "day2Night_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_18": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Do you know what a 'rift' is?",
+    "NEXT_TEXT_ID": [
+      "day2Night_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_19": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Why do you ask?",
+    "NEXT_TEXT_ID": [
+      "day2Night_20"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Tomorrow on I'll be walking through the woods.",
+    "NEXT_TEXT_ID": [
+      "day2Night_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_20": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I heard two of the guards talking about it. Something about a \"rift\" under the town...",
+    "NEXT_TEXT_ID": [
+      "day2Night_21"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_21": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "The way they talked about it made it sound scary, but I couldn't hear a lot.",
+    "NEXT_TEXT_ID": [
+      "day2Night_22"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_22": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I don't know what it means, but that's high quality intel.",
+    "NEXT_TEXT_ID": [
+      "day2Night_23"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_23": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good job Molly.",
+    "NEXT_TEXT_ID": [
+      "day2Night_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_24": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I raise my hand instinctively for a high-five...",
+    "NEXT_TEXT_ID": [
+      "day2Night_25"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_25": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... a light tap to the walkie will have to do for now.",
+    "NEXT_TEXT_ID": [
+      "day2Night_26"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_26": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Thanks, I try.",
+    "NEXT_TEXT_ID": [
+      "day2Night_27"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_27": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Anything else that you can think of?",
+    "NEXT_TEXT_ID": [
+      "day2Night_28"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_28": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Hmm...",
+    "NEXT_TEXT_ID": [
+      "day2Night_29"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_29": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Nope, that's it.",
+    "NEXT_TEXT_ID": [
+      "day2Night_30"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Three days to the site...",
+    "NEXT_TEXT_ID": [
+      "day2Night_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_30": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ok. I'll see what I can do with your intel.",
+    "NEXT_TEXT_ID": [
+      "day2Night_31"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_31": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "And I'll keep listening.",
+    "NEXT_TEXT_ID": [
+      "day2Night_32"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_32": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good to hear.",
+    "NEXT_TEXT_ID": [
+      "day2Night_33"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_33": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ok, it's time for me to sign off. Gotta keep those batteries juiced.",
+    "NEXT_TEXT_ID": [
+      "day2Night_34"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_34": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Ok...",
+    "NEXT_TEXT_ID": [
+      "day2Night_35"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_35": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She doesn't say it, but anyone could tell that her dissapointment is immeasurable.",
+    "NEXT_TEXT_ID": [
+      "day2Night_36"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_36": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "These walkie talkie chats are great, but they're not nearly enough.",
+    "NEXT_TEXT_ID": [
+      "day2Night_37"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_37": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "See you soon.",
+    "NEXT_TEXT_ID": [
+      "day2Night_38"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_38": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The electrical buzzing sound of our connection stops as I turn off the walkie talkie.",
+    "NEXT_TEXT_ID": [
+      "day2Night_39"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_39": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I need to rest up good tonight, it only gets harder from here...",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day2Night_4": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Dad?... Hello?.......",
+    "NEXT_TEXT_ID": [
+      "day2Night_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_5": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm here bug. Are you ok?",
+    "NEXT_TEXT_ID": [
+      "day2Night_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_6": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I'm fine...",
+    "NEXT_TEXT_ID": [
+      "day2Night_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She's not, but given the circumstances I can't blame her.",
+    "NEXT_TEXT_ID": [
+      "day2Night_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_8": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I know this is rough, but I'm on my way.",
+    "NEXT_TEXT_ID": [
+      "day2Night_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day2Night_9": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I know...",
+    "NEXT_TEXT_ID": [
+      "day2Night_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

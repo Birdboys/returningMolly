@@ -1,8 +1,8 @@
 extends Control
 @export var transition_done := false
 var next_day
-@onready var titles = {'intro':'Returning\nto Molly', "day0": "Day 0", "day1": "Day 1", "day2":"Day 2"}
-@onready var subtitles = {'intro':'A game by Colby Bird', "day0":"Doomsday", "day1":"Relocation", "day2":"Quarrel"}
+@onready var titles = {'intro':'Returning\nto Molly', "day0": "Day 0", "day1": "Day 1", "day2":"Day 2", "day3":"Day 3"}
+@onready var subtitles = {'intro':'A game by Colby Bird', "day0":"Doomsday", "day1":"Embark", "day2":"Acclimating", "day3":"Altercation"}
 
 signal finished_transition(next)
 # Called when the node enters the scene tree for the first time.

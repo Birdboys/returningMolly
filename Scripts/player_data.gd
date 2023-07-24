@@ -20,6 +20,7 @@ func save_user():
 	user_file.close()
 
 func load_user_data(save_path):
+	return default_save_data
 	if FileAccess.file_exists(save_path): #we have data
 		#var save_data = FileAccess.open_encrypted_with_pass(save_path, FileAccess.READ, 'porbo')
 		var save_data = FileAccess.open(save_path, FileAccess.READ)
