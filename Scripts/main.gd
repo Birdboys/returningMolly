@@ -7,7 +7,10 @@ var currentDialogue = null
 var nextDialogue = null
 var currentDay
 var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "day0"],"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], "day1":[true,true,"day1Night"], 
-				"day1Night": [false, false, "day2"], "day2":[true, true,"day2Night"], "day2Night":[false, false,"day3"],"tempLooper":[false, true,"tempLooper"]}
+				"day1Night": [false, false, "day2"], "day2":[true, true,"day2Night"], "day2Night":[false, false,"day3"],"tempLooper":[false, true,"tempLooper"],
+				"day3":[true,true,"day3Night"], "day3Night":[false,false,"day4"],
+				"day4":[true,true,"day4Night"], "day4Night":[false,false,"day5"],
+				"day5":[true,true,"day5Night"], "day5Night":[false,false,"day5"]}
 @onready var objects_in_inventory = {}
 @onready var water_objects = {1:5, 6:1, 11:2}
 @onready var food_objects = {3:5, 5:1}

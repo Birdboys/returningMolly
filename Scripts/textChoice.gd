@@ -21,10 +21,10 @@ func initialize(textID):
 	textId = textID
 	textData = DialogueManager.dialogue_data[textID]
 	text.parse_bbcode(textData['TEXT_TEXT'])
-	
+	print(textData['TEXT_SPEAKER'])
 	match textData['TEXT_SPEAKER']:
-		'dad','girl': set_theme(load("res:///themes/text_choice_%s.tres" % textData['TEXT_SPEAKER']))
-		_: set_theme(load("res://Assets/themes/Assetstext_choice_default.tres"))
+		'dad','girl': set_theme(load("res://Assets/themes/text_choice_%s.tres" % textData['TEXT_SPEAKER']))
+		_: set_theme(load("res://Assets/themes/text_choice_default.tres"))
 func _on_gui_input(event):
 	if event.is_action_pressed("dialogue_choice_input"):
 		emit_signal("dialogue_choice", textId, textData)
