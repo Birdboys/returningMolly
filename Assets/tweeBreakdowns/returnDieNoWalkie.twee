@@ -1,0 +1,131 @@
+:: StoryTitle
+returnDieNoWalkie
+
+
+:: StoryData
+{
+  "ifid": "E7CB5395-A1C4-42FC-87C2-95D1F6130438",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "dieNoWalkie_0",
+  "tag-colors": {
+    "dad:think": "green",
+    "officer:listen": "yellow",
+    "dad:choice": "blue",
+    "dad:talk": "green"
+  },
+  "zoom": 1
+}
+
+
+:: dieNoWalkie_0 [dad:think] {"position":"800,350","size":"100,100"}
+The days flew by. [[dieNoWalkie_0a]]
+
+
+:: dieNoWalkie_0a [dad:think] {"position":"925,475","size":"100,100"}
+I missed hearing her on the walkie, but sometimes I felt like I could hear her anyway. [[dieNoWalkie_1]]
+
+
+:: dieNoWalkie_1 [dad:think] {"position":"800,475","size":"100,100"}
+Within no time I was there. Thirsty, starving, exhausted, but there... [[dieNoWalkie_2]]
+
+
+:: dieNoWalkie_10 [dad:think] {"position":"800,1600","size":"100,100"}
+Where is she? [[dieNoWalkie_11]] 
+
+
+:: dieNoWalkie_11 [officer:listen] {"position":"800,1725","size":"100,100"}
+There's no one here named Molly, sir. [[dieNoWalkie_12]]
+
+
+:: dieNoWalkie_12 [dad:think] {"position":"800,1850","size":"100,100"}
+He looks uneasy, like he doesn't enjoy the direction he knows this altercation is going. [[dieNoWalkie_13]]
+
+
+:: dieNoWalkie_13 [dad:talk] {"position":"800,1975","size":"100,100"}
+You can't possibly know everyone in there by name. It was packed to the brim. [[dieNoWalkie_14]]
+
+
+:: dieNoWalkie_14 [dad:talk] {"position":"800,2100","size":"100,100"}
+You must have a list or something. [[dieNoWalkie_15]]
+
+
+
+:: dieNoWalkie_15 [officer:listen] {"position":"800,2225","size":"100,100"}
+I'm looking at the list sir. You're one of the first newcomers. I can put your name at number thirteen if you give it to me. [[dieNoWalkie_16]]
+
+
+:: dieNoWalkie_16 [dad:choice] {"position":"800,2350","size":"100,100"}
+What? [[dieNoWalkie_17]]
+
+
+:: dieNoWalkie_17 [officer:listen] {"position":"800,2475","size":"100,100"}
+Sir I-... there... [[dieNoWalkie_18a]] [[dieNoWalkie_18b]] [[dieNoWalkie_18c]]
+
+
+:: dieNoWalkie_18a [dad:choice] {"position":"675,2600","size":"100,100"}
+what? [[dieNoWalkie_19]]
+
+
+:: dieNoWalkie_18b [dad:choice] {"position":"800,2600","size":"100,100"}
+What? [[dieNoWalkie_19]]
+
+
+:: dieNoWalkie_18c [dad:choice] {"position":"925,2600","size":"100,100"}
+WHAT? [[dieNoWalkie_19]]
+
+
+:: dieNoWalkie_19 [officer:listen] {"position":"800,2725","size":"100,100"}
+There was a shipment of evacuated citizens to a safe, secondary location a couple of nights ago. [[dieNoWalkie_20]]
+
+
+:: dieNoWalkie_2 [dad:think] {"position":"800,600","size":"100,100"}
+... zone C, Molly. [[dieNoWalkie_3]]
+
+
+:: dieNoWalkie_20 [dad:think] {"position":"800,2850","size":"100,100"}
+No. [[dieNoWalkie_21]]
+
+
+:: dieNoWalkie_21 [officer:listen] {"position":"800,2975","size":"100,100"}
+Is... is it possible that 'Molly' was one of those people who were moved. [[dieNoWalkie_22]]
+
+
+:: dieNoWalkie_22 [dad:think] {"position":"800,3100","size":"100,100"}
+No.... [[dieNoWalkie_23]]
+
+
+:: dieNoWalkie_23 [officer:listen] {"position":"800,3225","size":"100,100"}
+Sir..... [[dieNoWalkie_24]]
+
+
+:: dieNoWalkie_24 [dad:talk] {"position":"800,3350","size":"100,100"}
+NO [[]]
+
+
+:: dieNoWalkie_3 [officer:listen] {"position":"800,725","size":"100,100"}
+Sir. [[dieNoWalkie_4]]
+
+
+:: dieNoWalkie_4 [dad:think] {"position":"800,850","size":"100,100"}
+It's eerily quiet for a bustling evacuation center. Where is she? [[dieNoWalkie_5]]
+
+
+:: dieNoWalkie_5 [officer:listen] {"position":"800,975","size":"100,100"}
+Sir! Hello. Would you like to be admitted? [[dieNoWalkie_6]]
+
+
+:: dieNoWalkie_6 [dad:think] {"position":"800,1100","size":"100,100"}
+I'd barily noticed him. The guard standing at the open gate. [[dieNoWalkie_7]]
+
+
+:: dieNoWalkie_7 [officer:listen] {"position":"800,1225","size":"100,100"}
+Sir, we have room in this evacuation zone. Please, come in. [[dieNoWalkie_8]] 
+
+
+:: dieNoWalkie_8 [dad:choice] {"position":"800,1350","size":"100,100"}
+Where is Molly. [[dieNoWalkie_9]]
+
+
+:: dieNoWalkie_9 [officer:listen] {"position":"800,1475","size":"100,100"}
+I'm sorry sir? [[dieNoWalkie_10]]

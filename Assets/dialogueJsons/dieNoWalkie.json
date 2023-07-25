@@ -1,0 +1,282 @@
+{
+  "dieNoWalkie_0": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The days flew by.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_0a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_0a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I missed hearing her on the walkie, but sometimes I felt like I could hear her anyway.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Within no time I was there. Thirsty, starving, exhausted, but there...",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_10": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Where is she?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_11": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "There's no one here named Molly, sir.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "He looks uneasy, like he doesn't enjoy the direction he knows this altercation is going.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_13": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "You can't possibly know everyone in there by name. It was packed to the brim.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_14"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_14": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "You must have a list or something.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_15"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_15": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "I'm looking at the list sir. You're one of the first newcomers. I can put your name at number thirteen if you give it to me.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_16"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_16": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_17"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_17": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Sir I-... there...",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_18a",
+      "dieNoWalkie_18b",
+      "dieNoWalkie_18c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "dieNoWalkie_18a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "what?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_18b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_18c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "WHAT?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_19": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "There was a shipment of evacuated citizens to a safe, secondary location a couple of nights ago.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_20"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... zone C, Molly.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_20": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_21"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_21": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Is... is it possible that 'Molly' was one of those people who were moved.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_22"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_22": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No....",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_23"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_23": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Sir.....",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_24": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "NO",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "dieNoWalkie_3": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Sir.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It's eerily quiet for a bustling evacuation center. Where is she?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_5": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Sir! Hello. Would you like to be admitted?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'd barily noticed him. The guard standing at the open gate.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_7": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "Sir, we have room in this evacuation zone. Please, come in.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_8": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Where is Molly.",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieNoWalkie_9": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "officer",
+    "TEXT_TEXT": "I'm sorry sir?",
+    "NEXT_TEXT_ID": [
+      "dieNoWalkie_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

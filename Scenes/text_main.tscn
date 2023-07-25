@@ -79,6 +79,7 @@ theme_override_constants/margin_right = 32
 [node name="textMainText" type="RichTextLabel" parent="textMainPanel/textMargin"]
 layout_mode = 2
 mouse_filter = 1
+bbcode_enabled = true
 text = "Good that they're feeding her too. If she worked up the nerve to eat the canned food she'd still only have enough for a few days. "
 
 [node name="cursor" type="TextureRect" parent="textMainPanel"]
@@ -111,9 +112,9 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 426.0
+offset_left = 465.0
 offset_top = -33.0
-offset_right = -428.0
+offset_right = -465.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 0
@@ -121,23 +122,25 @@ theme_override_constants/separation = 0
 [node name="Button" type="Button" parent="textMainPanel/settingsButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
-mouse_filter = 1
 theme_type_variation = &"settingButton"
-text = "Settings"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+text = "Options"
 
-[node name="Button2" type="Button" parent="textMainPanel/settingsButtons"]
+[node name="quit" type="Button" parent="textMainPanel/settingsButtons"]
 layout_mode = 2
 size_flags_horizontal = 3
-mouse_filter = 1
 theme_type_variation = &"settingButton"
-text = "Settings"
-
-[node name="Button3" type="Button" parent="textMainPanel/settingsButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 1
-theme_type_variation = &"settingButton"
-text = "Settings"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+action_mode = 0
+text = "Quit"
 
 [node name="textSpeaker" type="RichTextLabel" parent="."]
 layout_mode = 1
@@ -166,3 +169,5 @@ theme_type_variation = &"speakerText"
 bbcode_enabled = true
 fit_content = true
 autowrap_mode = 0
+
+[connection signal="pressed" from="textMainPanel/settingsButtons/quit" to="." method="_on_quit_pressed"]

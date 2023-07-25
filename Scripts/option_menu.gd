@@ -3,7 +3,6 @@ extends Control
 @onready var music_button = $bg/music_vol/music_button
 @onready var sound_button = $bg/sound_button
 @onready var sound_slider = $bg/sound_vol
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -39,3 +38,12 @@ func _on_music_button_pressed():
 func _on_sound_button_pressed():
 	sound_slider.value = 0
 	pass # Replace with function body.
+
+func _on_close_pressed():
+	queue_free()
+	PlayerData.in_options = false
+	pass # Replace with function body.
+	
+func initialize(music_val, sound_val):
+	music_slider.value = music_val
+	sound_slider.value = sound_val

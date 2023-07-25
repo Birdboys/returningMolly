@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxwe01qwbklgx"]
+[gd_scene load_steps=2 format=3 uid="uid://dxwe01qwbklgx"]
 
 [ext_resource type="Script" path="res://Scripts/dialogue_ui.gd" id="1_5qnim"]
-[ext_resource type="PackedScene" uid="uid://2ub6scsfkxtl" path="res://Scenes/text_main.tscn" id="2_chrpt"]
 
 [node name="dialogueUI" type="Control"]
 layout_mode = 3
@@ -37,8 +36,5 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
 alignment = 2
-
-[node name="textMain" parent="." instance=ExtResource("2_chrpt")]
-layout_mode = 1
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

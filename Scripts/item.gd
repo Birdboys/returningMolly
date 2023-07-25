@@ -35,7 +35,6 @@ func loadItem(id, scl=Vector2(1,1), sl=50):
 	item_coords = ItemLoader.item_data[str(id)]["item_graph"]
 	item_size = ItemLoader.item_data[str(id)]["item_size"]
 	slot_width = sl
-	print("THE PIVOT OFFSET",itemImage.pivot_offset, itemImage.size)
 func pickUp():
 	pickup_coords = global_position
 	z_index = 1
@@ -44,7 +43,6 @@ func putDown(snap_coords=null):
 	z_index = 0
 	held = false
 	if snap_coords:
-		print("PUTTING ITEM IN POSITION", snap_coords)
 		global_position = snap_coords# + item_size*slot_width/2
 	else:
 		emit_signal("return_to_ground", item_id)
@@ -70,7 +68,6 @@ func rotateMe():
 	for x in range(len(item_coords)):
 		item_coords[x] = round(item_coords[x].rotated(PI/2))
 		#item_coords[x].x = Math.round(item_coords[x].x, 0)
-	print(item_coords)
 	
 	emit_signal("rotated")
 

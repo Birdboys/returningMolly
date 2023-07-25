@@ -118,4 +118,9 @@ libraries = {
 "": SubResource("AnimationLibrary_kljjn")
 }
 
+[node name="timer" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

@@ -6,10 +6,12 @@ extends Control
 @onready var amp = 18
 @onready var speed = 3
 @onready var time=0
+@onready var options_menu = preload("res://Scenes/option_menu.tscn")
 var return_pos
 var molly_pos
 signal play_game
 signal quit_game
+signal open_options
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	return_pos = returningto.position
@@ -27,7 +29,6 @@ func _process(delta):
 
 
 func _on_credits_meta_clicked(meta):
-	print(str(meta))
 	OS.shell_open(str(meta))
 
 
@@ -37,4 +38,8 @@ func _on_play_pressed():
 
 func _on_quit_pressed():
 	emit_signal("quit_game")
+	pass # Replace with function body.
+
+func _on_options_pressed():
+	emit_signal("open_options")
 	pass # Replace with function body.

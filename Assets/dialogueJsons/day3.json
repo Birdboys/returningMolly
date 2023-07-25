@@ -1,10 +1,1000 @@
 {
+  "3_20": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I heard the guards talking at breakfast.",
+    "NEXT_TEXT_ID": [
+      "day3_21"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
   "day3_0": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "OOOHH ADSAD ADSA",
+    "TEXT_TEXT": "When I wake up im soaked.",
+    "NEXT_TEXT_ID": [
+      "day3_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_1": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I tried to nestle myself under an awning to hide from the rain, but a large, chilly puddle has crept its way up to my legs.",
+    "NEXT_TEXT_ID": [
+      "day3_2"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_10": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Huh..?",
+    "NEXT_TEXT_ID": [
+      "day3_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "walkie",
+    "TEXT_TEXT": "Bzzzzz...... bzzz......",
+    "NEXT_TEXT_ID": [
+      "day3_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The walkie talkie...",
+    "NEXT_TEXT_ID": [
+      "day3_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_13": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Molly!",
+    "NEXT_TEXT_ID": [
+      "day3_14"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_14": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I flip open my bag and retrieve the buzzing walkie talkie.",
+    "NEXT_TEXT_ID": [
+      "day3_15"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_15": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The connection crackles to life as I hear the sounds of panicked and shouty whispering.",
+    "NEXT_TEXT_ID": [
+      "day3_16"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_16": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "-EASE PICK UP. ARE YOU THERE? HURRY! HELLO?",
+    "NEXT_TEXT_ID": [
+      "day3_17"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_17": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm here bug, calm down.",
+    "NEXT_TEXT_ID": [
+      "day3_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_18": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "THEY'RE MOVING US!",
+    "NEXT_TEXT_ID": [
+      "day3_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_19": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What...",
+    "NEXT_TEXT_ID": [
+      "3_20"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_2": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Thankfully my pack is alright, no water damage.",
+    "NEXT_TEXT_ID": [
+      "day3_3"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_21": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "They said that they are 'relocating the civilians to the secondary location' tonight.",
+    "NEXT_TEXT_ID": [
+      "day3_22"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_22": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "When are you getting here? I don't want to leave without you!",
+    "NEXT_TEXT_ID": [
+      "day3_23"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_23": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No...",
+    "NEXT_TEXT_ID": [
+      "day3_24a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_24": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I thought I had more time. I mean the guard we-.... he said five days...  I'll never make it on foot, I can't.",
+    "NEXT_TEXT_ID": [
+      "day3_25"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_24a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What are you going to do? Dad?",
+    "NEXT_TEXT_ID": [
+      "day3_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_25": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "You have to hurry. The guards said they took people from zone C yesterday, the only group left is us at D.",
+    "NEXT_TEXT_ID": [
+      "day3_26"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_26": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What......",
+    "NEXT_TEXT_ID": [
+      "day3_27"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_27": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Are you listening? They're going to move us. I don't want to go away without YOU.",
+    "NEXT_TEXT_ID": [
+      "day3_28"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_28": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Di- did you say zone D.",
+    "NEXT_TEXT_ID": [
+      "day3_29"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_29": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Yes. They're taking us out of zone D tonight.",
+    "NEXT_TEXT_ID": [
+      "day3_30a",
+      "day3_30b",
+      "day3_30c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day3_3": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The straps are cold and uncomfortable but they'll still work.",
+    "NEXT_TEXT_ID": [
+      "day3_4"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_30a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I left you at evacuation zone C bug...",
+    "NEXT_TEXT_ID": [
+      "day3_31a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_30b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Are you sure you heard them say zone D?",
+    "NEXT_TEXT_ID": [
+      "day3_31b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_30c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I don't understand.",
+    "NEXT_TEXT_ID": [
+      "day3_31c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_31a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "You mean you didn't leave me in the bus?",
+    "NEXT_TEXT_ID": [
+      "day3_32a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_31b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Definitely. There are signs posted all around the building.",
+    "NEXT_TEXT_ID": [
+      "day3_32b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_31c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What don't you understand",
+    "NEXT_TEXT_ID": [
+      "day3_32c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_32a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No. What bus?",
+    "NEXT_TEXT_ID": [
+      "day3_33"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_32b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What? How did you get there? I dropped you off at evacuation site C.",
+    "NEXT_TEXT_ID": [
+      "day3_33"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_32c": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "When I dropped you off three days ago, I dropped you off at evacuation zone C. Are you sure you're at D?",
+    "NEXT_TEXT_ID": [
+      "day3_31a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_33": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "When I woke up I was in a bus with a bunch of other people and guards...",
+    "NEXT_TEXT_ID": [
+      "day3_34"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_34": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I was scared... you weren't there...",
+    "NEXT_TEXT_ID": [
+      "day3_34a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_34a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Why weren't you there?",
+    "NEXT_TEXT_ID": [
+      "day3_35a",
+      "day3_35b",
+      "day3_35c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day3_35a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I know bug, I'm sorry.",
+    "NEXT_TEXT_ID": [
+      "day3_36"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_35b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Come on bug, let's focus on the mission.",
+    "NEXT_TEXT_ID": [
+      "day3_36"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_35c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm on my way now bug.",
+    "NEXT_TEXT_ID": [
+      "day3_36"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_36": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I can't believe they moved her and I didn't realize...",
+    "NEXT_TEXT_ID": [
+      "day3_37"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_37": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... but for now it might just be a good thing.",
     "NEXT_TEXT_ID": [],
     "HAS_CHOICE": false,
     "IS_END": true
+  },
+  "day3_38a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Yes, I have my map!",
+    "NEXT_TEXT_ID": [
+      "day3_39a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_38b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "No... I don't have my map.",
+    "NEXT_TEXT_ID": [
+      "day3_39b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_39a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What?",
+    "NEXT_TEXT_ID": [
+      "day3_40a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_39b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What?",
+    "NEXT_TEXT_ID": [
+      "day3_40b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_4": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ahead of me the asphalt road transitions to an unruly, tire marked patch of dirt. Rough path ahead...",
+    "NEXT_TEXT_ID": [
+      "day3_5"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_40a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Nothing bug, it's gonna be ok.",
+    "NEXT_TEXT_ID": [
+      "day3_41a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_40b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Uh... nothing...",
+    "NEXT_TEXT_ID": [
+      "day3_41b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_41a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Based on the map...",
+    "NEXT_TEXT_ID": [
+      "day3_42a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_41b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What am I going to do without the map.",
+    "NEXT_TEXT_ID": [
+      "day3_42b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_42a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... oh my...",
+    "NEXT_TEXT_ID": [
+      "day3_43a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_42b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The original destination was far away but at least it was a straight shot.",
+    "NEXT_TEXT_ID": [
+      "day3_43b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_43a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... I CAN MAKE IT!",
+    "NEXT_TEXT_ID": [
+      "day3_44a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_43b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I try to visualize the map in my head. I know I need to make a right turn off the main path...",
+    "NEXT_TEXT_ID": [
+      "day3_44b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_44a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It'll be tight, but zone D is definitely closer than zone C.",
+    "NEXT_TEXT_ID": [
+      "day3_45a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_44b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...but I can't remember where, or which one.",
+    "NEXT_TEXT_ID": [
+      "day3_45b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_45a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "There's a chance I can make it before they ship people out.",
+    "NEXT_TEXT_ID": [
+      "day3_46a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_45b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Screw it.",
+    "NEXT_TEXT_ID": [
+      "day3_46b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_46a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "There's a chance I get to Molly in time..",
+    "NEXT_TEXT_ID": [
+      "day3_47a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_46b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What? Are you ok. What's going on?",
+    "NEXT_TEXT_ID": [
+      "day3_47b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_47a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Listen Molly.",
+    "NEXT_TEXT_ID": [
+      "day3_48a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_47b": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Sorry bug, I'm working on it.",
+    "NEXT_TEXT_ID": [
+      "day3_48b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_48a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm arriving at your evacuation zone tonight.",
+    "NEXT_TEXT_ID": [
+      "day3_49a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_48b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She's getting upset... I have to figure this out.",
+    "NEXT_TEXT_ID": [
+      "day3_49b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_49a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "New mission. I need you to stall for as long as possible before I get there.",
+    "NEXT_TEXT_ID": [
+      "day3_50a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_49b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Sitting here does nothing.",
+    "NEXT_TEXT_ID": [
+      "day3_50b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_5": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... let's get a move on.",
+    "NEXT_TEXT_ID": [
+      "day3_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_50a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Can you do that for me?",
+    "NEXT_TEXT_ID": [
+      "day3_51a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_50b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hopefully I can call Molly when I get closer... try to echolocate or something.",
+    "NEXT_TEXT_ID": [
+      "day3_51b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_51a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I can do it.",
+    "NEXT_TEXT_ID": [
+      "day3_52a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_51b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Worse comes to worse, I'll just have to guess.",
+    "NEXT_TEXT_ID": [
+      "day3_47a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_52a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I know you can bug.",
+    "NEXT_TEXT_ID": [
+      "day3_53a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_53a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm burning time. The new location is closer but not close.",
+    "NEXT_TEXT_ID": [
+      "day3_54a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_54a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I need to go. She needs me to go.",
+    "NEXT_TEXT_ID": [
+      "day3_55a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_55a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Ok, Make sure you keep the walkie close tonight, I might need to call you to find exactly where you are.",
+    "NEXT_TEXT_ID": [
+      "day3_56a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_56a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "You don't-... ok. I will.",
+    "NEXT_TEXT_ID": [
+      "day3_57a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_57a": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Good. I'll see you later tonight bug, hang in there.",
+    "NEXT_TEXT_ID": [
+      "day3_58"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_58": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "See y-...",
+    "NEXT_TEXT_ID": [
+      "day3_59"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_59": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "HEY.",
+    "NEXT_TEXT_ID": [
+      "day3_60"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day3_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_60": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "NO, th- it's mine!",
+    "NEXT_TEXT_ID": [
+      "day3_61"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_61": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "voice",
+    "TEXT_TEXT": "What is that. Give it here!",
+    "NEXT_TEXT_ID": [
+      "day3_62"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_62": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Oh no. I can hear another voice coming through the walkie.",
+    "NEXT_TEXT_ID": [
+      "day3_63"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_63": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "It sounds like a struggle.",
+    "NEXT_TEXT_ID": [
+      "day3_64"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_64": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "NO! I give it- it's for my mission!",
+    "NEXT_TEXT_ID": [
+      "day3_65"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_65": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "voice",
+    "TEXT_TEXT": "Halt",
+    "NEXT_TEXT_ID": [
+      "day3_66"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_66": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "walkie",
+    "TEXT_TEXT": ".... click ....",
+    "NEXT_TEXT_ID": [
+      "day3_67"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_67": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The walkie talkie flips off.",
+    "NEXT_TEXT_ID": [
+      "day3_68"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_68": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Molly.....",
+    "NEXT_TEXT_ID": [
+      "day3_69"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_69": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I play frantically with the connection. The machine buzzes and beeps.",
+    "NEXT_TEXT_ID": [
+      "day3_70"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day3_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_70": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Molly!",
+    "NEXT_TEXT_ID": [
+      "day3_71"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_71": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "MOLLY!!",
+    "NEXT_TEXT_ID": [
+      "day3_72"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_72": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day3_73"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_73": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day3_74"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_74": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "She's gone, and I find myself sprinting down the road.",
+    "NEXT_TEXT_ID": [
+      "day3_75"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3_75": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I have nothing better to do, I have to go.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day3_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day3_9": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "walkie",
+    "TEXT_TEXT": "bzzz.....",
+    "NEXT_TEXT_ID": [
+      "day3_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
   }
 }

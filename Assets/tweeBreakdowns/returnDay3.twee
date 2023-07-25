@@ -9,11 +9,416 @@ returnDay3
   "format-version": "2.36.1",
   "start": "day3_0",
   "tag-colors": {
-    "dad:think": "green"
+    "dad:think": "green",
+    "dad:talk": "green",
+    "man:listen": "red",
+    "walkie:think": "yellow",
+    "girl:listen": "purple",
+    "dad:choice": "blue",
+    "voice:listen": "yellow"
   },
   "zoom": 1
 }
 
 
-:: day3_0 [dad:think] {"position":"800,350","size":"100,100"}
-OOOHH ADSAD ADSA
+:: 3_20 [girl:listen] {"position":"625,2850","size":"100,100"}
+I heard the guards talking at breakfast. [[day3_21]]
+
+
+
+:: day3_0 [dad:think] {"position":"625,350","size":"100,100"}
+When I wake up im soaked. [[day3_1]]
+
+
+:: day3_1 [dad:think] {"position":"625,475","size":"100,100"}
+I tried to nestle myself under an awning to hide from the rain, but a large, chilly puddle has crept its way up to my legs. [[day3_2]]
+
+
+:: day3_10 [dad:talk] {"position":"625,1600","size":"100,100"}
+Huh..? [[day3_11]]
+
+
+:: day3_11 [walkie:think] {"position":"625,1725","size":"100,100"}
+Bzzzzz...... bzzz...... [[day3_12]]
+
+
+:: day3_12 [dad:think] {"position":"625,1850","size":"100,100"}
+The walkie talkie... [[day3_13]]
+
+
+:: day3_13 [dad:think] {"position":"625,1975","size":"100,100"}
+Molly! [[day3_14]]
+
+
+:: day3_14 [dad:think] {"position":"625,2100","size":"100,100"}
+I flip open my bag and retrieve the buzzing walkie talkie. [[day3_15]]
+
+
+:: day3_15 [dad:think] {"position":"625,2225","size":"100,100"}
+The connection crackles to life as I hear the sounds of panicked and shouty whispering. [[day3_16]]
+
+
+:: day3_16 [girl:listen] {"position":"625,2350","size":"100,100"}
+-EASE PICK UP. ARE YOU THERE? HURRY! HELLO? [[day3_17]]
+
+
+:: day3_17 [dad:talk] {"position":"625,2475","size":"100,100"}
+I'm here bug, calm down. [[day3_18]]
+
+
+:: day3_18 [girl:listen] {"position":"625,2600","size":"100,100"}
+THEY'RE MOVING US! [[day3_19]]
+
+
+
+:: day3_19 [dad:talk] {"position":"625,2725","size":"100,100"}
+What... [[3_20]]
+
+
+:: day3_2 [dad:think] {"position":"625,600","size":"100,100"}
+Thankfully my pack is alright, no water damage. [[day3_3]]
+
+
+:: day3_21 [girl:listen] {"position":"625,2975","size":"100,100"}
+They said that they are 'relocating the civilians to the secondary location' tonight. [[day3_22]]
+
+
+:: day3_22 [girl:listen] {"position":"625,3100","size":"100,100"}
+When are you getting here? I don't want to leave without you! [[day3_23]]
+
+
+:: day3_23 [dad:think] {"position":"625,3225","size":"100,100"}
+No... [[day3_24a]]
+
+
+:: day3_24 [dad:think] {"position":"625,3350","size":"100,100"}
+I thought I had more time. I mean the guard we-.... he said five days...  I'll never make it on foot, I can't. [[day3_25]]
+
+
+:: day3_24a [girl:listen] {"position":"750,3350","size":"100,100"}
+What are you going to do? Dad? [[day3_24]]
+
+
+:: day3_25 [girl:listen] {"position":"625,3475","size":"100,100"}
+You have to hurry. The guards said they took people from zone C yesterday, the only group left is us at D. [[day3_26]]
+
+
+:: day3_26 [dad:choice] {"position":"625,3600","size":"100,100"}
+What...... [[day3_27]]
+
+
+:: day3_27 [girl:listen] {"position":"625,3725","size":"100,100"}
+Are you listening? They're going to move us. I don't want to go away without YOU. [[day3_28]]
+
+
+:: day3_28 [dad:talk] {"position":"625,3850","size":"100,100"}
+Di- did you say zone D. [[day3_29]]
+
+
+:: day3_29 [girl:listen] {"position":"625,3975","size":"100,100"}
+Yes. They're taking us out of zone D tonight. [[day3_30a]] [[day3_30b]] [[day3_30c]]
+
+
+:: day3_3 [dad:think] {"position":"625,725","size":"100,100"}
+The straps are cold and uncomfortable but they'll still work. [[day3_4]]
+
+
+:: day3_30a [dad:choice] {"position":"500,4100","size":"100,100"}
+I left you at evacuation zone C bug... [[day3_31a]]
+
+
+:: day3_30b [dad:choice] {"position":"625,4100","size":"100,100"}
+Are you sure you heard them say zone D? [[day3_31b]] 
+
+
+:: day3_30c [dad:choice] {"position":"750,4100","size":"100,100"}
+I don't understand. [[day3_31c]]
+
+
+
+:: day3_31a [girl:listen] {"position":"500,4225","size":"100,100"}
+You mean you didn't leave me in the bus? [[day3_32a]]
+
+
+:: day3_31b [girl:listen] {"position":"625,4225","size":"100,100"}
+Definitely. There are signs posted all around the building. [[day3_32b]]
+
+
+:: day3_31c [girl:listen] {"position":"750,4225","size":"100,100"}
+ What don't you understand [[day3_32c]]
+
+
+:: day3_32a [dad:talk] {"position":"500,4350","size":"100,100"}
+No. What bus? [[day3_33]]
+
+
+:: day3_32b [dad:talk] {"position":"625,4350","size":"100,100"}
+What? How did you get there? I dropped you off at evacuation site C. [[day3_33]]
+
+
+:: day3_32c [dad:talk] {"position":"750,4350","size":"100,100"}
+When I dropped you off three days ago, I dropped you off at evacuation zone C. Are you sure you're at D? [[day3_31a]]
+
+
+:: day3_33 [girl:listen] {"position":"625,4475","size":"100,100"}
+When I woke up I was in a bus with a bunch of other people and guards... [[day3_34]]
+
+
+:: day3_34 [girl:listen] {"position":"625,4600","size":"100,100"}
+I was scared... you weren't there... [[day3_34a]]
+
+
+:: day3_34a [girl:listen] {"position":"750,4600","size":"100,100"}
+Why weren't you there? [[day3_35a]] [[day3_35b]] [[day3_35c]]
+
+
+:: day3_35a [dad:choice] {"position":"500,4725","size":"100,100"}
+I know bug, I'm sorry. [[day3_36]]
+
+
+:: day3_35b [dad:choice] {"position":"625,4725","size":"100,100"}
+Come on bug, let's focus on the mission. [[day3_36]]
+
+
+:: day3_35c [dad:choice] {"position":"750,4725","size":"100,100"}
+I'm on my way now bug. [[day3_36]]
+
+
+:: day3_36 [dad:think] {"position":"625,4850","size":"100,100"}
+I can't believe they moved her and I didn't realize... [[day3_37]] 
+
+
+:: day3_37 [dad:think] {"position":"625,4975","size":"100,100"}
+... but for now it might just be a good thing. [[]] 
+
+
+:: day3_38a [dad:talk] {"position":"575,5125","size":"100,100"}
+Yes, I have my map! [[day3_39a]]
+
+
+:: day3_38b [dad:talk] {"position":"700,5125","size":"100,100"}
+No... I don't have my map. [[day3_39b]]
+
+
+:: day3_39a [girl:listen] {"position":"575,5250","size":"100,100"}
+What? [[day3_40a]]
+
+
+:: day3_39b [girl:listen] {"position":"700,5250","size":"100,100"}
+What? [[day3_40b]]
+
+
+:: day3_4 [dad:think] {"position":"625,850","size":"100,100"}
+ Ahead of me the asphalt road transitions to an unruly, tire marked patch of dirt. Rough path ahead... [[day3_5]]
+
+
+:: day3_40a [dad:talk] {"position":"575,5375","size":"100,100"}
+Nothing bug, it's gonna be ok. [[day3_41a]]
+
+
+:: day3_40b [dad:talk] {"position":"700,5375","size":"100,100"}
+Uh... nothing... [[day3_41b]]
+
+
+:: day3_41a [dad:think] {"position":"575,5500","size":"100,100"}
+Based on the map... [[day3_42a]] 
+
+
+:: day3_41b [dad:think] {"position":"700,5500","size":"100,100"}
+What am I going to do without the map. [[day3_42b]]
+
+
+:: day3_42a [dad:think] {"position":"575,5625","size":"100,100"}
+... oh my... [[day3_43a]] 
+
+
+:: day3_42b [dad:think] {"position":"700,5625","size":"100,100"}
+The original destination was far away but at least it was a straight shot. [[day3_43b]]
+
+
+:: day3_43a [dad:think] {"position":"575,5750","size":"100,100"}
+... I CAN MAKE IT! [[day3_44a]]
+
+
+:: day3_43b [dad:think] {"position":"700,5750","size":"100,100"}
+I try to visualize the map in my head. I know I need to make a right turn off the main path... [[day3_44b]] 
+
+
+:: day3_44a [dad:think] {"position":"575,5875","size":"100,100"}
+It'll be tight, but zone D is definitely closer than zone C. [[day3_45a]]
+
+
+:: day3_44b [dad:think] {"position":"700,5875","size":"100,100"}
+...but I can't remember where, or which one. [[day3_45b]]
+
+
+:: day3_45a [dad:think] {"position":"575,6000","size":"100,100"}
+There's a chance I can make it before they ship people out. [[day3_46a]]
+
+
+:: day3_45b [dad:talk] {"position":"700,6000","size":"100,100"}
+Screw it. [[day3_46b]]
+
+
+:: day3_46a [dad:think] {"position":"575,6125","size":"100,100"}
+There's a chance I get to Molly in time.. [[day3_47a]]
+
+
+:: day3_46b [girl:listen] {"position":"700,6125","size":"100,100"}
+What? Are you ok. What's going on? [[day3_47b]]
+
+
+:: day3_47a [dad:talk] {"position":"575,6250","size":"100,100"}
+Listen Molly. [[day3_48a]]
+
+
+:: day3_47b [dad:talk] {"position":"700,6250","size":"100,100"}
+Sorry bug, I'm working on it. [[day3_48b]] 
+
+
+:: day3_48a [dad:talk] {"position":"575,6375","size":"100,100"}
+I'm arriving at your evacuation zone tonight. [[day3_49a]]
+
+
+:: day3_48b [dad:think] {"position":"700,6375","size":"100,100"}
+She's getting upset... I have to figure this out. [[day3_49b]]
+
+
+:: day3_49a [dad:talk] {"position":"575,6500","size":"100,100"}
+New mission. I need you to stall for as long as possible before I get there. [[day3_50a]]
+
+
+:: day3_49b [dad:think] {"position":"700,6500","size":"100,100"}
+Sitting here does nothing. [[day3_50b]]
+
+
+:: day3_5 [dad:talk] {"position":"625,975","size":"100,100"}
+... let's get a move on. [[day3_6]]
+
+
+:: day3_50a [dad:talk] {"position":"575,6625","size":"100,100"}
+Can you do that for me? [[day3_51a]] 
+
+
+:: day3_50b [dad:think] {"position":"700,6625","size":"100,100"}
+Hopefully I can call Molly when I get closer... try to echolocate or something. [[day3_51b]]
+
+
+:: day3_51a [girl:listen] {"position":"575,6750","size":"100,100"}
+I can do it. [[day3_52a]]
+
+
+:: day3_51b [dad:think] {"position":"700,6750","size":"100,100"}
+Worse comes to worse, I'll just have to guess. [[day3_47a]]
+
+
+:: day3_52a [dad:talk] {"position":"575,6875","size":"100,100"}
+I know you can bug. [[day3_53a]]
+
+
+:: day3_53a [dad:think] {"position":"575,7000","size":"100,100"}
+I'm burning time. The new location is closer but not close. [[day3_54a]]
+
+
+:: day3_54a [dad:think] {"position":"575,7125","size":"100,100"}
+I need to go. She needs me to go. [[day3_55a]]
+
+
+:: day3_55a [dad:talk] {"position":"575,7250","size":"100,100"}
+Ok, Make sure you keep the walkie close tonight, I might need to call you to find exactly where you are. [[day3_56a]] 
+
+
+:: day3_56a [girl:listen] {"position":"575,7375","size":"100,100"}
+You don't-... ok. I will. [[day3_57a]] 
+
+
+:: day3_57a [dad:talk] {"position":"575,7500","size":"100,100"}
+Good. I'll see you later tonight bug, hang in there. [[day3_58]]
+
+
+:: day3_58 [girl:listen] {"position":"575,7625","size":"100,100"}
+See y-... [[day3_59]] 
+
+
+:: day3_59 [girl:listen] {"position":"575,7750","size":"100,100"}
+HEY. [[day3_60]]
+
+
+:: day3_6 [dad:think] {"position":"625,1100","size":"100,100"}
+... [[day3_7]]
+
+
+:: day3_60 [girl:listen] {"position":"575,7875","size":"100,100"}
+NO, th- it's mine! [[day3_61]]
+
+
+:: day3_61 [voice:listen] {"position":"575,8000","size":"100,100"}
+What is that. Give it here! [[day3_62]]
+
+
+:: day3_62 [dad:think] {"position":"575,8125","size":"100,100"}
+Oh no. I can hear another voice coming through the walkie. [[day3_63]]
+
+
+:: day3_63 [dad:think] {"position":"575,8250","size":"100,100"}
+It sounds like a struggle. [[day3_64]]
+
+
+:: day3_64 [girl:listen] {"position":"575,8375","size":"100,100"}
+NO! I give it- it's for my mission! [[day3_65]]
+
+
+:: day3_65 [voice:listen] {"position":"575,8500","size":"100,100"}
+Halt [[day3_66]]
+
+
+:: day3_66 [walkie:think] {"position":"575,8625","size":"100,100"}
+.... click .... [[day3_67]]
+
+
+:: day3_67 [dad:think] {"position":"575,8750","size":"100,100"}
+The walkie talkie flips off. [[day3_68]]
+
+
+:: day3_68 [dad:talk] {"position":"575,8875","size":"100,100"}
+Molly..... [[day3_69]]
+
+
+:: day3_69 [dad:think] {"position":"575,9000","size":"100,100"}
+I play frantically with the connection. The machine buzzes and beeps. [[day3_70]]
+
+
+:: day3_7 [dad:think] {"position":"625,1225","size":"100,100"}
+... [[day3_8]]
+
+
+:: day3_70 [dad:talk] {"position":"575,9125","size":"100,100"}
+Molly! [[day3_71]]
+
+
+:: day3_71 [dad:talk] {"position":"575,9250","size":"100,100"}
+MOLLY!! [[day3_72]]
+
+
+:: day3_72 [dad:talk] {"position":"575,9375","size":"100,100"}
+... [[day3_73]]
+
+
+:: day3_73 [dad:think] {"position":"575,9500","size":"100,100"}
+... [[day3_74]]
+
+
+:: day3_74 [dad:think] {"position":"575,9625","size":"100,100"}
+She's gone, and I find myself sprinting down the road. [[day3_75]]
+
+
+:: day3_75 [dad:think] {"position":"575,9750","size":"100,100"}
+I have nothing better to do, I have to go. [[]]
+
+
+:: day3_8 [dad:think] {"position":"625,1350","size":"100,100"}
+... [[]]
+
+
+:: day3_9 [walkie:think] {"position":"625,1475","size":"100,100"}
+bzzz..... [[day3_10]]

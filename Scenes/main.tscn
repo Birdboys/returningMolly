@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bq5ce1ok6yq7m"]
+[gd_scene load_steps=3 format=3 uid="uid://bq5ce1ok6yq7m"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_f4uf4"]
 [ext_resource type="PackedScene" uid="uid://cov2cmi00nwqq" path="res://Scenes/main_menu.tscn" id="2_vslve"]
-[ext_resource type="PackedScene" uid="uid://cjle6mqaponny" path="res://Scenes/option_menu.tscn" id="3_o80m0"]
 
 [node name="game" type="Control"]
 layout_mode = 3
@@ -16,8 +15,6 @@ script = ExtResource("1_f4uf4")
 [node name="mainMenu" parent="." instance=ExtResource("2_vslve")]
 layout_mode = 1
 
-[node name="optionMenu" parent="." instance=ExtResource("3_o80m0")]
-layout_mode = 1
-
+[connection signal="open_options" from="mainMenu" to="." method="_on_main_menu_open_options"]
 [connection signal="play_game" from="mainMenu" to="." method="_on_main_menu_play_game"]
 [connection signal="quit_game" from="mainMenu" to="." method="_on_main_menu_quit_game"]

@@ -88,3 +88,7 @@ func getSpeaker(s):
 		return speaker_dict[s]
 	else:
 		return " %s " % DialogueManager.to_title(s)
+
+func _on_quit_pressed():
+	get_tree().quit()
+	pass # Replace with function body.

@@ -73,6 +73,7 @@ offset_left = 90.0
 offset_top = 475.0
 offset_right = 688.0
 offset_bottom = 649.0
+theme_override_colors/font_selected_color = Color(0.435294, 0.545098, 0.431373, 1)
 theme_override_colors/font_shadow_color = Color(0.678431, 0.639216, 0.529412, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 3
@@ -81,7 +82,7 @@ theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "Code, Design, Narrative, 
 Sounds: [u][url=https://birdboys.itch.io/]Colby Bird[/url][/u]
-Music: Logan Bird"
+Music: [u][url=https://www.youtube.com/@wyzegye]Logan Bird[/url][/u]"
 fit_content = true
 autowrap_mode = 0
 
@@ -106,13 +107,13 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ulcny")
 theme_override_styles/hover = SubResource("StyleBoxFlat_21k2l")
 text = " Play "
 
-[node name="settings" type="Button" parent="buttons"]
+[node name="options" type="Button" parent="buttons"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_lkeoa")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_ulcny")
 theme_override_styles/hover = SubResource("StyleBoxFlat_21k2l")
-text = " Settings "
+text = "Options"
 
 [node name="quit" type="Button" parent="buttons"]
 layout_mode = 2
@@ -124,4 +125,5 @@ text = "Quit "
 
 [connection signal="meta_clicked" from="credits" to="." method="_on_credits_meta_clicked"]
 [connection signal="pressed" from="buttons/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="buttons/options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="buttons/quit" to="." method="_on_quit_pressed"]
