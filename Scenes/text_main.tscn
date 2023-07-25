@@ -1,41 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://2ub6scsfkxtl"]
+[gd_scene load_steps=6 format=3 uid="uid://2ub6scsfkxtl"]
 
 [ext_resource type="Theme" uid="uid://ba0rnmow03dw7" path="res://Assets/themes/text_main_dad.tres" id="1_c66p8"]
 [ext_resource type="Script" path="res://Scripts/textMain.gd" id="1_fl4v4"]
-[ext_resource type="Texture2D" uid="uid://bi73c5358eiqf" path="res://Assets/temp_cursor1.png" id="2_vmmny"]
 
 [sub_resource type="Animation" id="Animation_6stfl"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cursor:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1230, 200)]
-}
 
 [sub_resource type="Animation" id="Animation_sg3si"]
 resource_name = "cursorWaggle"
 length = 0.35
 loop_mode = 2
 step = 0.05
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("cursor:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.35),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1230, 190), Vector2(1230, 175)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7y3vy"]
 _data = {
@@ -82,24 +57,6 @@ mouse_filter = 1
 bbcode_enabled = true
 text = "Good that they're feeding her too. If she worked up the nerve to eat the canned food she'd still only have enough for a few days. "
 
-[node name="cursor" type="TextureRect" parent="textMainPanel"]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1230.0
-offset_top = 200.0
-offset_right = 1245.0
-offset_bottom = 210.0
-grow_horizontal = 0
-grow_vertical = 0
-scale = Vector2(2, 2)
-texture = ExtResource("2_vmmny")
-stretch_mode = 2
-flip_h = true
-
 [node name="textAnim" type="AnimationPlayer" parent="textMainPanel"]
 autoplay = "cursorWaggle"
 libraries = {
@@ -107,28 +64,19 @@ libraries = {
 }
 
 [node name="settingsButtons" type="HBoxContainer" parent="textMainPanel"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 465.0
+offset_left = -16.0
 offset_top = -33.0
-offset_right = -465.0
+offset_right = 16.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 0
-
-[node name="Button" type="Button" parent="textMainPanel/settingsButtons"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_type_variation = &"settingButton"
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 2
-text = "Options"
 
 [node name="quit" type="Button" parent="textMainPanel/settingsButtons"]
 layout_mode = 2

@@ -42,7 +42,7 @@
   "intro_12": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "Remember, [i][b]left click[/b][/i] on something to [i][b]grab[/b][/i] it. Then, you can [i][b]click again[/b][/i] to [i][b]place it in your bag[/b][/i] or [i][b]put it back on the floor[/b][/i].",
+    "TEXT_TEXT": "Remember, left click on something to grab it. Then, you can click again to place it in your bag or put it back on the floor.",
     "NEXT_TEXT_ID": [
       "intro_13"
     ],
@@ -52,7 +52,7 @@
   "intro_13": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "You can [i][b]right click[/b][/i] on an [i][b]object in your bag[/b][/i] or [i][b]on the floor[/b][/i] to open it's [i][b]description[/b][/i]. The [i][b]description[/b][/i] tells you [i][b]what an object does[/b][/i].",
+    "TEXT_TEXT": "You can right click on an object in your bag] or on the floor to open it's description. The description tells you what an object does.",
     "NEXT_TEXT_ID": [
       "intro_14"
     ],
@@ -62,7 +62,7 @@
   "intro_14": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "If you're curious about an [i][b]object[/b][/i], read it's [i][b]description[/b][/i]. When you're done packing, hit the [i][b]finish button[/b][/i].",
+    "TEXT_TEXT": "If you're curious about an object, read it's description. When you're done packing, hit the finish button.",
     "NEXT_TEXT_ID": [
       "intro_15"
     ],

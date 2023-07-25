@@ -124,7 +124,7 @@ func endDialogue(dialogueID):
 			currentInventory = null
 			currentInventory = inventoryScene.instantiate()
 			add_child(currentInventory)
-			currentInventory.initialize(10, {}, [5,5,8,1,5,6,7], girl_edges, 1)
+			currentInventory.initialize(10, {}, [5,5,5,8,1,6,11,7], girl_edges, 1)
 			currentInventory.inventory_finished.connect(endInventory)
 		"day2_29c":
 			if 4 in objects_in_inventory.values():
@@ -272,8 +272,10 @@ func _input(event: InputEvent):
 						print("closing_options")
 						child.queue_free()
 						PlayerData.in_options=false
-
-
+		if key_event.keycode == KEY_P and key_event.pressed:
+			var image = get_viewport().get_texture().get_image()
+			image.save_png("res://Assets/screenshot.png")
+	
 func _on_main_menu_open_options():
 	if not PlayerData.in_options:
 		var options = options_menu.instantiate()
