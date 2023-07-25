@@ -4,90 +4,90 @@
     "item_name": "pencil",
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
-    "item_description": "The pencil I use for school."
+    "item_description": "My pencil.\nI'm not much of a school person, but it's fun to drum wit"
   },
   "1": {
     "item_id": 1,
     "item_name": "water_bottle",
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
-    "item_description": "My water bottle. Sometimes I put kool aid in it when Dad isn't looking."
+    "item_description": "My water bottle.\nSometimes I forget it at recess."
   },
   "2": {
     "item_id": 2,
     "item_name": "notebook",
     "item_graph": "0,0/0,1/1,0/1,1",
     "item_size": "2,2",
-    "item_description": "I mostly use it for doodles."
+    "item_description": "My notebook.\nI'm supposed to write stuff down, but I mostly use it for doodles."
   },
   "3": {
     "item_id": 3,
     "item_name": "lunch_box",
     "item_graph": "0,0/1,0",
     "item_size": "2,1",
-    "item_description": "I wonder what sandwich I got today."
+    "item_description": "My lunchbox.\nI wonder what salad I got today. I hope it's the one with salami."
   },
   "4": {
     "item_id": 4,
     "item_name": "stuffy",
     "item_graph": "0,0",
     "item_size": "1,1",
-    "item_description": "Its stuffy"
+    "item_description": "It's stuffy, the best stuffed animal of all time.\nMolly's best friend in the whole world."
   },
   "5": {
     "item_id": 5,
     "item_name": "canned_food",
     "item_graph": "0,0/1,0",
     "item_size": "2,1",
-    "item_description": "A can of food"
+    "item_description": "A can of food.\nConsumed at the end of the day to give you +1 food. If you don't have +1 food at the end of the day, you will starve."
   },
   "6": {
     "item_id": 6,
     "item_name": "bottled_water",
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
-    "item_description": "A bottle of water"
+    "item_description": "A bottle of water.\nConsumed at the end of the day to give you +1 water. If you don't have +2 water at the end of the day, you will starve."
   },
   "7": {
     "item_id": 7,
     "item_name": "baseball_bat",
     "item_graph": "0,0/0,1/0,2",
     "item_size": "1,3",
-    "item_description": "A baseball bat"
+    "item_description": "A baseball bat.\nA sturdy weapon with some reach. Hopefully I won't have to use it, but you never know..."
   },
   "8": {
     "item_id": 8,
     "item_name": "walkie_talkie",
     "item_graph": "0,0/0,1",
     "item_size": "1,2",
-    "item_description": "A walkie talkie"
+    "item_description": "A walkie talkie.\nThe range on these babies is massive.\\nI'll need this if I want to be able to communicate with people long distances."
   },
   "9": {
     "item_id": 9,
     "item_name": "kitchen_knife",
     "item_graph": "0,0/1,0/1,1",
     "item_size": "2,2",
-    "item_description": "A meat cleaver"
+    "item_description": "A meat cleaver.\nNot the cleanest weapon, but it will get the job done in a pinch."
   },
   "10": {
     "item_id": 10,
     "item_name": "map",
     "item_graph": "0,0/1,0/0,1/1,1",
     "item_size": "2,2",
-    "item_description": "A map of the city and surrounding area."
+    "item_description": "A map of the toown and surrounding area.\nI've marked the evacuation areas.It's pretty much a straight shot to Molly, but this will be helpful if I get lost."
   },
   "11": {
     "item_id": 11,
     "item_name": "water_jug",
     "item_graph": "0,0/1,0/0,1/1,1",
     "item_size": "2,2",
-    "item_description": "A jug of water"
+    "item_description": "A jug of water.\nConsumed at the end of the day to give you +2 water. If you don't have +2 water at the end of the day, you will starve."
   },
   "12": {
     "item_id": 12,
     "item_name": "sleeping_bag",
     "item_graph": "0,0/1,0/0,1/1,1/0,2/1,2",
     "item_size": "2,3",
-    "item_description": "A sleeping bag"
+    "item_description": "A sleeping bag.\nThere hasn't been a weather forcast on the news since the emergency messages started."
   }
 }

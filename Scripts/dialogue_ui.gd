@@ -55,6 +55,7 @@ func dialogueChoice(id, data):
 	mainText.queue_free()
 	mainText = textMain.instantiate()
 	add_child(mainText)
+	
 	mainText.initialize(data['NEXT_TEXT_ID'][0])
 
 func initialize(init_text):

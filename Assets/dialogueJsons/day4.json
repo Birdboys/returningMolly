@@ -1,14 +1,4 @@
 {
-  "Untitled Passage": {
-    "TEXT_TYPE": "listen",
-    "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "A classic, that's a quality choice.",
-    "NEXT_TEXT_ID": [
-      "day4_11"
-    ],
-    "HAS_CHOICE": false,
-    "IS_END": false
-  },
   "day4_0": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
@@ -34,7 +24,7 @@
   "day4_10a": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "Changing it up, a brilliant choice.",
+    "TEXT_TEXT": "A brilliant choice.",
     "NEXT_TEXT_ID": [
       "day4_11"
     ],
@@ -269,24 +259,30 @@
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "girl",
     "TEXT_TEXT": "Pancakes",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day4_10a"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day4_9b": {
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "girl",
     "TEXT_TEXT": "Waffles",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day4_10a"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day4_9c": {
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "girl",
     "TEXT_TEXT": "French toast",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day4_10a"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   }
 }

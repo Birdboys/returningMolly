@@ -19,10 +19,6 @@ returnDay4
 }
 
 
-:: Untitled Passage [dad:listen] {"position":"850,1600","size":"100,100"}
-A classic, that's a quality choice. [[day4_11]]
-
-
 :: day4_0 [dad:listen] {"position":"800,350","size":"100,100"}
 Hey bug... [[day4_1]]
 
@@ -32,7 +28,7 @@ Hey bug... [[day4_1]]
 
 
 :: day4_10a [dad:listen] {"position":"725,1600","size":"100,100"}
-Changing it up, a brilliant choice. [[day4_11]]
+A brilliant choice. [[day4_11]]
 
 
 :: day4_11 [girl:talk] {"position":"800,1725","size":"100,100"}
@@ -125,12 +121,12 @@ Now, what do you want for breakfast... [[day4_9a]] [[day4_9b]] [[day4_9c]]
 
 
 :: day4_9a [girl:choice] {"position":"675,1475","size":"100,100"}
-Pancakes [[]]
+Pancakes [[day4_10a]]
 
 
 :: day4_9b [girl:choice] {"position":"800,1475","size":"100,100"}
-Waffles [[]]
+Waffles [[day4_10a]]
 
 
 :: day4_9c [girl:choice] {"position":"925,1475","size":"100,100"}
-French toast [[]]
+French toast [[day4_10a]]

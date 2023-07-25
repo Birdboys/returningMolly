@@ -11,7 +11,7 @@ var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "
 				"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], 
 				"day1":[true,true,"day1Night"], "day1Night": [false, false, "day2"], 
 				"day2":[true, true,"day2Night"], "day2Night":[false, false,"day3"],
-				"day3":[true,false,"day3Night"], "day3Night":[true,false,"endGood"],
+				"day3":[true,false,"day3Night"], "day3Night":[true,false,"day4"],
 				"day4":[true,false,"endGood"],
 				"tempDieWater":[true,false,"dieWater"],"tempDieFood":[true,false,"dieFood"],
 				"dieWater":[true,false,"endBad"],"dieFood":[true,false,"endBad"],
@@ -62,7 +62,7 @@ func startDialogue(dialogueID, add_transition=false, start_index=0):
 			return
 		else:
 			await startTransition(dialogueID)
-	if "Night" in dialogueID and "intro" not in dialogueID:
+	if "Night" in dialogueID and "intro" not in dialogueID and "day0" not in dialogueID:
 		if 8 in objects_in_inventory.values():
 			pass
 		else:
@@ -82,13 +82,16 @@ func startInventory():
 	currentInventory.inventory_finished.connect(endInventory)
 
 func endInventory(placed_objects):
-	if "intro" not in currentDay:
+	if "intro" not in currentDay and "day0" not in currentDay:
 		objects_in_inventory = placed_objects
 	currentDay = dayData[currentDay][2]
 	
 	startDialogue(currentDay, dayData[currentDay][0])
 
 func endDialogue(dialogueID):
+	if currentDay == "day3Night":
+		MusicPlayer.stream = load("res://Assets/music/bear_phone.mp3")
+		MusicPlayer.play()
 	if currentDay == "":
 		backToMainMenu()
 		return
@@ -96,7 +99,7 @@ func endDialogue(dialogueID):
 		currentDialogue.queue_free()
 	currentDialogue = null
 	var is_alive
-	if "Night" in currentDay and "intro" not in currentDay:
+	if "Night" in currentDay and "intro" not in currentDay and "day0" not in currentDay and currentDay != "day3Night":
 		is_alive = processInventory()
 	else:
 		is_alive = 0
@@ -150,6 +153,8 @@ func endDialogue(dialogueID):
 			startInventory()
 		"day3_8":
 			if 8 in objects_in_inventory.values():
+				MusicPlayer.stream = load("res://Assets/music/bear_road.mp3")
+				MusicPlayer.play()
 				startDialogue(currentDay, false, "9")
 			else:
 				currentDay = "tempNoWalkie"
@@ -244,9 +249,7 @@ func removeFromInv(item_ids):
 func _on_main_menu_play_game():
 	objects_in_inventory = {}
 	$mainMenu.visible = false
-	#startTutorial()
-	currentDay = "day1"
-	startDialogue(currentDay, dayData[currentDay][0], "55")
+	startTutorial()
 
 func _on_main_menu_quit_game():
 	get_tree().quit()
@@ -283,6 +286,9 @@ func _on_main_menu_open_options():
 
 func backToMainMenu():
 	print("GOING BACK TO THE MAIN MENU")
+	for child in get_children():
+		if child.name != "mainMenu":
+			child.queue_free()
 	currentDay = ""
 	if currentDialogue:
 		currentDialogue.queue_free()
