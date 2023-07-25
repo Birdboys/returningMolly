@@ -353,8 +353,7 @@ theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 3
 theme_override_constants/outline_size = 6
 theme_override_font_sizes/normal_font_size = 24
-text = "Oh fuck on shit oh fuck my balls got chopped off by the wood chipper oh fuck please help me the woodchipper it hurts oh my god help.
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+bbcode_enabled = true
 
 [node name="mapPanel" type="Panel" parent="infoPanel/infoVbox"]
 visible = false

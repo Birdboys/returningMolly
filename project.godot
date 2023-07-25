@@ -59,7 +59,6 @@ dialogue_input={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Assets/testTranslation - Sheet1.en.translation", "res://Assets/testTranslation - Sheet1.es.translation", "res://Assets/testTranslation - Sheet1.fi.translation", "res://Assets/testTranslation - Sheet1.fr.translation", "res://Assets/testTranslation - Sheet1.sv.translation")
 locale/test="en"
 
 [rendering]
