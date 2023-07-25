@@ -53,7 +53,7 @@ I'm right here Molly. [[day1Night_15a]]
 
 
 :: day1Night_14c [dad:choice] {"position":"925,2100","size":"100,100"}
-I'm here, and I brought stuffy too. [[day1Night_15b]]
+I'm on my way. [[day1Night_15b]]
 
 
 :: day1Night_15a [girl:listen] {"position":"725,2225","size":"100,100"}
@@ -61,7 +61,7 @@ Really? [[day1Night_16a]]
 
 
 :: day1Night_15b [girl:listen] {"position":"850,2225","size":"100,100"}
-Really, you got them?! [[day1Night_16b]]
+Really, do you get back tonight? [[day1Night_16b]]
 
 
 :: day1Night_16a [dad:think] {"position":"725,2350","size":"100,100"}
@@ -69,15 +69,15 @@ She's holding it together but I can hear the sniffles building. [[day1Night_17a]
 
 
 :: day1Night_16b [dad:think] {"position":"850,2350","size":"100,100"}
-I can hear the smile slowly building on her face. [[day1Night_17b]]
+I can hear the smile slowly building on her face... [[day1Night_17b]]
 
 
 :: day1Night_17a [dad:talk] {"position":"725,2475","size":"100,100"}
 Yep, I'm right here. [[day1Night_18]]
 
 
-:: day1Night_17b [dad:talk] {"position":"850,2475","size":"100,100"}
-Yep, we're right here.
+:: day1Night_17b [dad:think] {"position":"850,2475","size":"100,100"}
+... and I don't want to take it away. [[day1Night_18]]
 
 
 :: day1Night_18 [dad:talk] {"position":"800,2600","size":"100,100"}

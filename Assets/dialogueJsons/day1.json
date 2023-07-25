@@ -226,7 +226,7 @@
   "day1_2": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "guard",
-    "TEXT_TEXT": "[i] ... we're only taking the kids, sir ... [/i]",
+    "TEXT_TEXT": "[i] ... highest risk personel first sir, women and children ... [/i]",
     "NEXT_TEXT_ID": [
       "day1_3"
     ],
@@ -789,7 +789,7 @@
   "day1_53": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "I'll need food, water, my map, and maybe a weapon. I can use the walkie talkie to talk to Molly... hopefully.",
+    "TEXT_TEXT": "I'll need food, water, and maybe a weapon. I can use the walkie talkie to talk to Molly... hopefully.",
     "NEXT_TEXT_ID": [
       "day1_54"
     ],
@@ -799,7 +799,37 @@
   "day1_54": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place...",
+    "TEXT_TEXT": "Maybe I should take two... I'll mark the evacuation locations on the map aswell.",
+    "NEXT_TEXT_ID": [
+      "day1_54a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1_54a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I went to C hoping it would be less full because its the farthest from town center. I had hope...",
+    "NEXT_TEXT_ID": [
+      "day1_54b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1_54b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... but they barely let Molly in, let alone me.",
+    "NEXT_TEXT_ID": [
+      "day1_54c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day1_54c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'll get there. I have to...  I can't forget stuffy either. I feel bad for hiding them in the first place.",
     "NEXT_TEXT_ID": [
       "day1_55"
     ],

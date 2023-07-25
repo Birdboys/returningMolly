@@ -113,7 +113,7 @@ On behalf of the government, I can assure you that your safety is our utmost pri
 
 
 :: day1_2 [guard:listen] {"position":"800,600","size":"100,100"}
-[i] ... we're only taking the kids, sir ... [/i][[day1_3]]
+[i] ... highest risk personel first sir, women and children ... [/i][[day1_3]]
 
 
 :: day1_20a [officer:listen] {"position":"675,2875","size":"100,100"}
@@ -344,11 +344,23 @@ The last three days will involve going through the woods towards the northmost e
 
 
 :: day1_53 [dad:think] {"position":"800,6875","size":"100,100"}
-I'll need food, water, my map, and maybe a weapon. I can use the walkie talkie to talk to Molly... hopefully.[[day1_54]]
+I'll need food, water, and maybe a weapon. I can use the walkie talkie to talk to Molly... hopefully.[[day1_54]]
 
 
 :: day1_54 [dad:think] {"position":"800,7000","size":"100,100"}
-Maybe I should take two. I can't forget stuffy either. I feel bad for hiding them in the first place... [[day1_55]]
+Maybe I should take two... I'll mark the evacuation locations on the map aswell.[[day1_54a]]
+
+
+:: day1_54a [dad:think] {"position":"925,7125","size":"100,100"}
+I went to C hoping it would be less full because its the farthest from town center. I had hope... [[day1_54b]]
+
+
+:: day1_54b [dad:think] {"position":"925,7250","size":"100,100"}
+... but they barely let Molly in, let alone me. [[day1_54c]]
+
+
+:: day1_54c [dad:think] {"position":"925,7375","size":"100,100"}
+I'll get there. I have to...  I can't forget stuffy either. I feel bad for hiding them in the first place. [[day1_55]]
 
 
 :: day1_55 [dad:think] {"position":"800,7125","size":"100,100"}

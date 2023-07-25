@@ -11,11 +11,12 @@ var dayData = {"intro":[true, true, "introNight"], "introNight":[false, false, "
 				"day0":[true, true, "day0Night"], "day0Night":[false, false, "day1"], 
 				"day1":[true,true,"day1Night"], "day1Night": [false, false, "day2"], 
 				"day2":[true, true,"day2Night"], "day2Night":[false, false,"day3"],
-				"day3":[true,false,"day3Night"], "day3Night":[true,false,"day4"],
-				"day4":[true,true,"endGood"], "day4Night":[false,false,"day5"],
-				"tempDieWater":[false,false,"dieWater"],"dieWater":[true,false,"endBad"],
-				"tempDieFood":[false,false,"dieFood"],"dieFood":[true,false,"endBad"],
-				"tempNoWalkie":[false,false,"dieNoWalkie"],"dieNoWalkie":[true,false,"endBad"],"tempLooper":[false, true,"tempLooper"],}
+				"day3":[true,false,"day3Night"], "day3Night":[true,false,"endGood"],
+				"day4":[true,false,"endGood"],
+				"tempDieWater":[true,false,"dieWater"],"tempDieFood":[true,false,"dieFood"],
+				"dieWater":[true,false,"endBad"],"dieFood":[true,false,"endBad"],
+				"tempNoWalkie":[false,false,"dieNoWalkie"],"dieNoWalkie":[true,false,"endBad"],
+				"endBad":[true,false,""],"endGood":[true,false,""], "tempLooper":[false, true,"tempLooper"],}
 @onready var objects_in_inventory = {}
 @onready var water_objects = {1:5, 6:1, 11:2}
 @onready var food_objects = {3:5, 5:1}
@@ -46,12 +47,27 @@ func startTutorial():
 
 func startDay(day):
 	startDialogue(day)
+	
 func startDialogue(dialogueID, add_transition=false, start_index=0):
+	print("STARTING DIALOGUE", dialogueID)
 	if currentDialogue:
 		currentDialogue.queue_free()
 		currentDialogue = null
 	if add_transition:
-		await startTransition(dialogueID)
+		if "end" in dialogueID:
+			if currentInventory:
+				currentInventory.queue_free()
+			backToMainMenu()
+			startTransition(dialogueID)
+			return
+		else:
+			await startTransition(dialogueID)
+	if "Night" in dialogueID and "intro" not in dialogueID:
+		if 8 in objects_in_inventory.values():
+			pass
+		else:
+			dialogueID = "noWalkie"
+			start_index = "0"
 	DialogueManager.loadDialogue(dialogueID)
 	currentDialogue = dialogueScene.instantiate()
 	add_child(currentDialogue)
@@ -70,22 +86,25 @@ func endInventory(placed_objects):
 		objects_in_inventory = placed_objects
 	currentDay = dayData[currentDay][2]
 	
-	if 8 in objects_in_inventory.values() or "intro" in currentDay:
-		startDialogue(currentDay, dayData[currentDay][0])
-	else:
-		startDialogue("noWalkie")
+	startDialogue(currentDay, dayData[currentDay][0])
 
 func endDialogue(dialogueID):
-	currentDialogue.queue_free()
+	if currentDay == "":
+		backToMainMenu()
+		return
+	if currentDialogue:
+		currentDialogue.queue_free()
 	currentDialogue = null
-	if "intro" not in currentDay and "Night" in currentDay:
-		is_alive_tomorrow = processInventory()
+	var is_alive
+	if "Night" in currentDay and "intro" not in currentDay:
+		is_alive = processInventory()
 	else:
-		is_alive_tomorrow = 0
-	match is_alive_tomorrow:
+		is_alive = 0
+		
+	match is_alive:
 		0: pass
-		1: currentDay="tempDieFood"; startDialogue("dieFood")
-		2: currentDay="tempDieWater"; startDialogue("dieWater")
+		1: currentDay = "tempDieFood"
+		2: currentDay = "tempDieWater"
 		
 	match dialogueID:
 		"intro_19": #FINISHED INTRO 1
@@ -104,8 +123,6 @@ func endDialogue(dialogueID):
 			add_child(currentInventory)
 			currentInventory.initialize(10, {}, [5,5,8,1,5,6,7], girl_edges, 1)
 			currentInventory.inventory_finished.connect(endInventory)
-		"dieWater_5", "dieFood_4":
-			pass
 		"day2_29c":
 			if 4 in objects_in_inventory.values():
 				startDialogue(currentDay, false, "30a")
@@ -136,7 +153,7 @@ func endDialogue(dialogueID):
 				startDialogue(currentDay, false, "9")
 			else:
 				currentDay = "tempNoWalkie"
-				startDialogue("noWalkie")
+				startDialogue("noWalkie", true)
 		"day3_37":
 			if 10 in objects_in_inventory.values():
 				print("IM THE MAP")
@@ -154,12 +171,14 @@ func endDialogue(dialogueID):
 				currentDay = dayData[currentDay][2]
 				startDialogue(currentDay, dayData[currentDay][0], "0a")
 		_:
+			print("HIT GENERIC CASE %s, GOING TO %S", currentDay, currentDay[2])
 			if dayData[currentDay][1]: #go to inventory
+				print("OPENING INVENTORY")
 				startInventory()
 			else:
 				currentDay = dayData[currentDay][2]
 				startDialogue(currentDay, dayData[currentDay][0])
-				
+	print("DIALOGUE ENDED", dialogueID)			
 func startTransition(day):
 	var new_transition = transition.instantiate()
 	add_child(new_transition)
@@ -223,10 +242,11 @@ func removeFromInv(item_ids):
 	return false
 
 func _on_main_menu_play_game():
-	$mainMenu.queue_free()
+	objects_in_inventory = {}
+	$mainMenu.visible = false
 	#startTutorial()
 	currentDay = "day1"
-	startDialogue(currentDay, dayData[currentDay][0])
+	startDialogue(currentDay, dayData[currentDay][0], "55")
 
 func _on_main_menu_quit_game():
 	get_tree().quit()
@@ -260,3 +280,14 @@ func _on_main_menu_open_options():
 		options.initialize(music_vol, sound_vol)
 		PlayerData.in_options = true
 	pass # Replace with function body.
+
+func backToMainMenu():
+	print("GOING BACK TO THE MAIN MENU")
+	currentDay = ""
+	if currentDialogue:
+		currentDialogue.queue_free()
+	currentDialogue = null
+	if currentInventory:
+		currentInventory.queue_free()
+	currentInventory = false
+	$mainMenu.visible = true

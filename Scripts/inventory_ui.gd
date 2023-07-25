@@ -49,7 +49,7 @@ func _process(delta):
 						var slot_to_update = held_item.item_location + coord
 						slots["%s:%s"%[slot_to_update.x, slot_to_update.y]].removeItem()
 				else:
-					print("item found on ground")
+					pass
 				held_item.pickUp()
 				#print(held_item.item_location)
 		for child in groundItems.get_children():
@@ -156,7 +156,6 @@ func addItemToGround(id):
 	
 func groundItemPressed(id):
 	var new_item = load('res://Scenes/item.tscn').instantiate()
-	print("ADDING A NEW ITTEM TO INV")
 	objects.add_child(new_item)
 	new_item.loadItem(id, Vector2(inv_scale, inv_scale),slot_width)
 	#new_item.pivot_offset = new_item.getSize()/2
@@ -216,7 +215,6 @@ func loadGround():
 			addItemToGround(item)
 
 func initialize(col, placed, ground=[1,2,3,4], edge=[], fc=0, girl=false):
-	print("STARTING INV INIT")
 	num_col = col
 	num_row = 4 * col / 5
 	placed_objects = placed

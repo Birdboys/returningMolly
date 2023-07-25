@@ -155,9 +155,11 @@
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "dad",
     "TEXT_TEXT": "*turn and walk away*",
-    "NEXT_TEXT_ID": [],
+    "NEXT_TEXT_ID": [
+      "day2_27a"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day2_22b": {
     "TEXT_TYPE": "choice",

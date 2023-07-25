@@ -1,0 +1,152 @@
+:: StoryTitle
+returnDay3Night
+
+
+:: StoryData
+{
+  "ifid": "F4C7D4EC-FA07-408C-B900-80623F540C8D",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day3Night_0a",
+  "tag-colors": {
+    "dad:think": "green",
+    "rumble:think": "yellow",
+    "dad:talk": "green",
+    "guard:listen": "yellow"
+  },
+  "zoom": 1
+}
+
+
+:: day3Night_0a [dad:think] {"position":"800,350","size":"100,100"}
+My legs are burning, but I keep pushing forward. [[day3Night_1a]]
+
+
+
+:: day3Night_0b [dad:think] {"position":"925,350","size":"100,100"}
+This feels hopeless. [[day3Night_1b]]
+
+
+:: day3Night_10 [dad:talk] {"position":"925,1600","size":"100,100"}
+... MOLLY. MOLLY. [[day3Night_11]]
+
+
+:: day3Night_11 [dad:think] {"position":"925,1725","size":"100,100"}
+This has to be her, it has to. [[day3Night_12]]
+
+
+:: day3Night_12 [dad:think] {"position":"925,1850","size":"100,100"}
+As the car comes into view I can see it isn't a car, it's a bus, and it's huge. [[day3Night_13]]
+
+
+:: day3Night_13 [rumble:think] {"position":"925,1975","size":"100,100"}
+RUMBLE RUMBLE RUMBLE [[day3Night_14]]
+
+
+:: day3Night_14 [dad:think] {"position":"925,2100","size":"100,100"}
+The huge black frame could have easily fit 100 people. I'm amazed it could handle the rough terrain. [[day3Night_15]]
+
+
+:: day3Night_15 [dad:think] {"position":"925,2225","size":"100,100"}
+Even more amazing was the bright red letter "D" spray painted on the side. [[day3Night_16]]
+
+
+:: day3Night_16 [rumble:think] {"position":"925,2350","size":"100,100"}
+HOOOOONK [[day3Night_17]]
+
+
+:: day3Night_17 [dad:think] {"position":"925,2475","size":"100,100"}
+I hadn't noticed I was standing in the middle of the road. [[day3Night_18]]
+
+
+:: day3Night_18 [dad:think] {"position":"925,2600","size":"100,100"}
+I moved to the side of the road, waving my arms frantically. [[day3Night_19]]
+
+
+:: day3Night_19 [dad:talk] {"position":"925,2725","size":"100,100"}
+STOP. PLEASE. [[day3Night_20]]
+
+
+:: day3Night_1a [dad:think] {"position":"800,475","size":"100,100"}
+There's a chance she's gone already... [[day3Night_2a]]
+
+
+:: day3Night_1b [dad:think] {"position":"925,475","size":"100,100"}
+I've passed multiple right turns... [[day3Night_2b]]
+
+
+:: day3Night_20 [dad:think] {"position":"925,2850","size":"100,100"}
+Despite it's large size, the vehicle was able to stop relatively quickly. [[day3Night_21]]
+
+
+:: day3Night_21 [dad:think] {"position":"925,2975","size":"100,100"}
+I was practically attacking the reinforced door before a guard turned the handle from inside to open it. [[day3Night_22]]
+
+
+:: day3Night_22 [guard:listen] {"position":"925,3100","size":"100,100"}
+Step back! [[day3Night_23]]
+
+
+:: day3Night_23 [dad:think] {"position":"925,3225","size":"100,100"}
+I can see the back of the guard's helmet through the open crack in the door. Instinctively I raise my hands in retreat... [[day3Night_24]]
+
+
+:: day3Night_24 [dad:think] {"position":"925,3350","size":"100,100"}
+...until I realize he isn't talking to me. [[day3Night_25]]
+
+
+:: day3Night_25 [dad:think] {"position":"925,3475","size":"100,100"}
+Through a gap in the guards legs runs a little girl with a purple backpack. [[day3Night_26]]
+
+
+:: day3Night_26 [dad:think] {"position":"925,3600","size":"100,100"}
+Her hands ferociously grip a walkie talkie, until she looks up at me... and the tension releases. [[day3Night_27]].
+
+
+:: day3Night_27 [dad:talk] {"position":"925,3725","size":"100,100"}
+MOLLY. [[]]
+
+
+:: day3Night_2a [dad:think] {"position":"800,600","size":"100,100"}
+... if they evacuated zone C already there's no way to kno- [[day3Night_3a]]
+
+
+:: day3Night_2b [dad:think] {"position":"925,600","size":"100,100"}
+...none of them have felt right, but there's a possibility Molly is a few miles behind me. [[day3Night_3b]]
+
+
+:: day3Night_3a [rumble:think] {"position":"800,725","size":"100,100"}
+rumble... rumble... rumble... [[day3Night_4a]]
+
+
+:: day3Night_3b [dad:think] {"position":"925,725","size":"100,100"}
+I should have kept the map with me. [[day3Night_4b]]
+
+
+:: day3Night_4a [dad:think] {"position":"800,850","size":"100,100"}
+What is that? [[day3Night_6]]
+
+
+:: day3Night_4b [dad:think] {"position":"925,850","size":"100,100"}
+I shouldn't have left her alone. [[day3Night_5b]]
+
+
+:: day3Night_5b [dad:think] {"position":"925,975","size":"100,100"}
+I'm never going to se- [[day3Night_6]]
+
+
+
+:: day3Night_6 [dad:think] {"position":"925,1100","size":"100,100"}
+... [[day3Night_7]]
+
+
+:: day3Night_7 [rumble:think] {"position":"925,1225","size":"100,100"}
+rumble... rumble... rumble... [[day3Night_8]]
+
+
+:: day3Night_8 [dad:think] {"position":"925,1350","size":"100,100"}
+My thoughts are cut off by a loud noise. It's approaching fast. [[day3Night_9]]
+
+
+:: day3Night_9 [dad:talk] {"position":"925,1475","size":"100,100"}
+A car... [[day3Night_10]]

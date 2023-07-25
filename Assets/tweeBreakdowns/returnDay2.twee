@@ -82,7 +82,7 @@ He looks terrified. I don't want to provoke him. At the same time, it couldn't h
 
 
 :: day2_22a [dad:choice] {"position":"675,3100","size":"100,100"}
-*turn and walk away* 
+*turn and walk away* [[day2_27a]]
 
 
 :: day2_22b [dad:choice] {"position":"800,3100","size":"100,100"}

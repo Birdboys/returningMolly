@@ -34,9 +34,13 @@ I reach desparately for my bag. After several failed attempts I manage to loosel
 
 
 :: dieWater_4 [dad:think] {"position":"800,850","size":"100,100"}
-My hand searches desperately for a bottle with weight. Empty... empty... I'm out of water.[[dieWater_5]]
+My hand searches desperately for a bottle with weight. [[dieWater_4a]]
 
 
 
-:: dieWater_5 [dad:think dad:talk] {"position":"800,975","size":"100,100"}
+:: dieWater_4a [dad:think] {"position":"925,850","size":"100,100"}
+Empty... empty. I'm out of water. [[dieWater_5]]
+
+
+:: dieWater_5 [dad:talk] {"position":"800,975","size":"100,100"}
 I'm sorry... Molly. [[]]

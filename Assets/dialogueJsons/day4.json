@@ -1,0 +1,292 @@
+{
+  "Untitled Passage": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "A classic, that's a quality choice.",
+    "NEXT_TEXT_ID": [
+      "day4_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_0": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Hey bug...",
+    "NEXT_TEXT_ID": [
+      "day4_1"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_1": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... it's time to wake up.",
+    "NEXT_TEXT_ID": [
+      "day4_2a",
+      "day4_2b",
+      "day4_2c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day4_10a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Changing it up, a brilliant choice.",
+    "NEXT_TEXT_ID": [
+      "day4_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_11": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I think so too.",
+    "NEXT_TEXT_ID": [
+      "day4_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I smile at him.",
+    "NEXT_TEXT_ID": [
+      "day4_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_13": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He smiles at me.",
+    "NEXT_TEXT_ID": [
+      "day4_14"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_14": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "narrator",
+    "TEXT_TEXT": "The End.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day4_2a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "What? What's wrong?",
+    "NEXT_TEXT_ID": [
+      "day4_3a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_2b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day4_3b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_2c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "I'm tired...",
+    "NEXT_TEXT_ID": [
+      "day4_3c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_3a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Aww, nothing bug.",
+    "NEXT_TEXT_ID": [
+      "day4_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_3b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "You're not foolin me bug.",
+    "NEXT_TEXT_ID": [
+      "day4_4b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_3c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "So am I kiddo, but I've got to make breakfast and you've got to go to school.",
+    "NEXT_TEXT_ID": [
+      "day4_4c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_4a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He hugs me through the blanket.",
+    "NEXT_TEXT_ID": [
+      "day4_5a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_4b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He hugs me through the blanket.",
+    "NEXT_TEXT_ID": [
+      "day4_5b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_4c": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "He hugs me through the blanket.",
+    "NEXT_TEXT_ID": [
+      "day4_5c"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_5a": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "But, you do have school today.",
+    "NEXT_TEXT_ID": [
+      "day4_6a",
+      "day4_6b",
+      "day4_6c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day4_5b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Get up, you have school tomorrow.",
+    "NEXT_TEXT_ID": [
+      "day4_6a",
+      "day4_6b",
+      "day4_6c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day4_5c": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Come on now, get on up.",
+    "NEXT_TEXT_ID": [
+      "day4_6a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_6a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "If you say so.",
+    "NEXT_TEXT_ID": [
+      "day4_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_6b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Tell them I cancelled.",
+    "NEXT_TEXT_ID": [
+      "day4_7b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_6c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Fine, but breakfast better be good.",
+    "NEXT_TEXT_ID": [
+      "day4_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_7": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "That's my bug.",
+    "NEXT_TEXT_ID": [
+      "day4_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_7b": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Very funny bug.",
+    "NEXT_TEXT_ID": [
+      "day4_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day4_8": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Now, what do you want for breakfast...",
+    "NEXT_TEXT_ID": [
+      "day4_9a",
+      "day4_9b",
+      "day4_9c"
+    ],
+    "HAS_CHOICE": true,
+    "IS_END": false
+  },
+  "day4_9a": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Pancakes",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day4_9b": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "Waffles",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day4_9c": {
+    "TEXT_TYPE": "choice",
+    "TEXT_SPEAKER": "girl",
+    "TEXT_TEXT": "French toast",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  }
+}

@@ -1,0 +1,136 @@
+:: StoryTitle
+returnDay4
+
+
+:: StoryData
+{
+  "ifid": "88A52F9B-0CFE-4052-8745-E607609C7A91",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "day4_0",
+  "tag-colors": {
+    "dad:listen": "green",
+    "girl:choice": "red",
+    "girl:think": "purple",
+    "girl:talk": "purple",
+    "narrator:think": "yellow"
+  },
+  "zoom": 1
+}
+
+
+:: Untitled Passage [dad:listen] {"position":"850,1600","size":"100,100"}
+A classic, that's a quality choice. [[day4_11]]
+
+
+:: day4_0 [dad:listen] {"position":"800,350","size":"100,100"}
+Hey bug... [[day4_1]]
+
+
+:: day4_1 [dad:listen] {"position":"800,475","size":"100,100"}
+... it's time to wake up. [[day4_2a]] [[day4_2b]] [[day4_2c]]
+
+
+:: day4_10a [dad:listen] {"position":"725,1600","size":"100,100"}
+Changing it up, a brilliant choice. [[day4_11]]
+
+
+:: day4_11 [girl:talk] {"position":"800,1725","size":"100,100"}
+I think so too. [[day4_12]]
+
+
+:: day4_12 [girl:think] {"position":"800,1850","size":"100,100"}
+I smile at him. [[day4_13]]
+
+
+
+:: day4_13 [girl:think] {"position":"800,1975","size":"100,100"}
+He smiles at me. [[day4_14]]
+
+
+:: day4_14 [narrator:think] {"position":"800,2100","size":"100,100"}
+The End. [[]]
+
+
+:: day4_2a [girl:choice] {"position":"675,600","size":"100,100"}
+What? What's wrong? [[day4_3a]]
+
+
+:: day4_2b [girl:choice] {"position":"800,600","size":"100,100"}
+... [[day4_3b]]
+
+
+:: day4_2c [girl:choice] {"position":"925,600","size":"100,100"}
+I'm tired... [[day4_3c]]
+
+
+:: day4_3a [dad:listen] {"position":"675,725","size":"100,100"}
+Aww, nothing bug. [[day4_4a]]
+
+
+:: day4_3b [dad:listen] {"position":"800,725","size":"100,100"}
+You're not foolin me bug. [[day4_4b]]
+
+
+:: day4_3c [dad:listen] {"position":"925,725","size":"100,100"}
+So am I kiddo, but I've got to make breakfast and you've got to go to school. [[day4_4c]]
+
+
+:: day4_4a [girl:think] {"position":"675,850","size":"100,100"}
+He hugs me through the blanket. [[day4_5a]]
+
+
+:: day4_4b [girl:think] {"position":"800,850","size":"100,100"}
+He hugs me through the blanket. [[day4_5b]]
+
+
+:: day4_4c [girl:think] {"position":"925,850","size":"100,100"}
+He hugs me through the blanket. [[day4_5c]]
+
+
+:: day4_5a [dad:listen] {"position":"675,975","size":"100,100"}
+But, you do have school today. [[day4_6a]] [[day4_6b]] [[day4_6c]]
+
+
+:: day4_5b [dad:listen] {"position":"800,975","size":"100,100"}
+Get up, you have school tomorrow. [[day4_6a]] [[day4_6b]] [[day4_6c]]
+
+
+:: day4_5c [dad:listen] {"position":"925,975","size":"100,100"}
+Come on now, get on up. [[day4_6a]]
+
+
+:: day4_6a [girl:choice] {"position":"675,1100","size":"100,100"}
+If you say so. [[day4_7]]
+
+
+:: day4_6b [girl:choice] {"position":"800,1100","size":"100,100"}
+Tell them I cancelled. [[day4_7b]]
+
+
+:: day4_6c [girl:choice] {"position":"925,1100","size":"100,100"}
+Fine, but breakfast better be good. [[day4_7]]
+
+
+:: day4_7 [dad:listen] {"position":"725,1225","size":"100,100"}
+That's my bug. [[day4_8]]
+
+
+:: day4_7b [dad:listen] {"position":"850,1225","size":"100,100"}
+Very funny bug. [[day4_8]]
+
+
+:: day4_8 [dad:listen] {"position":"800,1350","size":"100,100"}
+Now, what do you want for breakfast... [[day4_9a]] [[day4_9b]] [[day4_9c]]
+
+
+:: day4_9a [girl:choice] {"position":"675,1475","size":"100,100"}
+Pancakes [[]]
+
+
+:: day4_9b [girl:choice] {"position":"800,1475","size":"100,100"}
+Waffles [[]]
+
+
+:: day4_9c [girl:choice] {"position":"925,1475","size":"100,100"}
+French toast [[]]

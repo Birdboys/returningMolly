@@ -84,7 +84,7 @@
   "day1Night_14c": {
     "TEXT_TYPE": "choice",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "I'm here, and I brought stuffy too.",
+    "TEXT_TEXT": "I'm on my way.",
     "NEXT_TEXT_ID": [
       "day1Night_15b"
     ],
@@ -104,7 +104,7 @@
   "day1Night_15b": {
     "TEXT_TYPE": "listen",
     "TEXT_SPEAKER": "girl",
-    "TEXT_TEXT": "Really, you got them?!",
+    "TEXT_TEXT": "Really, do you get back tonight?",
     "NEXT_TEXT_ID": [
       "day1Night_16b"
     ],
@@ -124,7 +124,7 @@
   "day1Night_16b": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "I can hear the smile slowly building on her face.",
+    "TEXT_TEXT": "I can hear the smile slowly building on her face...",
     "NEXT_TEXT_ID": [
       "day1Night_17b"
     ],
@@ -142,12 +142,14 @@
     "IS_END": false
   },
   "day1Night_17b": {
-    "TEXT_TYPE": "talk",
+    "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "Yep, we're right here.",
-    "NEXT_TEXT_ID": [],
+    "TEXT_TEXT": "... and I don't want to take it away.",
+    "NEXT_TEXT_ID": [
+      "day1Night_18"
+    ],
     "HAS_CHOICE": false,
-    "IS_END": true
+    "IS_END": false
   },
   "day1Night_18": {
     "TEXT_TYPE": "talk",

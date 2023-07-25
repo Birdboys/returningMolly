@@ -42,7 +42,17 @@
   "dieWater_4": {
     "TEXT_TYPE": "think",
     "TEXT_SPEAKER": "dad",
-    "TEXT_TEXT": "My hand searches desperately for a bottle with weight. Empty... empty... empty...\nI'm out of water.",
+    "TEXT_TEXT": "My hand searches desperately for a bottle with weight.",
+    "NEXT_TEXT_ID": [
+      "dieWater_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "dieWater_4a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Empty... empty. I'm out of water.",
     "NEXT_TEXT_ID": [
       "dieWater_5"
     ],
@@ -50,7 +60,7 @@
     "IS_END": false
   },
   "dieWater_5": {
-    "TEXT_TYPE": "think dad:talk",
+    "TEXT_TYPE": "talk",
     "TEXT_SPEAKER": "dad",
     "TEXT_TEXT": "I'm sorry... Molly.",
     "NEXT_TEXT_ID": [],

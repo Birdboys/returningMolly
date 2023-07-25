@@ -1,0 +1,330 @@
+{
+  "day3Night_0a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "My legs are burning, but I keep pushing forward.",
+    "NEXT_TEXT_ID": [
+      "day3Night_1a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_0b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This feels hopeless.",
+    "NEXT_TEXT_ID": [
+      "day3Night_1b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_10": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... MOLLY. MOLLY.",
+    "NEXT_TEXT_ID": [
+      "day3Night_11"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_11": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "This has to be her, it has to.",
+    "NEXT_TEXT_ID": [
+      "day3Night_12"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_12": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "As the car comes into view I can see it isn't a car, it's a bus, and it's huge.",
+    "NEXT_TEXT_ID": [
+      "day3Night_13"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_13": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "rumble",
+    "TEXT_TEXT": "RUMBLE RUMBLE RUMBLE",
+    "NEXT_TEXT_ID": [
+      "day3Night_14"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_14": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "The huge black frame could have easily fit 100 people. I'm amazed it could handle the rough terrain.",
+    "NEXT_TEXT_ID": [
+      "day3Night_15"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_15": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Even more amazing was the bright red letter \"D\" spray painted on the side.",
+    "NEXT_TEXT_ID": [
+      "day3Night_16"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_16": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "rumble",
+    "TEXT_TEXT": "HOOOOONK",
+    "NEXT_TEXT_ID": [
+      "day3Night_17"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_17": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I hadn't noticed I was standing in the middle of the road.",
+    "NEXT_TEXT_ID": [
+      "day3Night_18"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_18": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I moved to the side of the road, waving my arms frantically.",
+    "NEXT_TEXT_ID": [
+      "day3Night_19"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_19": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "STOP. PLEASE.",
+    "NEXT_TEXT_ID": [
+      "day3Night_20"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_1a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "There's a chance she's gone already...",
+    "NEXT_TEXT_ID": [
+      "day3Night_2a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_1b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I've passed multiple right turns...",
+    "NEXT_TEXT_ID": [
+      "day3Night_2b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_20": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Despite it's large size, the vehicle was able to stop relatively quickly.",
+    "NEXT_TEXT_ID": [
+      "day3Night_21"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_21": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I was practically attacking the reinforced door before a guard turned the handle from inside to open it.",
+    "NEXT_TEXT_ID": [
+      "day3Night_22"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_22": {
+    "TEXT_TYPE": "listen",
+    "TEXT_SPEAKER": "guard",
+    "TEXT_TEXT": "Step back!",
+    "NEXT_TEXT_ID": [
+      "day3Night_23"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_23": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I can see the back of the guard's helmet through the open crack in the door. Instinctively I raise my hands in retreat...",
+    "NEXT_TEXT_ID": [
+      "day3Night_24"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_24": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...until I realize he isn't talking to me.",
+    "NEXT_TEXT_ID": [
+      "day3Night_25"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_25": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Through a gap in the guards legs runs a little girl with a purple backpack.",
+    "NEXT_TEXT_ID": [
+      "day3Night_26"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_26": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "Her hands ferociously grip a walkie talkie, until she looks up at me... and the tension releases.",
+    "NEXT_TEXT_ID": [
+      "day3Night_27"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_27": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "MOLLY.",
+    "NEXT_TEXT_ID": [],
+    "HAS_CHOICE": false,
+    "IS_END": true
+  },
+  "day3Night_2a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "... if they evacuated zone C already there's no way to kno-",
+    "NEXT_TEXT_ID": [
+      "day3Night_3a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_2b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...none of them have felt right, but there's a possibility Molly is a few miles behind me.",
+    "NEXT_TEXT_ID": [
+      "day3Night_3b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_3a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "rumble",
+    "TEXT_TEXT": "rumble... rumble... rumble...",
+    "NEXT_TEXT_ID": [
+      "day3Night_4a"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_3b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I should have kept the map with me.",
+    "NEXT_TEXT_ID": [
+      "day3Night_4b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_4a": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "What is that?",
+    "NEXT_TEXT_ID": [
+      "day3Night_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_4b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I shouldn't have left her alone.",
+    "NEXT_TEXT_ID": [
+      "day3Night_5b"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_5b": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "I'm never going to se-",
+    "NEXT_TEXT_ID": [
+      "day3Night_6"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_6": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "...",
+    "NEXT_TEXT_ID": [
+      "day3Night_7"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_7": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "rumble",
+    "TEXT_TEXT": "rumble... rumble... rumble...",
+    "NEXT_TEXT_ID": [
+      "day3Night_8"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_8": {
+    "TEXT_TYPE": "think",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "My thoughts are cut off by a loud noise. It's approaching fast.",
+    "NEXT_TEXT_ID": [
+      "day3Night_9"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  },
+  "day3Night_9": {
+    "TEXT_TYPE": "talk",
+    "TEXT_SPEAKER": "dad",
+    "TEXT_TEXT": "A car...",
+    "NEXT_TEXT_ID": [
+      "day3Night_10"
+    ],
+    "HAS_CHOICE": false,
+    "IS_END": false
+  }
+}

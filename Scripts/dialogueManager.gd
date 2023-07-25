@@ -11,7 +11,6 @@ func _process(delta):
 	pass
 	
 func loadDialogue(name):
-	print(name)
 	var path = dialogue_json_path % name
 	if not FileAccess.file_exists(path):
 		print("DIALOGUE DATA LOADING ERROR")
